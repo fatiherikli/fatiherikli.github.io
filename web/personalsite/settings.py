@@ -110,6 +110,7 @@ INSTALLED_APPS = (
     'south',
     'markitup',
 
+    'contents',
     'blog',
 
 )
