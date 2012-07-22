@@ -1,0 +1,59 @@
+body {
+    background-image: url(/static/img/bg-pattern.png);
+    color: #434343;
+}
+
+#container {
+    max-width: 960px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#main {
+    background-color: white;
+    border-top: 4px solid #069;
+}
+
+#main {
+    clear: both;
+}
+
+header, nav {
+    font-family: 'Crete Round', serif;
+}
+
+header {
+    width: 50%;
+    float: left;
+}
+
+header h1 {
+    font-size: 49px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+header h2 {
+    color: gray;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: -8px;
+    margin-bottom: 5px;
+}
+
+nav {
+    float: right;
+    margin-top: 90px;
+}
+
+nav li {
+    float: left;
+    margin-left: 15px;
+}
+
+nav li a {
+    letter-spacing: -1px;
+    color: #069;
+    font-size: 24px;
+    text-decoration: none;
+}

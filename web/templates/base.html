@@ -1,0 +1,67 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Fatih Erikli</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{{ STATIC_URL}}css/base.css">
+    <link rel="stylesheet" href="{{ STATIC_URL}}css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'></head>
+</head>
+<body>
+<div id="container">
+    <header>
+        <hgroup>
+            <h1>Fatih Erikli</h1>
+            <h2>tıngır mıngır ayaklı, seksen sekiz toynaklı</h2>
+        </hgroup>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">cv</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <section role="main" id="main">
+        {% block content %}
+        {% endblock %}
+    </section>
+
+    <footer>
+    </footer>
+
+</div>
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ STATIC_URL }}js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- scripts concatenated and minified via build script -->
+<script src="{{ STATIC_URL }}js/script.js"></script>
+{% block javascripts %}
+{% endblock %}
+<!-- end scripts -->
+
+<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+mathiasbynens.be/notes/async-analytics-snippet -->
+<script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>

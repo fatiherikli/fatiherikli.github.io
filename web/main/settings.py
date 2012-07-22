@@ -1,4 +1,4 @@
-# Django settings for personalsite project.
+from utils import here
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -56,9 +56,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    here("../static"),
 )
 
 # List of finder classes that know how to find static files in
@@ -86,16 +84,15 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'personalsite.urls'
+ROOT_URLCONF = 'main.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'personalsite.wsgi.application'
+WSGI_APPLICATION = 'main.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    here("../templates"),
 )
+
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -110,11 +107,11 @@ INSTALLED_APPS = (
     'south',
     'markitup',
 
-    'contents',
     'blog',
 
-)
+    'contents',
 
+)
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
