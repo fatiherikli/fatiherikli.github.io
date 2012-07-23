@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% load content_block %}
+
+{% block content %}
+    {% for post in posts %}
+    <article id="short-bio">
+        <h3>short bio</h3>
+        {{ post.content }}
+    </article>
+    {% endfor %}
+{% endblock %}

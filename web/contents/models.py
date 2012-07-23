@@ -9,7 +9,7 @@ class ContentBlock(models.Model):
     """
     Holds content block data.
     """
-    name = models.SlugField(_("Name"), max_length=255)
+    name = models.SlugField(_("Name"), unique=True, max_length=255)
     content = MarkupField()
 
     def __unicode__(self):

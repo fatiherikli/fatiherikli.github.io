@@ -1,9 +1,21 @@
 {% extends 'base.html' %}
 
-{% load contents %}
+{% load content_block %}
 
 {% block content %}
-<article>
-    test
-</article>
+    <article id="short-bio">
+        <h3>short bio</h3>
+        {% content_block "short-bio" %}
+    </article>
+
+
+    <article id="projects" class="link-list right column">
+        <h3>projects</h3>
+        {% content_block "projects" %}
+    </article>
+
+    <article id="open-source" class="link-list left column">
+        <h3>open source</h3>
+        {% content_block "open-source" %}
+    </article>
 {% endblock %}

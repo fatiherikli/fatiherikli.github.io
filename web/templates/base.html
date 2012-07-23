@@ -17,15 +17,15 @@
 <div id="container">
     <header>
         <hgroup>
-            <h1>Fatih Erikli</h1>
-            <h2>tıngır mıngır ayaklı, seksen sekiz toynaklı</h2>
+            <h1>{% block title %}Fatih Erikli{% endblock %}</h1>
+            <h2>{% block subtitle %}python - django developer{% endblock %}</h2>
         </hgroup>
     </header>
     <nav>
         <ul>
-            <li><a href="#">home</a></li>
+            <li><a href="{% url index %}">home</a></li>
             <li><a href="#">cv</a></li>
-            <li><a href="#">blog</a></li>
+            <li><a href="{% url blog %}">blog</a></li>
             <li><a href="#">contact</a></li>
         </ul>
     </nav>

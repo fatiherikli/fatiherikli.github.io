@@ -141,7 +141,8 @@ LOGGING = {
     }
 }
 
-MARKITUP_FILTER = ('markdown.markdown', {'safe_mode': True})
+MARKITUP_SET = 'markitup/sets/markdown'
+MARKITUP_FILTER = ('markdown.markdown', {'safe_mode': False})
 
 try:
     from settings_local import *
