@@ -4,9 +4,11 @@
 
 {% block content %}
     {% for post in posts %}
-    <article id="short-bio">
-        <h3>short bio</h3>
+    <article class="post">
+        <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
         {{ post.content }}
     </article>
     {% endfor %}
+
+    {% include "pagination.html" %}
 {% endblock %}

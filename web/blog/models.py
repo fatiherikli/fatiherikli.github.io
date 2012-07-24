@@ -24,7 +24,7 @@ class Post(models.Model):
     content = MarkupField(_("Content"))
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True, auto_now_add=True)
-    is_published = models.BooleanField(_("Draft"), default=True)
+    is_published = models.BooleanField(_("Published"), default=True)
 
     # legacy fields
     legacy_url = models.URLField(_("Legacy URL"), blank=True, null=True, editable=False)
@@ -36,3 +36,7 @@ class Post(models.Model):
 
     def __unicode__(self):
         return smart_unicode(self.title)
+
+    @models.permalink
+    def get_absolute_url(self):
+        return "blog_detail", [self.slug, ]
