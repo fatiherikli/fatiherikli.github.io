@@ -26,6 +26,10 @@ class Post(models.Model):
     date_modified = models.DateTimeField(auto_now=True, auto_now_add=True)
     is_published = models.BooleanField(_("Draft"), default=True)
 
+    # legacy fields
+    legacy_url = models.URLField(_("Legacy URL"), blank=True, null=True, editable=False)
+    legacy_id = models.IntegerField(_("Legacy Post ID"), blank=True, null=True)
+
     objects = models.Manager()
     published_objects = PublishedManager()
     tags = TaggableManager()
