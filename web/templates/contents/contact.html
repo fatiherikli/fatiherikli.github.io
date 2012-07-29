@@ -1,10 +1,21 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends "base.html" %}
+{% load content_block %}
 
-</body>
-</html>
+{% block content %}
+<article id="short-bio">
+    <h3>contact me</h3>
+    {% content_block "contact-info" %}
+</article>
+
+<article id="contact-form">
+    {% if form.is_valid %}
+        {{ success_message }}
+    {% else %}
+    <form action="{% url contact %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+    {% endif %}
+</article>
+{% endblock %}
