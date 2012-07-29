@@ -67,6 +67,7 @@ article h3 {
     margin-top: 12px;
     margin-bottom: 15px;
     font-size: 25px;
+    line-height: 1.2em;
 }
 
 article time {
@@ -151,4 +152,50 @@ a {
 
 form label {
     display: block;
+}
+
+
+/*
+* Media queries
+*/
+
+@media screen and (max-width: 700px) {
+
+    header {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    nav {
+        float: none;
+        margin: 0 0 10px 0;
+    }
+
+    nav ul {
+        width: 370px;
+        margin: auto;
+    }
+
+    nav li {
+        margin-bottom: 20px;
+        margin-top: -25px;
+    }
+
+    nav li a {
+        font-size: 42px;
+    }
+
+    article.column {
+        width: auto;
+        float: none;
+    }
+
+    .post img {
+        max-width: 500px;
+    }
+
+    article h3 {
+        font-size: 28px;
+    }
 }
