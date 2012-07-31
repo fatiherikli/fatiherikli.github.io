@@ -1,11 +1,11 @@
 body {
-    background: #f7f7f7 url(/static/img/bg-pattern.png);
+    background: #fff url(/static/img/bg-pattern.png);
     color: #434343;
 }
 
 #container {
     max-width: 960px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 
@@ -20,11 +20,15 @@ header, nav {
 header {
     width: 50%;
     float: left;
+    height: 250px;
+    background: url("../img/kafa.png") no-repeat left center;
+    padding-left: 200px;
 }
 
 header h1 {
-    font-size: 58px;
+    font-size: 38px;
     font-weight: normal;
+    margin-top: 75px;
     margin-bottom: 0;
 }
 
@@ -36,8 +40,8 @@ header h2 {
 }
 
 nav {
-    float: right;
-    margin-top: 115px;
+    position: absolute;
+    margin: 155px 0 0 185px;
 }
 
 nav li {
@@ -165,15 +169,18 @@ form label {
         width: 100%;
         float: none;
         text-align: center;
+        background-position: center top;
+        padding: 140px 0 0 0;
     }
 
     nav {
+        position: relative;
         float: none;
-        margin: 0 0 10px 0;
+        margin: -70px 0 40px 0;
     }
 
     nav ul {
-        width: 370px;
+        width: 360px;
         margin: auto;
     }
 
@@ -192,10 +199,15 @@ form label {
     }
 
     .post img {
-        max-width: 500px;
+        max-width: 100%;
     }
 
     article h3 {
         font-size: 28px;
+    }
+
+    article {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
