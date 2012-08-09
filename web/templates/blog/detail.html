@@ -3,8 +3,5 @@
 {% load content_block %}
 
 {% block content %}
-    <article class="post">
-        <h3>{{ post.title }}</h3>
-        {{ post.content }}
-    </article>
+    {% include "blog/post.html" %}
 {% endblock %}

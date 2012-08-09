@@ -1,6 +1,6 @@
 import json
 import requests
-import html2text
+import _html2text
 from dateutil import parser
 
 from django.conf import settings
@@ -60,16 +60,11 @@ class Command(BaseCommand):
 
         html_post = post["body"].replace("<br/>", "<br>") # html2text hack.
 
-        text =  html2text.html2text(html_post)
+        text =  _html2text.html2text(html_post)
 
-        content_lines = text.splitlines()
-
-        for i, line in enumerate(content_lines):
-            if line.startswith("     "):
-                del content_lines[i-1]
 
         return {
-            "content": "\n".join(content_lines),
+            "content":  text,
             "title": post["title"],
             "slug": post["slug"],
             "date_created": parser.parse(post["date"]),

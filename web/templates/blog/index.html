@@ -4,10 +4,7 @@
 
 {% block content %}
     {% for post in posts %}
-    <article class="post">
-        <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
-        {{ post.content }}
-    </article>
+    {% include "blog/post.html" %}
     {% endfor %}
 
     {% include "blog/inc/pagination.html" %}

@@ -15,19 +15,21 @@
 </head>
 <body>
 <div id="container">
-    <header>
-        <hgroup>
-            <h1>{% block title %}Fatih Erikli{% endblock %}</h1>
-            <h2>{% block subtitle %}python - django developer{% endblock %}</h2>
-        </hgroup>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="{% url index %}">home</a></li>
-            <li><a href="{% url blog %}">blog</a></li>
-            <li><a href="{% url contact %}">contact</a></li>
-        </ul>
-    </nav>
+    <div id="fixed-header">
+        <header>
+            <hgroup>
+                <h1>{% block title %}Fatih Erikli{% endblock %}</h1>
+                <h2>{% block subtitle %}python - django developer{% endblock %}</h2>
+            </hgroup>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="{% url index %}">home</a></li>
+                <li><a href="{% url blog %}">blog</a></li>
+                <li><a href="{% url contact %}">contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <section role="main" id="main">
         {% block content %}
         {% endblock %}

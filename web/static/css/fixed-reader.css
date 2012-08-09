@@ -1,0 +1,12 @@
+
+#fixed-header {
+    z-index: -1;
+    position: relative;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -250px;
+}
+
+#main {
+    margin-top: 250px;
+}

@@ -1,0 +1,17 @@
+<div class="post-wrapper">
+    <section class="info">
+        <time datetime="{{ post.date_created }}">{{ post.date_created|date }}</time>
+
+        <strong>tags</strong>
+        <ul class="tags">
+            {% for tag in post.tags.all %}
+            <li><a href="{{ tag.get_absolute_url }}">{{ tag }}</a></li>
+            {% endfor %}
+        </ul>
+
+    </section>
+    <article class="post">
+        <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+        {{ post.content }}
+    </article>
+</div>
