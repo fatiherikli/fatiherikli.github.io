@@ -1,0 +1,61 @@
+body {
+    width: 100%;
+}
+
+header#banner {
+    margin-top: 20px;
+}
+
+    header#banner hgroup {
+        padding: 150px 0 0 0;
+        background-position: top center;
+        text-align: center;
+    }
+
+    header#banner h2 {
+        font-weight: normal;
+        font-size: 25px;
+    }
+
+
+nav {
+    height: auto;
+    overflow: auto;
+}
+
+    nav ul li {
+        float: left;
+        text-align: center;
+        width: 16%;
+    }
+
+
+    nav ul li a {
+        font-weight: normal;
+    }
+
+#nav ul:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+article {
+    clear: both;
+}
+
+article.post aside {
+    display: none;
+}
+
+section#main article {
+    width: 100%;
+    margin: 10px 0;
+}
+
+section#main article.post p {
+    text-wrap: avoid;
+}

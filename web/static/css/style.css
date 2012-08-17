@@ -7,7 +7,7 @@ body {
     background: #f7f7f7 url(/static/img/bg-pattern.png) fixed;
     color: #434343;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 16px;
     width: 960px;
     /*-webkit-font-smoothing: antialiased;*/
 }
@@ -35,7 +35,8 @@ header#banner {
     header#banner h2 {
         margin: -25px 0 0 0;
         padding: 0;
-        font-size: 24px;
+        font-weight: normal;
+        font-size: 25px;
         color: gray;
     }
 
@@ -43,7 +44,7 @@ header#banner {
 
 nav {
     background: white;
-    height: 2.5em;
+    height: 2.8em;
     border-top: 5px solid #069;
     margin-top: 15px;
 }
@@ -79,7 +80,7 @@ section#main {
 
 
     section#main article {
-        margin-top: 20px;
+        margin-top: 10px;
         background: white;
         width: 810px;
         margin-left: 150px;
@@ -155,5 +156,8 @@ section#main {
 
 
 
+        section#main article img {
+            max-width: 100%;
+        }
 
 

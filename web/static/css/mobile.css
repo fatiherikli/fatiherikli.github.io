@@ -1,0 +1,14 @@
+nav ul li {
+    width: 50%;
+    text-align: left;
+}
+
+nav ul li:nth-child(odd) {
+    text-align: right;
+}
+
+article.post  {
+
+    overflow: hidden;
+
+}
