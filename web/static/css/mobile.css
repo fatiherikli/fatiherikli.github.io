@@ -10,5 +10,7 @@ nav ul li:nth-child(odd) {
 article.post  {
 
     overflow: hidden;
+    width: 100%;
+    margin-left: 0;
 
 }

@@ -2,6 +2,8 @@
 
 {% load content_block %}
 
+{% block title %}{{ post.title }}{% endblock %}
+
 {% block content %}
     {% include "blog/post.html" %}
 {% endblock %}

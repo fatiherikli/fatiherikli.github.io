@@ -1,15 +1,12 @@
-/*
-
-*/
-
-
 body {
     background: #f7f7f7 url(/static/img/bg-pattern.png) fixed;
-    color: #434343;
+    color: #575757;
     margin: 0 auto;
     font-size: 16px;
     width: 960px;
-    /*-webkit-font-smoothing: antialiased;*/
+
+
+
 }
 
 header#banner {
@@ -22,6 +19,10 @@ header#banner {
         background: url(../img/kafa.png) no-repeat left top;
         padding-left: 200px;
         padding-bottom: 50px;
+    }
+
+    header#banner hgroup:hover {
+        background-rotate: -10deg;
     }
 
     header#banner h1 {
@@ -80,12 +81,19 @@ section#main {
 
 
     section#main article {
-        margin-top: 10px;
-        background: white;
-        width: 810px;
-        margin-left: 150px;
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 1.3em;
     }
 
+    section#main article.post {
+        /*width: 810px;*/
+        margin-left: 150px;
+        background: white;
+
+
+
+    }
 
     section#main article aside {
         margin-left: -150px;
@@ -107,6 +115,7 @@ section#main {
 
     section#main article footer {
         clear: both;
+        padding: 10px 20px;
     }
 
     section#main article ul.tags li a {
@@ -114,12 +123,13 @@ section#main {
         text-decoration: none;
         display: block;
         float: right;
-        padding: 1px 5px;
+        padding: 2px 5px;
         background: #069;
         margin-bottom: 2px;
+        font-weight: normal;
     }
 
-    section#main article time {
+    section#main article.post time {
         /*padding: 5px 7px;*/
         background: #069;
         color: white;
@@ -132,32 +142,146 @@ section#main {
         margin-bottom: 20px;
     }
 
+    section#main article h3 {
+        padding: 20px 20px 0 20px;
+        margin: 0;
+        line-height: 1.5em;
+    }
 
-        section#main article header {
+    section#main article h3 a {
+        color: #069;
+        font-size: 30px;
+        text-decoration: none;
+    }
 
-        }
+    section#main article section {
+        padding: 0 20px;
+
+    }
+
+    section#main article.block  {
+
+        -webkit-font-smoothing: antialiased;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+    }
 
 
-        section#main article header h3 {
-            padding: 20px 20px 0 20px;
+    section#main article img {
+        max-width: 100%;
+    }
+
+
+    section#main article.block  {
+
+    }
+
+    section#main article#projects  {
+        float: left;
+        width: 48%;
+    }
+
+    section#main article#open-source  {
+        float: left;
+        width: 48%;
+        margin-left: 2%;
+
+    }
+
+        section#main article.block h3 {
+            padding: 5px 10px;
             margin: 0;
-            line-height: 1.5em;
+            background: #069;
+            color: white;
+            float: left;
+            font-weight: normal;
         }
 
-        section#main article header h3 a {
-            color: #069;
-            font-size: 30px;
+
+
+
+
+        section#main article.block section {
+            clear: both;
+            padding: 5px 25px;
+            background: white;
+        }
+
+        section#main article.block ul {
+            padding: 0;
+        }
+
+        section#main article.block ul li {
+            list-style: none;
+            margin: 5px 0;
+        }
+
+        section#main #projects li a, section#main #open-source li a {
+            display: block;
             text-decoration: none;
+            padding: 0 5px;
+            margin: 20px 10px 10px -5px;
+            border-bottom: 1px dotted #bebebe;
+
         }
 
-        section#main article section {
-            padding: 0 20px;
+        section#main article#latest-posts section {
+            overflow: hidden;
+        }
+
+        section#main article#latest-posts time {
+            float: left;
+            width: 15%;
+            text-align: right;
+            border-right: 3px solid #f4f4f4;
+            padding-right: 10px;
+            color: #a4a4a4;
+        }
+
+        section#main article#latest-posts li {
+            float: left;
+            width: 100%;
+        }
+
+        section#main article#latest-posts a {
+            display: block;
+            float: left;
+            padding-left: 10px;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        section#main article#latest-posts .more {
+            margin: 15px 150px;
+            display: inline-block;
+            text-decoration: none;
+            color: #666666;
+
+            transition: margin-left 0.4s;
+            -moz-transition: margin-left 0.4s;
+            -webkit-transition: margin-left 0.4s;
+            -o-transition: margin-left 0.4s;
+
+        }
+
+        section#main article#latest-posts .more:hover {
+            margin-left: 160px;
+        }
+
+        section#main article#latest-posts .more:after {
+            content: "»";
+            margin-left: 5px;
         }
 
 
+section.columns footer {
+    clear: both;
+}
 
-        section#main article img {
-            max-width: 100%;
-        }
-
-
+body > footer {
+    background: white;
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 5px solid #069;
+}

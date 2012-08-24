@@ -59,3 +59,7 @@ section#main article {
 section#main article.post p {
     text-wrap: avoid;
 }
+
+section#main article.post {
+    margin-left: 0;
+}

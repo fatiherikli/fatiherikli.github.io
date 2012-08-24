@@ -3,19 +3,43 @@
 {% load content_block %}
 
 {% block content %}
-    <article id="short-bio">
-        <h3>hello</h3>
-        {% content_block "short-bio" %}
+    <article class="block" id="short-bio">
+        <h3>short bio</h3>
+        <section>
+            {% content_block "short-bio" %}
+        </section>
     </article>
 
+    <section class="columns">
+        <article class="block" id="projects">
+            <h3>projects</h3>
+            <section>
+                {% content_block "projects" %}
+            </section>
+        </article>
 
-    <article id="projects" class="link-list right column">
-        <h3>projects</h3>
-        {% content_block "projects" %}
-    </article>
+        <article class="block" id="open-source">
+            <h3>open source</h3>
+            <section>
+                {% content_block "open-source" %}
+            </section>
+        </article>
+        <footer></footer>
+    </section>
 
-    <article id="open-source" class="link-list left column">
-        <h3>open source</h3>
-        {% content_block "open-source" %}
+    <article class="block" id="latest-posts">
+        <h3>latest blog posts</h3>
+        <section>
+            <ul>
+            {% for post in latest_posts %}
+                <li>
+                    <time>{{ post.date_created|date }}</time>
+                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                </li>
+            {%  endfor %}
+            </ul>
+
+            <a href="{% url blog %}" class="more">see more posts</a>
+        </section>
     </article>
 {% endblock %}

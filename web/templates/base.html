@@ -42,7 +42,7 @@
 <nav role="navigation">
     <ul>
         <li><a href="{% url index %}">home</a></li>
-        <li><a href="{% url blog %}">blog</a></li>
+        <li><a class="active" href="{% url blog %}">blog</a></li>
         <li><a href="{% url blog %}">feed</a></li>
         <li><a href="{% url blog %}">github</a></li>
         <li><a href="{% url blog %}">twitter</a></li>
@@ -53,13 +53,12 @@
 <section role="main" id="main">
     {% block content %}
     {% endblock %}
-
-    <footer>
-        Runs with Python, Django.
-        Source code is available on <a href="http://github.com/fatiherikli/fatiherikli.com">github</a>.
-    </footer>
 </section>
 
+<footer>
+    Runs with Python, Django.
+    Source code is available on <a href="http://github.com/fatiherikli/fatiherikli.com">github</a>.
+</footer>
 
 <!-- JavaScript at the bottom for fast page loading -->
 
