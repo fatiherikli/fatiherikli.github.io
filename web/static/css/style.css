@@ -5,8 +5,6 @@ body {
     font-size: 16px;
     width: 960px;
 
-
-
 }
 
 header#banner {
@@ -58,11 +56,11 @@ nav {
         nav ul li a {
             color: #069;
             text-decoration: none;
-            font-weight: bold;
+            /*font-weight: bold;*/
             font-family: "Crete Round", serif;
             font-size: 25px;
             display: block;
-            padding: 5px 10px;
+            padding: 5px 15px;
         }
 
         nav ul li a:hover {
@@ -277,6 +275,27 @@ section#main {
 
 section.columns footer {
     clear: both;
+}
+
+form label {
+    display: block;
+}
+
+form {
+    padding-bottom: 20px;
+}
+
+ul.errorlist {
+    overflow: hidden;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 100px;
+}
+
+ul.errorlist li {
+    float: left;
+    background: red;
+    color: white;
 }
 
 body > footer {

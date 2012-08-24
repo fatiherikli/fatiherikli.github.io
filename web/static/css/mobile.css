@@ -14,3 +14,7 @@ article.post  {
     margin-left: 0;
 
 }
+
+form textarea {
+    width: 100%;
+}

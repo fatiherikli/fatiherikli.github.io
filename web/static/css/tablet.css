@@ -1,4 +1,5 @@
 body {
+
     width: 100%;
 }
 
@@ -62,4 +63,43 @@ section#main article.post p {
 
 section#main article.post {
     margin-left: 0;
+}
+
+section#main article#projects,  section#main article#open-source  {
+    width: 100%;
+    float: none;
+
+    margin: 0;
+
+}
+
+section#main article.block h3 {
+    margin-left: 5px;
+}
+section#main article.block section {
+    margin: 0 10px 20px 15px;
+}
+
+
+section#main article#latest-posts time {
+
+    width: 100%;
+    text-align: left;
+    border-width: 0;
+    border-left: 3px solid #f4f4f4;
+    padding-left: 7px;
+
+}
+
+section#main article#latest-posts li {
+    margin-bottom: 30px;
+}
+
+section#main article#latest-posts .more {
+    width: 100%;
+    margin: 20px 0;
+}
+
+section#main article#latest-posts .more:hover {
+    margin-left: 10px;
 }

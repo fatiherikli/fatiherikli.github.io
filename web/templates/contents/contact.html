@@ -2,12 +2,16 @@
 {% load content_block %}
 
 {% block content %}
-<article id="short-bio">
+<article class="block">
     <h3>contact me</h3>
-    {% content_block "contact-info" %}
+    <section>
+        {% content_block "contact-info" %}
+    </section>
 </article>
 
-<article id="contact-form">
+<article id="contact-form" class="block">
+    <h3>contact form</h3>
+    <section>
     {% if form.is_valid %}
         {{ success_message }}
     {% else %}
@@ -17,5 +21,6 @@
         <input type="submit" value="Submit">
     </form>
     {% endif %}
+    </section>
 </article>
 {% endblock %}

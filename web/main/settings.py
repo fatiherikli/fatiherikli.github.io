@@ -82,6 +82,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+#    "main.middleware.MultiHostMiddleware"
 )
 
 
@@ -99,6 +101,12 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 ROOT_URLCONF = 'main.urls'
+
+#HOST_MIDDLEWARE_URLCONF_MAP = {
+#    "blog.fatiherikli.com": "blog.urls",
+#    "blog.test.fatiherikli.com": "blog.urls",
+#}
+
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'main.wsgi.application'
