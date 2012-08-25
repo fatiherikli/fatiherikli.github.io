@@ -304,3 +304,8 @@ body > footer {
     padding: 15px;
     border-top: 5px solid #069;
 }
+
+#header > img {
+    display: none;
+    /* TODO: fix it! */
+}

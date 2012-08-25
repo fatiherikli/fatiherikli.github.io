@@ -35,12 +35,13 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crete+Round">
 
 </head>
-<body>
+<body  itemscope itemtype="http://data-vocabulary.org/Person">
 
 <header id="banner" role="banner">
+    <img itemprop="photo" src="{{ STATIC_URL }}img/kafa.png" alt="Fatih Erikli" />
     <hgroup>
-        <h1>Fatih Erikli</h1>
-        <h2>python - django developer</h2>
+        <h1 itemprop="name">Fatih Erikli</h1>
+        <h2 itemprop="title">python - django developer</h2>
     </hgroup>
 </header>
 <nav role="navigation">
