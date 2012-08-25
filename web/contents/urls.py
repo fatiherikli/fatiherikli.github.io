@@ -17,5 +17,14 @@ urlpatterns = patterns('',
     url(r'^contact/success/$', TemplateView.as_view(
         template_name="contents/contact_success.html"
     ), name="contact_success"),
+
+    # static files
+    url(r'^humans.txt$', TemplateView.as_view(
+        template_name="humans.txt"
+    ), name="humans"),
+
+    url(r'^robots.txt$', TemplateView.as_view(
+        template_name="robots.txt"
+    ), name="robots"),
     
 )
