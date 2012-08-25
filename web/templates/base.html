@@ -39,7 +39,7 @@
 <body  itemscope itemtype="http://data-vocabulary.org/Person">
 
 <header id="banner" role="banner">
-    <img itemprop="photo" src="{{ STATIC_URL }}img/kafa.png" alt="Fatih Erikli" />
+    <img itemprop="photo" src="{{ STATIC_URL }}img/kafa.png" alt="Fatih Erikli" id="logo" />
     <hgroup>
         <h1 itemprop="name">Fatih Erikli</h1>
         <h2 itemprop="title">python - django developer</h2>
@@ -52,7 +52,6 @@
         <li><a href="{{ urls.blog_feed }}">feed</a></li>
         <li><a href="{{ urls.github }}">github</a></li>
         <li><a href="{{ urls.twitter }}">twitter</a></li>
-        <li><a href="https://plus.google.com/109590184509977241359?rel=author">google</a></li>
         <li><a href="{{ urls.contact }}">contact</a></li>
         {# TODO: find a solution for url tag problem in multi-domain django sites #}
     </ul>

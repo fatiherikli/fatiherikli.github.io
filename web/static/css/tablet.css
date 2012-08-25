@@ -5,12 +5,19 @@ body {
 
 header#banner {
     margin-top: 20px;
+    text-align: center;
 }
 
+    header#banner img#logo {
+        float: none;
+    }
+
     header#banner hgroup {
-        padding: 150px 0 0 0;
-        background-position: top center;
+        float: none;
+        padding:  0;
         text-align: center;
+        margin-top: -30px;
+        margin-bottom: 10px;
     }
 
     header#banner h2 {
