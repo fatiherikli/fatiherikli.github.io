@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.encoding import smart_unicode
 from django.utils.translation import ugettext_lazy as _
@@ -35,12 +36,12 @@ class Post(models.Model):
     published_objects = PublishedManager()
     tags = TaggableManager()
 
+    class Meta:
+        ordering = ("-date_created", )
+
     def __unicode__(self):
         return smart_unicode(self.title)
 
-    @models.permalink
     def get_absolute_url(self):
-        return "blog_detail", [self.slug, ]
-
-    def get_external_url(self):
-        return settings.BLOG_URL + self.get_absolute_url()
+        return reverse("blog_detail", args=[self.slug, ],
+            urlconf="blog.urls", prefix=settings.BLOG_URL)

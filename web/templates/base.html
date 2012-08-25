@@ -18,8 +18,13 @@
     <meta property="og:description" content="Personal web site of Fatih Erikli, an Python developer." />
     <meta property="og:image" content="{{ STATIC_URL}}img/icon-128.png" />
     {% endblock %}
-    <link rel="author" href="/humans.txt" />
+
+    <link rel="author" href="{{ urls.humans }}" />
+    <link rel="robots" href="{{ urls.robots }}" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ urls.blog_rss_feed }}" />
+    <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="{{ urls.blog_atom_feed }}" />
+
     <link rel="icon" href="{{ STATIC_URL}}img/icon-16.png" />
     <link rel="shortcut icon" href="{{ STATIC_URL}}img/icon-16.png" />
 
@@ -40,12 +45,13 @@
 </header>
 <nav role="navigation">
     <ul>
-        <li><a href="/">home</a></li>
-        <li><a class="active" href="{% url blog %}">blog</a></li>
-        <li><a href="{% url blog %}">feed</a></li>
-        <li><a href="{% url blog %}">github</a></li>
-        <li><a href="{% url blog %}">twitter</a></li>
-        <li><a href="/">contact</a></li>
+        <li><a href="{{ urls.index }}">home</a></li>
+        <li><a href="{{ urls.blog }}">blog</a></li>
+        <li><a href="{{ urls.blog_feed }}">feed</a></li>
+        <li><a href="{{ urls.github }}">github</a></li>
+        <li><a href="{{ urls.twitter }}">twitter</a></li>
+        <li><a href="{{ urls.contact }}">contact</a></li>
+        {# TODO: find a solution for url tag problem in multi-domain django sites #}
     </ul>
 </nav>
 

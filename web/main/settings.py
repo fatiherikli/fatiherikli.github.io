@@ -97,6 +97,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.contrib.messages.context_processors.messages',
 
+    'contents.context_processors.urls',
     'blog.context_processors.latest_posts',
 )
 
@@ -107,8 +108,6 @@ HOST_MIDDLEWARE_URLCONF_MAP = {
     "blog.test.fatiherikli.com": "blog.urls",
 }
 
-BLOG_URL = "http://blog.fatiherikli.com"
-MAIN_URL = "http://fatiherikli.com"
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'main.wsgi.application'
@@ -132,7 +131,6 @@ INSTALLED_APPS = (
     'markitup',
 
     'blog',
-
     'contents',
 
 )
@@ -167,6 +165,19 @@ LOGGING = {
 
 MARKITUP_SET = 'markitup/sets/markdown'
 MARKITUP_FILTER = ('markdown.markdown', {'safe_mode': False})
+
+
+
+BLOG_URL = "http://blog.fatiherikli.com/"
+MAIN_URL = "http://fatiherikli.com/"
+
+BLOG_FEED_TITLE = "Fatih Erikli's web blog"
+BLOG_FEED_DESCRIPTION = "Fatih Erikli's personal development blog."
+
+TWITTER_USERNAME = "fthrkl"
+GITHUB_USERNAME = "fatiherikli"
+
+CONTACT_EMAIL = "fatiherikli@gmail.com"
 
 try:
     from settings_local import *
