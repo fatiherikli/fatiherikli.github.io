@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from django.utils.encoding import smart_unicode
 from django.utils.translation import ugettext_lazy as _
@@ -40,3 +41,6 @@ class Post(models.Model):
     @models.permalink
     def get_absolute_url(self):
         return "blog_detail", [self.slug, ]
+
+    def get_external_url(self):
+        return settings.BLOG_URL + self.get_absolute_url()

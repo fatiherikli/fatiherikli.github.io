@@ -107,6 +107,8 @@ HOST_MIDDLEWARE_URLCONF_MAP = {
     "blog.test.fatiherikli.com": "blog.urls",
 }
 
+BLOG_URL = "http://blog.fatiherikli.com"
+MAIN_URL = "http://fatiherikli.com"
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'main.wsgi.application'
