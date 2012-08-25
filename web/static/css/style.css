@@ -305,7 +305,7 @@ body > footer {
     border-top: 5px solid #069;
 }
 
-#header > img {
+header > img {
     display: none;
     /* TODO: fix it! */
 }
