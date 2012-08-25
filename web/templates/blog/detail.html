@@ -4,6 +4,11 @@
 
 {% block title %}{{ post.title }}{% endblock %}
 
+{% block extra-meta %}
+{{ block.super }}
+    <link rel="canonical" href="{{ post.get_absolute_url }}" />
+{% endblock %}
+
 {% block content %}
     {% include "blog/post.html" %}
 {% endblock %}

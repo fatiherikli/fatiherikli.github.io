@@ -176,8 +176,10 @@ BLOG_FEED_DESCRIPTION = "Fatih Erikli's personal development blog."
 
 TWITTER_USERNAME = "fthrkl"
 GITHUB_USERNAME = "fatiherikli"
+GOOGLE_ID = "109590184509977241359"
 
 CONTACT_EMAIL = "fatiherikli@gmail.com"
+
 
 try:
     from settings_local import *

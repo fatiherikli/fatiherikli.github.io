@@ -1,1 +1,13 @@
-selam
+/* TEAM */
+	Author: Fatih Erikli
+	Contact: fatih [at] gmail.com
+	Twitter: @fatiherikli
+	From: Istanbul, Turkey
+
+
+
+/* SITE */
+	Language: English / Turkish
+	Standards: HTML5, CSS3
+	Components: jQuery, H5bp
+	Software: Python, Django

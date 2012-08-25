@@ -25,5 +25,6 @@ def urls(request):
             # social media
             "twitter": "http://twitter.com/%s" % settings.TWITTER_USERNAME,
             "github": "http://github.com/%s" % settings.GITHUB_USERNAME,
+            "google": "https://plus.google.com/%s" % settings.GOOGLE_ID,
         }
     }
