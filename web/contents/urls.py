@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, url
 from django.views.generic.base import TemplateView
 
-from contents.views import ContactView
+from contents.views import ContactView, TextTemplateView
 
 
 urlpatterns = patterns('',
@@ -19,12 +19,12 @@ urlpatterns = patterns('',
     ), name="contact_success"),
 
     # static files
-    url(r'^humans.txt$', TemplateView.as_view(
+    url(r'^humans.txt$', TextTemplateView.as_view(
         template_name="humans.txt"
     ), name="humans"),
 
-    url(r'^robots.txt$', TemplateView.as_view(
-        template_name="robots.txt"
+    url(r'^robots.txt$', TextTemplateView.as_view(
+        template_name="robots.txt",
     ), name="robots"),
     
 )
