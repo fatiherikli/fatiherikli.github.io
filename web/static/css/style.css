@@ -20,6 +20,7 @@ header#banner {
         float: left;
         font-family: "Crete Round", serif;
         padding-bottom: 50px;
+        margin-left: 20px;
     }
 
     header#banner h1 {

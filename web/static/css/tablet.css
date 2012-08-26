@@ -16,8 +16,7 @@ header#banner {
         float: none;
         padding:  0;
         text-align: center;
-        margin-top: -30px;
-        margin-bottom: 10px;
+        margin: -30px auto 10px 0;
     }
 
     header#banner h2 {
@@ -102,6 +101,10 @@ nav {
 nav ul {
     display: none;
     background-color: white;
+    margin-top: 2px;
+    -moz-box-shadow: 11px 8px 20px -3px #ccc;
+    -webkit-box-shadow: 11px 8px 20px -3px #ccc;
+    box-shadow: 11px 8px 20px -3px #ccc;
 
 }
 

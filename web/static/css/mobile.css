@@ -11,7 +11,9 @@ header {
 
 nav ul {
     border-top: 3px solid #069;
-
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 nav ul li a {
@@ -22,6 +24,4 @@ nav .menu-icon {
     background-color: rgba(255, 255, 255, 0.70);
     background-position:  96% center;
     padding: 10px;
-
-
 }
