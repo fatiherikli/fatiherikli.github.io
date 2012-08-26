@@ -121,3 +121,7 @@ nav .menu-icon {
     cursor: pointer;
     text-indent: -999px;
 }
+
+.pagination {
+    margin-left: 0;
+}

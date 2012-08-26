@@ -73,9 +73,12 @@ nav {
     }
 
 
+
+
 section#main {
 
 }
+
 
     section#main a {
         color: #069;
@@ -307,8 +310,28 @@ body > footer {
     margin-top: 30px;
     padding: 15px;
     border-top: 5px solid #069;
+    clear: both;
 }
 
+.pagination {
+    margin-left: 120px;
+}
+
+.pagination a.load-more {
+    width: 240px;
+    margin: 20px auto 0;
+    display: block;
+    padding: 10px;
+    background: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.page-links a {
+}
 
 @media screen and (min-width: 960px) {
 
