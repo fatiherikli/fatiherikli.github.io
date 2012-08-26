@@ -26,31 +26,6 @@ header#banner {
     }
 
 
-nav {
-    height: auto;
-    overflow: auto;
-}
-
-    nav ul li {
-        float: left;
-        text-align: center;
-        width: 16%;
-    }
-
-
-    nav ul li a {
-        font-weight: normal;
-    }
-
-#nav ul:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-
-
 article {
     clear: both;
 }
@@ -109,4 +84,37 @@ section#main article#latest-posts .more {
 
 section#main article#latest-posts .more:hover {
     margin-left: 10px;
+}
+
+
+
+nav {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    margin-right: 20px;
+    width: 140px;
+
+}
+
+nav ul {
+    /*display: none;*/
+    background-color: white;
+
+}
+
+nav ul li {
+    float: none;
+    width: auto;
+}
+
+nav .menu-icon {
+    display: block;
+    height: 19px;
+    display: block;
+    background: url("../img/menu-icon.png") center right no-repeat;
+    cursor: pointer;
+    text-indent: -999px;
 }

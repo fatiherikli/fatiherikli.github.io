@@ -1,52 +1,24 @@
 !function ($){
 
     /*
-     * Actual-heights for columns.
-     * */
-//    var highestCol = Math.max($('#projects').height(), $('#open-source').height());
-//    $('#open-source, #projects').css("min-height", highestCol);
-
-
-    /*
-     * Google prettify settings
-     * */
+    * Google prettify settings
+    * */
     $("pre").addClass("prettyprint");
     prettyPrint();
 
 
+    /*
+    * Drop-down navigation for Mobile devices
+    * */
+    $(function () {
 
-//    var post_offsets = [];
-//    $(".post").each(function (index, element) {
-//       post_offsets.push($(element).offset().top)
-//    })
-    $(window).scroll(function () {
+        $("nav").prepend("<a href='#' class='menu-icon'>navigation</a>");
 
-//        var index = -1;
-//        for (var offset in post_offsets) {
-//            if ($(window).scrollTop() > post_offsets[offset]) {
-//                index = post_offsets.indexOf(post_offsets[offset])
-//            }
-//        }
-//
-//        if (index > -1)  {
-//            console.log(index)
-//            $("section.info, .post h3").css("position", "relative")
-//            $("section.info").eq(index).css("position", "fixed")
-//            $(".post").eq(index).css({
-////                "padding-top": "80px"
-//            })
-//            $(".post h3").eq(index).css({
-//                "position": "fixed"
-//            })
-//        } else {
-//            $("section.info, .post h3").css("position", "relative")
-//            $(".post").css({
-//                "padding-top": "0px"
-//            })
-//        }
+        $(".menu-icon").click(function () {
+            $("nav ul").slideToggle();
+        });
 
     });
-
 
 }(window.jQuery);
 

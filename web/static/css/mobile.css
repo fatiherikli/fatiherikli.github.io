@@ -1,20 +1,26 @@
-nav ul li {
-    width: 50%;
-    text-align: left;
-}
-
-nav ul li:nth-child(odd) {
-    text-align: right;
-}
-
-article.post  {
-
-    overflow: hidden;
+nav {
     width: 100%;
-    margin-left: 0;
+    margin: 0;
+    top: 0;
 
 }
 
-form textarea {
-    width: 100%;
+header {
+    padding-top: 40px;
+}
+
+nav ul {
+
+}
+
+nav ul li a {
+    text-align: center;
+}
+
+nav .menu-icon {
+    background-color: #f2f2f2;
+    background-position:  96% center;
+    padding: 10px;
+    border-bottom: 5px solid #069;
+
 }

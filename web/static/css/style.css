@@ -68,6 +68,10 @@ nav {
             color: white;
         }
 
+    nav .menu-icon {
+        display: none;
+    }
+
 
 section#main {
 
@@ -303,4 +307,14 @@ body > footer {
     margin-top: 30px;
     padding: 15px;
     border-top: 5px solid #069;
+}
+
+
+@media screen and (min-width: 960px) {
+
+    /* ensure `nav ul` is visible on desktop version */
+    nav ul {
+        display: block !important;
+    }
+
 }
