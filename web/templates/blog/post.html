@@ -1,23 +1,24 @@
-<article class="post">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <aside>
         <time datetime="{{ post.date_created }}">{{ post.date_created|date }}</time>
         <strong>Tags</strong>
         <ul class="tags">
             {% for tag in post.tags.all %}
-                <li><a href="{{ tag.get_absolute_url }}">{{ tag }}</a></li>
+                <li><a itemprop="keywords" href="{{ tag.get_absolute_url }}">{{ tag }}</a></li>
             {% endfor %}
         </ul>
     </aside>
 
     <header>
-        <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+        <h3><a itemprop="url" href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
     </header>
 
-    <section>
+    <section itemprop="articleBody">
     {{ post.content }}
     </section>
 
     <footer>
+        <meta itemprop="author" content="Fatih Erikli" />
         <a href="https://twitter.com/share" class="twitter-share-button" data-via="fthrkl">Tweet</a>
         <script>
         // twitter share button

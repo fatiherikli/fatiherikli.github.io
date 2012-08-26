@@ -5,10 +5,10 @@
 {% block content %}
     <article class="block" id="short-bio">
         <h3>short bio</h3>
-        <section>
+        <section itemscope itemtype="http://schema.org/Person">
             <p>
             I'm <span itemprop="name">Fatih Erikli</span>.
-            I'm a <span itemprop="title">web developer</span>.
+            I'm a <span itemprop="jobTitle">python/django developer</span>.
             I live in <span itemprop="address">Istanbul/Turkey</span>.
             My interest areas are open source technologies,
             back-end and front-end web development.
@@ -45,7 +45,7 @@
             {%  endfor %}
             </ul>
 
-            <a href="{% url blog %}" class="more">see more posts</a>
+            <a href="{{ urls.blog }}" class="more">see more posts</a>
         </section>
     </article>
 {% endblock %}
