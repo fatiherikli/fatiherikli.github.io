@@ -4,6 +4,7 @@ body {
 }
 
 header#banner {
+
     margin-top: 20px;
     text-align: center;
 }
@@ -124,4 +125,8 @@ nav .menu-icon {
 
 .pagination {
     margin-left: 0;
+}
+
+section#main article {
+    font-size: 18px;
 }

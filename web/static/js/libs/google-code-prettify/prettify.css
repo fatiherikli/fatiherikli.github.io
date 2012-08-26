@@ -1,7 +1,9 @@
-/* desert scheme ported from vim to google prettify */
-pre {display: block; background-color: #333; padding: 10px; font-size: 14px }
+
+
+
+pre {display: block; background-color: #333; padding: 10px; font-size: 13px }
 pre code {
-    font-family: "Monaco";
+    font-family: 'Monaco', 'Consolas', 'Bitstream Vera Sans Mono', 'Courier-Bold', 'Courier New', monospace;
     -webkit-font-smoothing: subpixel-antialiased;
 
 }

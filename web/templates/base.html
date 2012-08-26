@@ -25,6 +25,9 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ urls.blog_rss_feed }}" />
     <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="{{ urls.blog_atom_feed }}" />
 
+    {% if page_obj.has_next %}<link rel='next' href='{{ urls.blog }}?page={{ page_obj.next_page_number }}' />{% endif %}
+    {% if page_obj.has_previous %}<link rel='prev' href='{{ urls.blog }}?page={{ page_obj.previous_page_number }}' />{% endif %}
+
     <link rel="icon" href="{{ STATIC_URL}}img/icon-16.png" />
     <link rel="shortcut icon" href="{{ STATIC_URL}}img/icon-16.png" />
 
@@ -33,6 +36,8 @@
     <link rel="stylesheet" media="only screen and (max-width: 960px), only screen and (max-device-width: 960px)" href="{{ STATIC_URL}}css/tablet.css" />
     <link rel="stylesheet" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="{{ STATIC_URL}}css/mobile.css" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crete+Round">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ STATIC_URL }}js//libs/google-code-prettify/prettify.css" type="text/css" />
 
 </head>
 
@@ -80,7 +85,6 @@
 <![endif]-->
 
 <!-- google code prettify -->
-<link rel="stylesheet" href="{{ STATIC_URL }}js//libs/google-code-prettify/prettify.css" type="text/css" />
 <script src="{{ STATIC_URL }}js//libs/google-code-prettify/prettify.js"></script>
 <!-- end google code prettify -->
 
