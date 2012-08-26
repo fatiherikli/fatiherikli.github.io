@@ -100,7 +100,7 @@ nav {
 }
 
 nav ul {
-    /*display: none;*/
+    display: none;
     background-color: white;
 
 }

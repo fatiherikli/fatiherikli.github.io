@@ -15,7 +15,8 @@
         $("nav").prepend("<a href='#' class='menu-icon'>navigation</a>");
 
         $(".menu-icon").click(function () {
-            $("nav ul").slideToggle();
+            $("nav ul").slideToggle("fast");
+            return false;
         });
 
     });

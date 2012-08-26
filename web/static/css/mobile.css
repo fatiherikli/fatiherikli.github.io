@@ -10,6 +10,7 @@ header {
 }
 
 nav ul {
+    border-top: 3px solid #069;
 
 }
 
@@ -18,9 +19,9 @@ nav ul li a {
 }
 
 nav .menu-icon {
-    background-color: #f2f2f2;
+    background-color: rgba(255, 255, 255, 0.70);
     background-position:  96% center;
     padding: 10px;
-    border-bottom: 5px solid #069;
+
 
 }
