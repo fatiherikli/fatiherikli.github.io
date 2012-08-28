@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}{{ tag }} posts{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        {% include "blog/post.html" %}
+    {% endfor %}
+
+
+    {% include "blog/inc/pagination.html" %}
+
+{% endblock %}

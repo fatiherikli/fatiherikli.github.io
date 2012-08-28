@@ -4,7 +4,7 @@
         <strong>Tags</strong>
         <ul class="tags">
             {% for tag in post.tags.all %}
-                <li><a itemprop="keywords" href="{{ tag.get_absolute_url }}">{{ tag }}</a></li>
+                <li><a itemprop="keywords" href="{% url blog_tag_detail tag.slug %}">{{ tag }}</a></li>
             {% endfor %}
         </ul>
     </aside>

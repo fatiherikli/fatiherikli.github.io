@@ -2,7 +2,7 @@ from django.conf.urls import patterns, url
 from django.views.generic.base import RedirectView
 
 from blog.views import BlogIndexView, BlogDetailView, \
-    LegacyPostRedirectionView, BlogPostsAtomFeed, BlogPostsRssFeed
+    LegacyPostRedirectionView, BlogPostsAtomFeed, BlogPostsRssFeed, TagDetailView
 
 
 urlpatterns = patterns('',
@@ -11,6 +11,8 @@ urlpatterns = patterns('',
     url(r'^$', BlogIndexView.as_view(), name="blog"),
     url(r'^post/(?P<slug>[-\w]+)/$',
         BlogDetailView.as_view(), name="blog_detail"),
+    url(r'^tag/(?P<slug>[-\w]+)/$',
+        TagDetailView.as_view(), name="blog_tag_detail"),
 
     # rss & atom feed
     url(r'^feed/rss$', BlogPostsRssFeed(), name="blog_rss_feed"),

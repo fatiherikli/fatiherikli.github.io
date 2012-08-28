@@ -2,8 +2,10 @@ from django.conf import settings
 from django.contrib.syndication.views import Feed
 from django.http import HttpResponsePermanentRedirect
 from django.utils.feedgenerator import Atom1Feed
+from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
+from taggit.models import Tag
 
 from blog.models import Post
 
@@ -19,6 +21,17 @@ class BlogDetailView(DetailView):
     queryset = Post.published_objects.all()
     context_object_name = "post"
 
+class TagDetailView(DetailView):
+    queryset = Tag.objects.all()
+    template_name="blog/tag_detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(TagDetailView, self).get_context_data()
+        posts = Post.objects.filter(tags__in=[self.object])
+        context.update({
+            "posts": posts
+        })
+        return context
 
 class BlogPostsRssFeed(Feed):
     title = settings.BLOG_FEED_TITLE
@@ -52,3 +65,5 @@ class LegacyPostRedirectionView(DetailView):
     def render_to_response(self, context, **response_kwargs):
         return HttpResponsePermanentRedirect(
             context.get("object").get_absolute_url())
+
+
