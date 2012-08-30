@@ -1,1 +1,6 @@
 {% extends 'base.html' %}
+
+{% block javascripts %}
+{{ block.super }}
+<script src="{{ STATIC_URL }}js/sticky-navigation.js"></script>
+{% endblock %}
