@@ -6,23 +6,23 @@
 
 !function ($) {
 
-    var POSITION_THRESHOLD = 100;
+    var CONTENT_POSITION_THRESHOLD = 100;
+    var STICKY_CLASS_NAME = "sticky-navigation";
 
     $(window).ready(function () {
 
         var navigation = $("nav");
         var content = $("section#main");
-        var class_name = "sticky-navigation";
 
         $(this).scroll(function () {
             var scroll_position = $(this).scrollTop();
             var content_position = content.offset().top;
 
-            if (scroll_position > content_position - POSITION_THRESHOLD) {
-                !navigation.hasClass(class_name) && navigation.addClass(class_name)
+            if (scroll_position > content_position - CONTENT_POSITION_THRESHOLD) {
+                !navigation.hasClass(STICKY_CLASS_NAME) && navigation.addClass(STICKY_CLASS_NAME)
             }
             else {
-                navigation.removeClass(class_name);
+                navigation.removeClass(STICKY_CLASS_NAME);
             }
 
         });
