@@ -172,16 +172,13 @@ section#main {
         -webkit-font-smoothing: antialiased;
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         font-weight: 300;
+        font-size: 20px;
+
     }
 
 
     section#main article img {
         max-width: 100%;
-    }
-
-
-    section#main article.block  {
-        font-size: 18px;
     }
 
     section#main article#projects  {
@@ -204,10 +201,6 @@ section#main {
             float: left;
             font-weight: normal;
         }
-
-
-
-
 
         section#main article.block section {
             clear: both;
@@ -239,7 +232,7 @@ section#main {
 
         section#main article#latest-posts time {
             float: left;
-            width: 15%;
+            width: 16%;
             text-align: right;
             border-right: 3px solid #f4f4f4;
             padding-right: 10px;
