@@ -99,6 +99,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
     'contents.context_processors.urls',
     'blog.context_processors.latest_posts',
+    'blog.context_processors.search',
 )
 
 ROOT_URLCONF = 'main.urls'

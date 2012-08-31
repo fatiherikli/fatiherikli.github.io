@@ -2,13 +2,14 @@ from django.conf.urls import patterns, url
 from django.views.generic.base import RedirectView
 
 from blog.views import BlogIndexView, BlogDetailView, \
-    LegacyPostRedirectionView, BlogPostsAtomFeed, BlogPostsRssFeed, TagDetailView
+    LegacyPostRedirectionView, BlogPostsAtomFeed, BlogPostsRssFeed, TagDetailView, BlogSearchView
 
 
 urlpatterns = patterns('',
 
     # blog urls
     url(r'^$', BlogIndexView.as_view(), name="blog"),
+    url(r'^search$', BlogSearchView.as_view(), name="blog_search"),
     url(r'^post/(?P<slug>[-\w]+)/$',
         BlogDetailView.as_view(), name="blog_detail"),
     url(r'^tag/(?P<slug>[-\w]+)/$',

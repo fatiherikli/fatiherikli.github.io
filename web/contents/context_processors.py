@@ -10,12 +10,15 @@ def urls(request):
             "blog": settings.BLOG_URL,
 
             # internal links
+            "blog_search": reverse("blog_search",
+                urlconf="blog.urls", prefix=settings.BLOG_URL),
             "blog_rss_feed": reverse("blog_rss_feed",
                 urlconf="blog.urls", prefix=settings.BLOG_URL),
             "blog_atom_feed": reverse("blog_atom_feed",
                 urlconf="blog.urls", prefix=settings.BLOG_URL),
             "contact": reverse("contact",
                 urlconf="main.urls", prefix=settings.MAIN_URL),
+
 
             # static contents
             "humans": reverse("humans", urlconf="main.urls"),

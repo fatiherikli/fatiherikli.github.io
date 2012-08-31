@@ -30,7 +30,7 @@ article {
     clear: both;
 }
 
-article.post aside {
+article.post aside, #search {
     display: none;
 }
 

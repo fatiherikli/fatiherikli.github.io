@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}{{ keyword }} search{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+    {% include "blog/inc/post.html" %}
+    {% empty %}
+        <article>
+            <section>No result for {{ keyword }} keyword.</section>
+        </article>
+    {% endfor %}
+
+{% endblock %}
