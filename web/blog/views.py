@@ -1,13 +1,12 @@
 from django.conf import settings
+from django.contrib.contenttypes.models import ContentType
 from django.contrib.syndication.views import Feed
 from django.http import HttpResponsePermanentRedirect
 from django.utils.feedgenerator import Atom1Feed
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
-from django.views.generic.edit import FormView
-from django.views.generic.list import ListView
-from taggit.models import Tag
-from blog.forms import SearchForm
+
+from taggit.models import Tag, TaggedItem
 
 from blog.models import Post
 
@@ -17,6 +16,24 @@ class BlogIndexView(ListView):
     queryset = Post.published_objects.all()
     context_object_name = "posts"
     paginate_by = 10
+
+    def get_queryset(self):
+        queryset = super(BlogIndexView, self).get_queryset()
+
+        # `prefetch_related` doesn't work with generic relationships.
+        # django-taggit uses generic relationships for tagging.
+
+        content_type = ContentType.objects.get_for_model(queryset.model)
+        tagged_items = TaggedItem.objects.\
+            select_related("tag").filter(
+            content_type=content_type,
+            object_id__in=queryset.values_list("pk", flat=True))
+
+        for post in queryset:
+            post.cached_tags = [tagged_item.tag
+                                for tagged_item in tagged_items if tagged_item.object_id == post.pk]
+
+        return queryset
 
 class BlogSearchView(BlogIndexView):
     template_name= "blog/post_search.html"
