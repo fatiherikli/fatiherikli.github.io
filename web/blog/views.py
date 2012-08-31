@@ -31,9 +31,11 @@ class BlogIndexView(ListView):
 
         for post in queryset:
             post.cached_tags = [tagged_item.tag
-                                for tagged_item in tagged_items if tagged_item.object_id == post.pk]
+                                for tagged_item in tagged_items
+                                if tagged_item.object_id == post.pk]
 
         return queryset
+
 
 class BlogSearchView(BlogIndexView):
     template_name= "blog/post_search.html"

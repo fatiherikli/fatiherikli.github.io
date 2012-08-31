@@ -45,3 +45,8 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse("blog_detail", args=[self.slug, ],
             urlconf="blog.urls", prefix=settings.BLOG_URL)
+
+    def get_tags(self):
+        if hasattr(self, "cached_tags"):
+            return self.cached_tags
+        return self.tags.all()

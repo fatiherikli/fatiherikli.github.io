@@ -3,7 +3,7 @@
         <time datetime="{{ post.date_created }}">{{ post.date_created|date }}</time>
         <strong>Tags</strong>
         <ul class="tags">
-            {% for tag in post.cached_tags %}
+            {% for tag in post.get_tags %}
                 <li><a rel="tag" itemprop="keywords" href="{% url blog_tag_detail tag.slug %}">{{ tag }}</a></li>
             {% endfor %}
         </ul>
