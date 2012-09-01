@@ -199,12 +199,12 @@ section#main {
 
     section#main article#projects  {
         float: left;
-        width: 48%;
+        width: 49%;
     }
 
     section#main article#open-source  {
-        float: left;
-        width: 48%;
+        float: right;
+        width: 49%;
         margin-left: 2%;
 
     }
