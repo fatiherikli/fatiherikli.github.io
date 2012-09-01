@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.syndication.views import Feed
-from django.http import HttpResponsePermanentRedirect
+from django.http import HttpResponsePermanentRedirect, Http404
 from django.utils.feedgenerator import Atom1Feed
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
@@ -42,8 +42,8 @@ class BlogSearchView(BlogIndexView):
     paginate_by = 20
 
     def get_queryset(self):
-        keyword = self.request.GET.get("keyword")
         queryset = super(BlogSearchView, self).get_queryset()
+        keyword = self.request.GET.get("keyword")
 
         if not keyword:
             return queryset.none()
@@ -99,8 +99,15 @@ class LegacyPostRedirectionView(DetailView):
     """
     model = Post
 
+    def get_object(self, queryset=None):
+        if queryset is None:
+            queryset = self.get_queryset()
+
+        try:
+            return queryset.get(legacy_post_id=self.kwargs.get("legacy_post_id"))
+        except self.model.DoesNotExist:
+            raise Http404
+
     def render_to_response(self, context, **response_kwargs):
         return HttpResponsePermanentRedirect(
             context.get("object").get_absolute_url())
-
-

@@ -20,7 +20,7 @@ urlpatterns = patterns('',
     url(r'^feed/atom', BlogPostsAtomFeed(), name="blog_atom_feed"),
 
     # legacy urls for old blog.fatiherikli.com
-    url(r'^post/(?P<id>\d+)/(?P<slug>[-\w]+)$',
+    url(r'^post/(?P<legacy_post_id>\d+)/(?P<slug>[-\w]+)$',
         LegacyPostRedirectionView.as_view(), name="blog_detail"),
 
     url(r'^rss', RedirectView.as_view(
