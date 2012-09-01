@@ -55,8 +55,13 @@ class BlogSearchView(BlogIndexView):
 
 class BlogDetailView(DetailView):
     template_name= "blog/post_detail.html"
-    queryset = Post.published_objects.all()
+    model = Post
     context_object_name = "post"
+
+    def get_queryset(self):
+        if self.request.user.is_superuser:
+            return self.model.objects.all()
+        return self.model.published_objects.all()
 
 class TagDetailView(DetailView):
     queryset = Tag.objects.all()
