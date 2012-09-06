@@ -7,10 +7,12 @@ register = template.Library()
 
 @register.simple_tag
 def content_block(name):
+
     try:
-        contentblock = ContentBlock.objects.get(name=name)
+        content_block = ContentBlock.objects.get(name=name)
     except ContentBlock.DoesNotExist:
         return ""
-    return contentblock.content.rendered
+
+    return content_block.content.rendered
 
 register.simple_tag(content_block)
