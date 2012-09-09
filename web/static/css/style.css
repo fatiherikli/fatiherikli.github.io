@@ -115,6 +115,13 @@ section#main {
 
     }
 
+    section#main article.post section h3 {
+        margin: 20px -20px 0;
+        padding: 3px 20px 3px;
+        border-bottom: 1px solid #eaeaea;
+
+    }
+
     section#main article aside {
         margin-left: -150px;
         width: 150px;
