@@ -21,13 +21,13 @@
 
     <link rel="author" href="{{ urls.google }}" />
     <link rel="author" href="{{ urls.humans }}" />
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ urls.sitemap }}" />
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ urls.blog_rss_feed }}" />
     <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="{{ urls.blog_atom_feed }}" />
-
-    {% if page_obj.has_next %}<link rel='next' href='{{ urls.blog }}?page={{ page_obj.next_page_number }}' />{% endif %}
-    {% if page_obj.has_previous %}<link rel='prev' href='{{ urls.blog }}?page={{ page_obj.previous_page_number }}' />{% endif %}
-
+    {% if page_obj.has_next %}
+    <link rel='next' href="{{ urls.blog }}?page={{ page_obj.next_page_number }}" />{% endif %}
+    {% if page_obj.has_previous %}
+    <link rel='prev' href="{{ urls.blog }}?page={{ page_obj.previous_page_number }}" />{% endif %}
     <link rel="icon" href="{{ STATIC_URL}}img/icon-16.png" />
     <link rel="shortcut icon" href="{{ STATIC_URL}}img/icon-16.png" />
 

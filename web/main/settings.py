@@ -125,6 +125,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'django.contrib.sitemaps',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
@@ -170,9 +171,11 @@ MARKITUP_SET = 'markitup/sets/markdown'
 MARKITUP_FILTER = ('markdown.markdown', {'safe_mode': False})
 
 
+MAIN_DOMAIN = "fatiherikli.com"
+MAIN_URL = "http://%s/" % MAIN_DOMAIN
 
-BLOG_URL = "http://blog.fatiherikli.com/"
-MAIN_URL = "http://fatiherikli.com/"
+BLOG_DOMAIN = "blog.fatiherikli.com"
+BLOG_URL = "http://%s/" % BLOG_DOMAIN
 
 BLOG_FEED_TITLE = "Fatih Erikli's web blog"
 BLOG_FEED_DESCRIPTION = "Fatih Erikli's personal development blog."

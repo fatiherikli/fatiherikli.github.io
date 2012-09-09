@@ -42,9 +42,9 @@ class Post(models.Model):
     def __unicode__(self):
         return smart_unicode(self.title)
 
-    def get_absolute_url(self):
+    def get_absolute_url(self, prefix=settings.BLOG_URL):
         return reverse("blog_detail", args=[self.slug, ],
-            urlconf="blog.urls", prefix=settings.BLOG_URL)
+            urlconf="blog.urls", prefix=prefix)
 
     def get_tags(self):
         if hasattr(self, "cached_tags"):

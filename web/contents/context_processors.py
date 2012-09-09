@@ -8,6 +8,8 @@ def urls(request):
             # sub-domains
             "index": settings.MAIN_URL,
             "blog": settings.BLOG_URL,
+            "sitemap": reverse("blog_sitemap",
+                urlconf="blog.urls", prefix=settings.BLOG_URL),
 
             # internal links
             "blog_search": reverse("blog_search",

@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, url
 from django.views.generic.base import RedirectView
+from blog.sitemaps import BlogSitemap
 
 from blog.views import BlogIndexView, BlogDetailView, \
     LegacyPostRedirectionView, BlogPostsAtomFeed, BlogPostsRssFeed, TagDetailView, BlogSearchView
@@ -19,7 +20,12 @@ urlpatterns = patterns('',
     url(r'^feed/rss$', BlogPostsRssFeed(), name="blog_rss_feed"),
     url(r'^feed/atom', BlogPostsAtomFeed(), name="blog_atom_feed"),
 
-    # legacy urls for old blog.fatiherikli.com
+    # sitemap
+    url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': dict(
+        blog=BlogSitemap()
+    )}, name="blog_sitemap"),
+
+    # legacy urls for oldest tumblr blog.
     url(r'^post/(?P<legacy_post_id>\d+)/(?P<slug>[-\w]+)$',
         LegacyPostRedirectionView.as_view(), name="blog_detail"),
 
