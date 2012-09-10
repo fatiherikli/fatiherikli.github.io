@@ -103,7 +103,7 @@ section#main {
         line-height: 1.4em;
     }
 
-    section#main article.post {
+    section#main article.post, section#main article.comments {
         margin-left: 150px;
         background: white;
     }
@@ -297,6 +297,15 @@ section#main {
         section#main article#latest-posts .more:after {
             content: "»";
             margin-left: 5px;
+        }
+
+        .comments {
+            padding: 20px 0;
+        }
+
+        .comments .post-count h4 {
+            padding: 5px;
+            color: #069;
         }
 
 
