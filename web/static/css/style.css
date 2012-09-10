@@ -130,7 +130,7 @@ section#main {
 
     }
 
-    section#main article strong {
+    section#main aside strong {
         padding: 3px;
     }
 
@@ -348,6 +348,18 @@ body > footer {
     font-weight: bold;
 }
 
+
+blockquote {
+    margin: 0;
+    background: #d6fffc;
+    color: #005a8d;
+    padding: 0;
+}
+
+blockquote p {
+    margin: 0;
+    padding: 10px;
+}
 
 @media screen and (min-width: 960px) {
 
