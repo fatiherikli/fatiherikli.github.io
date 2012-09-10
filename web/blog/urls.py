@@ -3,7 +3,7 @@ from django.views.generic.base import RedirectView
 from blog.sitemaps import BlogSitemap
 
 from blog.views import BlogIndexView, BlogDetailView, \
-    LegacyPostRedirectionView, BlogPostsAtomFeed, BlogPostsRssFeed, TagDetailView, BlogSearchView
+     BlogPostsAtomFeed, BlogPostsRssFeed, TagDetailView, BlogSearchView, LegacyPostRedirectView
 
 
 urlpatterns = patterns('',
@@ -27,7 +27,7 @@ urlpatterns = patterns('',
 
     # legacy urls for oldest tumblr blog.
     url(r'^post/(?P<legacy_post_id>\d+)/(?P<slug>[-\w]+)$',
-        LegacyPostRedirectionView.as_view(), name="legacy_blog_detail"),
+        LegacyPostRedirectView.as_view(), name="legacy_blog_detail"),
     url(r'^tagged/(?P<slug>[-\w]+)', RedirectView.as_view(
         url="/tag/%(slug)s", permanent=True), name="legacy_blog_tag_detail"),
     url(r'^rss', RedirectView.as_view(
