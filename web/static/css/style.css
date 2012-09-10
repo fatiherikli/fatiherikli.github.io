@@ -158,6 +158,7 @@ section#main {
         background: #069;
         margin-bottom: 2px;
         font-weight: normal;
+        margin-left: 2px
     }
 
     section#main article.post time {
