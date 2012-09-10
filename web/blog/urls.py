@@ -27,10 +27,11 @@ urlpatterns = patterns('',
 
     # legacy urls for oldest tumblr blog.
     url(r'^post/(?P<legacy_post_id>\d+)/(?P<slug>[-\w]+)$',
-        LegacyPostRedirectionView.as_view(), name="blog_detail"),
-
+        LegacyPostRedirectionView.as_view(), name="legacy_blog_detail"),
+    url(r'^tagged/(?P<slug>[-\w]+)', RedirectView.as_view(
+        url="/tag/%(slug)s", permanent=True), name="legacy_blog_tag_detail"),
     url(r'^rss', RedirectView.as_view(
-        url="feed", permanent=True), name="blog_feed"),
+        url="feed", permanent=True), name="legacy_blog_feed"),
 )
 
 
