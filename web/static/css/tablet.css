@@ -130,3 +130,8 @@ nav .menu-icon {
 section#main article {
     font-size: 18px;
 }
+
+
+.comments {
+    margin-left: 0 !important;
+}
