@@ -186,6 +186,7 @@ GOOGLE_ID = "109590184509977241359"
 
 CONTACT_EMAIL = "fatiherikli@gmail.com"
 
+APPEND_SLASH = False
 
 try:
     from settings_local import *
