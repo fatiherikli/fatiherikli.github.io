@@ -371,7 +371,7 @@ blockquote p {
     padding: 10px;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) and (min-device-width: 960px) {
 
     /* ensure `nav ul` is visible on desktop version */
     nav ul {
