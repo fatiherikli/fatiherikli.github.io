@@ -31,7 +31,7 @@ urlpatterns = patterns('',
     url(r'^tagged/(?P<slug>[-\w]+)', RedirectView.as_view(
         url="/tag/%(slug)s/", permanent=True), name="legacy_blog_tag_detail"),
     url(r'^rss', RedirectView.as_view(
-        url="feed", permanent=True), name="legacy_blog_feed"),
+        url="feed/rss", permanent=True), name="legacy_blog_feed"),
 )
 
 
