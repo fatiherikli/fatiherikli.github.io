@@ -15,7 +15,7 @@ class BlogIndexView(ListView):
     template_name="blog/index.html"
     queryset = Post.published_objects.all()
     context_object_name = "posts"
-    paginate_by = 40
+    paginate_by = 30
 
     def get_queryset(self):
         queryset = super(BlogIndexView, self).get_queryset()
