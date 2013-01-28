@@ -265,7 +265,6 @@ section#main {
             padding-bottom: 30px;
         }
 
-
         section#main article#latest-posts section {
             overflow: hidden;
         }
@@ -324,15 +323,10 @@ section#main {
             color: #069;
         }
 
-
-.post.preview aside {
-
+.post.preview header {
+    height: 100px;
+    overflow: hidden;
 }
-
-    .post.preview header {
-        height: 100px;
-        overflow: hidden;
-    }
 
 section.columns footer {
     clear: both;
@@ -431,6 +425,5 @@ table th, td  {
     .sticky-navigation + section#main {
         margin-top: 70px;
     }
-
 
 }
