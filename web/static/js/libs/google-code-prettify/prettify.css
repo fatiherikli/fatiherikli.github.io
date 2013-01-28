@@ -1,11 +1,12 @@
 
 
 
-pre {display: block; background-color: #333; padding: 10px; font-size: 13px }
+pre {display: block; background-color: #333; padding: 10px;  }
 pre code {
     font-family: 'Monaco', 'Consolas', 'Bitstream Vera Sans Mono', 'Courier-Bold', 'Courier New', monospace;
     -webkit-font-smoothing: subpixel-antialiased;
-
+    font-size: 13px;
+    background-color: #333 !important;
 }
 pre .nocode { background-color: none; color: #000 }
 pre .str { color: #ffa0a0 } /* string  - pink */

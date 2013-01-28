@@ -1,11 +1,33 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in posts %}
-    {% include "blog/inc/post.html" %}
-    {% endfor %}
-
-
-    {% include "blog/inc/pagination.html" %}
-
+    {% if articles %}
+    <article class="block articles" id="latest-posts">
+        <h3>Articles</h3>
+        <section>
+            <ul>
+                {% for post in articles %}
+                    <li>
+                        <time>{{ post.date_created|date }}</time>
+                        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                    </li>
+                {%  endfor %}
+            </ul>
+        </section>
+    </article>
+    {% endif %}
+    <article class="block" id="latest-posts">
+        <h3>Blog posts</h3>
+        <section>
+            <ul>
+                {% for post in posts %}
+                    <li>
+                        <time>{{ post.date_created|date }}</time>
+                        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                    </li>
+                {%  endfor %}
+            </ul>
+            {% include "blog/inc/pagination.html" %}
+        </section>
+    </article>
 {% endblock %}

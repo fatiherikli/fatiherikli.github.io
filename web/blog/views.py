@@ -19,13 +19,37 @@ class BlogIndexView(ListView):
 
     def get_queryset(self):
         queryset = super(BlogIndexView, self).get_queryset()
+        self.cache_posts(queryset)
+        return queryset
 
-        # `prefetch_related` doesn't work with generic relationships.
-        # django-taggit uses generic relationships for tagging.
+    def get_articles(self):
+        """
+        Returns articles if the user on first page.
+        """
+        try:
+            page = int(self.request.GET.get("page"))
+        except (ValueError, TypeError):
+            page = 1
 
+        if page > 1:
+            return []
+
+        queryset = self.queryset.filter(tags__name__in=["article"])
+        self.cache_posts(queryset)
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        return super(BlogIndexView, self).get_context_data(
+            articles=self.get_articles(), **kwargs)
+
+    def cache_posts(self, queryset):
+        """
+        `prefetch_related` doesn't work with generic relationships.
+        django-taggit uses generic relationships for tagging.
+        """
         content_type = ContentType.objects.get_for_model(queryset.model)
         tagged_items = TaggedItem.objects.\
-            select_related("tag").filter(
+        select_related("tag").filter(
             content_type=content_type,
             object_id__in=queryset.values_list("pk", flat=True))
 
@@ -33,8 +57,6 @@ class BlogIndexView(ListView):
             post.cached_tags = [tagged_item.tag
                                 for tagged_item in tagged_items
                                 if tagged_item.object_id == post.pk]
-
-        return queryset
 
 
 class BlogSearchView(BlogIndexView):

@@ -106,13 +106,24 @@ section#main {
     section#main article.post, section#main article.comments {
         margin-left: 150px;
         background: white;
+        line-height: 22px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 15px;
     }
 
     section#main article.post ul,
     section#main article.post ol,
     section#main article.post p {
         overflow: hidden;
+    }
 
+    section#main article.post code {
+        color: #838383;
+        background-color: #f2f2f2;
+        font-family: 'Monaco', 'Consolas', monospace;
+        font-size: 14px;
+        padding-left: 2px;
+        padding-right: 2px;
     }
 
     section#main article.post section h3 {
@@ -250,6 +261,11 @@ section#main {
 
         }
 
+        section#main .articles section ul {
+            padding-bottom: 30px;
+        }
+
+
         section#main article#latest-posts section {
             overflow: hidden;
         }
@@ -308,6 +324,15 @@ section#main {
             color: #069;
         }
 
+
+.post.preview aside {
+
+}
+
+    .post.preview header {
+        height: 100px;
+        overflow: hidden;
+    }
 
 section.columns footer {
     clear: both;
