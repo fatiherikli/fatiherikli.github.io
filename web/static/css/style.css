@@ -3,7 +3,7 @@ body {
     color: #575757;
     margin: 0 auto;
     font-size: 16px;
-    width: 960px;
+    width: 820px;
 
 }
 
@@ -73,6 +73,7 @@ nav {
     }
 
     nav #search {
+        display: none;
         margin-top: -5px;
         margin-right: 10px;
         float: right;
@@ -104,10 +105,9 @@ section#main {
     }
 
     section#main article.post, section#main article.comments {
-        margin-left: 150px;
         background: white;
-        line-height: 22px;
-        font-size: 15px;
+        line-height: 25px;
+        font-size: 17px;
     }
 
     section#main article.post ul,
@@ -132,12 +132,13 @@ section#main {
 
     }
 
-    section#main article aside {
-        margin-left: -150px;
-        width: 150px;
-        float: left;
-        text-align: right;
-
+    article.post time {
+        letter-spacing: -1px;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 27px 20px 0;
+        display: block;
+        color: #9e9e9e;
     }
 
     section#main aside strong {
@@ -171,28 +172,17 @@ section#main {
         margin-left: 2px
     }
 
-    section#main article.post time {
-        /*padding: 5px 7px;*/
-        background: #069;
-        color: white;
-        display: block;
-        font-size: 30px;
-        font-weight: bold;
-        text-align: right;
-        padding: 10px 10px 10px 0;
-        line-height: 1em;
-        margin-bottom: 20px;
-    }
 
     section#main article h3 {
         padding: 20px 20px 0 20px;
         margin: 0;
-        line-height: 1.5em;
+        line-height: 2em;
     }
 
     section#main article h3 a {
         color: #069;
-        font-size: 30px;
+        font-size: 40px;
+        letter-spacing: -1px;
         text-decoration: none;
     }
 
@@ -265,12 +255,13 @@ section#main {
         }
 
         section#main article#latest-posts section {
+            padding-top: 10px;
             overflow: hidden;
         }
 
         section#main article#latest-posts time {
             float: left;
-            width: 16%;
+            width: 20%;
             text-align: right;
             border-right: 3px solid #f4f4f4;
             padding-right: 10px;
@@ -283,12 +274,14 @@ section#main {
         }
 
         section#main article#latest-posts a {
-            display: block;
             float: left;
             padding-left: 10px;
             text-decoration: none;
             font-weight: normal;
             font-size: 20px;
+            width: 70%;
+            display: inline-block;
+
         }
 
         section#main article#latest-posts .more {
@@ -321,6 +314,11 @@ section#main {
             padding: 5px;
             color: #069;
         }
+
+        #latest-posts h3 {
+        }
+
+
 
 .post.preview header {
     height: 100px;
@@ -414,10 +412,10 @@ table th, td  {
 
     .sticky-navigation {
         position: fixed;
-        width: 960px;
+        width: 820px;
         top: 0;
         margin: 0;
-        box-shadow: 0 1px 7px #888;
+        box-shadow: 0 1px 3px #888;
         border: none;
     }
 

@@ -1,15 +1,6 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <aside>
-        <time datetime="{{ post.date_created }}">{{ post.date_created|date:"N j Y" }}</time>
-        <strong>Tags</strong>
-        <ul class="tags">
-            {% for tag in post.get_tags %}
-                <li><a rel="tag" itemprop="keywords" href="{% url blog_tag_detail tag.slug %}">{{ tag }}</a></li>
-            {% endfor %}
-        </ul>
-    </aside>
-
     <header>
+        <time datetime="{{ post.date_created }}">{{ post.date_created|date:"N j Y" }}</time>
         <h3><a itemprop="url" href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
     </header>
 
