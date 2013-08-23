@@ -104,6 +104,10 @@ section#main {
         line-height: 1.4em;
     }
 
+    body#blog section#main article {
+        margin-top: 20px;
+    }
+
     section#main article.post, section#main article.comments {
         background: white;
         line-height: 25px;
