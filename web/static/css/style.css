@@ -111,7 +111,7 @@ section#main {
     section#main article.post, section#main article.comments {
         background: white;
         line-height: 25px;
-        font-size: 17px;
+        font-size: 15px;
     }
 
     section#main article.post ul,
