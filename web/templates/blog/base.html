@@ -5,10 +5,3 @@
         {{ search_form.as_p }}
     </form>
 {% endblock %}
-
-<body id="{% block body-id %}blog{% endblock %}">
-
-{% block javascripts %}
-<!-- blog app specific scripts -->
-<script src="{{ STATIC_URL }}js/sticky-navigation.js"></script>
-{% endblock %}
