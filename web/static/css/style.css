@@ -103,9 +103,9 @@ section#main {
         font-size: 15px;
         line-height: 1.4em;
     }
-
+    
     body#blog section#main article {
-        margin-top: 20px;
+        margin-top: 17px;
     }
 
     section#main article.post, section#main article.comments {
