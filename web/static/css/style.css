@@ -119,6 +119,10 @@ section#main {
     section#main article.post p {
         overflow: hidden;
     }
+    
+    article.post p:first-child {
+        margin-top: 6px;
+    }
 
     section#main article.post code {
         color: #838383;
