@@ -138,9 +138,8 @@ section#main {
 
     article.post time {
         letter-spacing: -1px;
-        font-weight: bold;
         font-size: 30px;
-        padding: 27px 20px 0;
+        padding: 24px 20px 0;
         display: block;
         color: #9e9e9e;
     }
