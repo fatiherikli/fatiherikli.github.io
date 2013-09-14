@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block body-id %}blog{% endblock %}
+
 {% block navigation %}{{ block.super }}
     <form id="search" action="{{ urls.blog_search  }}" method="get">
         {{ search_form.as_p }}
