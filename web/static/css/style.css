@@ -322,9 +322,10 @@ section#main {
             color: #069;
         }
 
-        #latest-posts h3 {
+        #latest-posts ul {
+            margin-top: 11px;
         }
-
+        
 
 
 .post.preview header {
