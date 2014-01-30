@@ -3,49 +3,186 @@
 {% load content_block %}
 
 {% block content %}
-    <article class="block" id="short-bio">
-        <h3>short bio</h3>
-        <section itemscope itemtype="http://schema.org/Person">
-            <p>
-            I'm <span itemprop="name">Fatih Erikli</span>.
-            I'm a <span itemprop="jobTitle">python/django developer</span>.
-            I live in <span itemprop="address">Istanbul/Turkey</span>.
-            My interest areas are open source technologies,
-            back-end and front-end web development.
-            </p>
-        </section>
-    </article>
+    <div id="about-me">
+    <div class="content">
+        <!--<img src="images/fatih-erikli.jpg" alt="Fatih Erikli" class="picture"/>-->
 
-    <section class="columns">
-        <article class="block" id="projects">
-            <h3>projects</h3>
-            <section>
-                {% content_block "projects" %}
-            </section>
-        </article>
+        <h3>selam</h3>
 
-        <article class="block" id="open-source">
-            <h3>open source</h3>
-            <section>
-                {% content_block "open-source" %}
-            </section>
-        </article>
-        <footer></footer>
-    </section>
+        <p>ben fatih. istanbul'da yaşıyorum.
+            <a href="#">hipo</a>'da, çalışıyorum.
+            <a href="#">python</a> ve <a href="#">javascript</a> ile
+            <a href="#works">bir şeyler</a> geliştiriyorum.
+        </p>
+    </div>
+</div>
 
-    <article class="block" id="latest-posts">
-        <h3>latest blog posts</h3>
-        <section>
-            <ul>
+<div id="latest-posts">
+    <div class="content">
+        <h3>son blog yazıları</h3>
+        <ul>
             {% for post in latest_posts %}
                 <li>
                     <time>{{ post.date_created|date }}</time>
                     <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
                 </li>
-            {%  endfor %}
-            </ul>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 
-            <a href="{{ urls.blog }}" class="more">see more posts</a>
-        </section>
-    </article>
+<div id="works">
+    <div class="content">
+        <h3>çalışmalar</h3>
+        <ul>
+            <li>
+                <a href="#">imageglitcher</a>
+
+                <p>Bir image glitching uygulamasıdır. HTML5 & Javascript
+                    ile geliştirilmiştir.</p>
+            </li>
+            <li>
+                <a href="#">dbpatterns</a>
+
+                <p>Dbpatterns web üzerinde veritabanı modellerini oluşturup
+                    paylaşabileceğiniz bir platformdur. Gerçek zamanlı olarak
+                    birden çok kişi bir model üzerinde çalışabilir. Ayrıca
+                    başkalarının oluşturduğu modelleri de platform üzerinden
+                    görebilirsiniz.</p>
+            </li>
+            <li>
+                <a href="#">mockup designer</a>
+
+                <p>
+                    Basit bir mockup düzenleme aracıdır. Backbone ile
+                    geliştirilmiştir.
+                    Html5 ile gelen localStorage özelliğini kullanmaktadır.
+                </p>
+            </li>
+            <li>
+                <a href="#">ismailabi</a>
+
+                <p>
+                    Leyla ile mecnun dizisinden repliklerin bulunduğu ufak bir
+                    haftasonu projesidir. Replikler kullanıcı tarafından
+                    ekleniyor.
+                    Kodları github üzerinde açıktır.
+                </p>
+            </li>
+            <li class="load-more">
+                <a href="#">daha fazla göster</a>
+            </li>
+            <li>
+                <a href="#">brainfuck visualizer</a>
+
+                <p>
+                    Brainfuck dili için yaptığım online bir editör ve
+                    görselleştiricidir. Brainfuck sadece 8 komutu bulunan,
+                    turing-complete
+                    bir programlama dilidir. İlginç olan tarafı ise bu dilin
+                    interpreter'ını yazmak bu dilde bir şeyler yapmaktan
+                    çok daha basit olmasıdır :)
+                </p>
+            </li>
+            <li>
+                <a href="#">kule</a>
+
+                <p>Kule Mongodb için bir REST arayüzüdür. Kule'yi hızlıca
+                    çıkarmanız gereken
+                    mobile ya da web uygulamalarınız da bir backend servisi
+                    olarak
+                    kullanabilirsiniz.</p>
+            </li>
+            <li>
+                <a href="#">dictdiffer</a>
+
+                <p>Python'da iki adet dictionary'nin farkını almanızı ve bu
+                    farkı
+                    yeni dictionary üzerinde uygulamanızı sağlayan ufak bir
+                    kütüphanedir.</p>
+            </li>
+            <li>
+                <a href="#">olay</a>
+
+                <p>Python üzerinde backbone benzeri bir event dispatching
+                    kütüphanesidir.</p>
+            </li>
+            <li>
+                <a href="#">django-api-playground</a>
+
+                <p>Django üzerinde API'larınız için test ortamı oluşturmanızı
+                    sağlayan, yeniden kullanılabilir bir uygulamadır.</p>
+            </li>
+            <li>
+                <a href="#">nginx parser</a>
+
+                <p>Python üzerinde nginx konfigürasyon dosyalarınızı parse
+                    etmenizi sağlayan
+                    bir kütüphanedir.</p>
+            </li>
+            <li>
+                <a href="#">backbone-notifications</a>
+
+                <p>Backbone.js için bir global notification yöneticisidir.
+                    Dbpatterns
+                    ve Mockup Designer projesinde kullanılmıştır.</p>
+            </li>
+            <li>
+                <a href="#">backbone-autocomplete</a>
+
+                <p>Backbone.js için jquery-ui tarzı autocomplete widget'dır.
+                    Ekstra bir uğraş gerektirmeden direkt olarak backbone
+                    koleksiyonları üzerinden çalışmaktadır.</p>
+            </li>
+            <li>
+                <a href="#">twister</a>
+
+                <p>Wamp protokolünün Python üzerinde uygulanmış halidir. Aynı
+                    zamanda
+                    twister.js adında bir javascript istemcisi
+                    bulunmaktadır.</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="presentations">
+    <div class="content">
+        <h3>sunumlar</h3>
+        <ul>
+            <li>
+                <h4>Lettuce ile Behaviour Driven Development</h4>
+
+                <p>Python Istanbul - <span>2014</span></p>
+            </li>
+
+            <li>
+                <h4>Processing diline giriş</h4>
+
+                <p>Hackerspace - <span>2014</span></p>
+            </li>
+
+            <li>
+                <h4>Django ORM Optimizasyonu</h4>
+
+                <p>Python Istanbul - <span>2012</span></p>
+
+                <p>JsPyConf Istanbul - <span>2013</span></p>
+            </li>
+
+            <li>
+                <h4>Django'ya Giriş</h4>
+
+                <p>Python Istanbul - <span>2012</span></p>
+            </li>
+
+            <li>
+                <h4>Distributed Queue Management - Celery</h4>
+
+                <p>Python Istanbul - <span>2012</span></p>
+            </li>
+        </ul>
+    </div>
+</div>
+
 {% endblock %}

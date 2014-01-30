@@ -12,12 +12,12 @@
     * */
     $(function () {
 
-        $("nav").prepend("<a href='#' class='menu-icon'>navigation</a>");
+//        $("nav").prepend("<a href='#' class='menu-icon'>navigation</a>");
 
-        $(".menu-icon").click(function () {
-            $("nav ul").slideToggle("fast");
-            return false;
-        });
+//        $(".menu-icon").click(function () {
+//            $("nav ul").slideToggle("fast");
+//            return false;
+//        });
 
     });
 

@@ -3,7 +3,7 @@ from blog.models import Post
 
 def latest_posts(request):
     return {
-        "latest_posts": Post.objects.all()[:10]
+        "latest_posts": Post.published_objects.all()[:10]
     }
 
 def search(request):
