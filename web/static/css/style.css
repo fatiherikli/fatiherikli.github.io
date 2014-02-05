@@ -8,6 +8,7 @@ body {
 
 body > header {
     padding-top: 30px;
+    text-align: center;
 }
 
 body > header h1 {
@@ -29,12 +30,11 @@ body > header i {
 }
 
 body > header nav {
-    width: 700px;
-    margin: auto;
+    display: inline-block;
 }
 
 header nav ul {
-    margin: 0 0 0 170px;
+    margin: 0 0 0 -10px;
     font-size: 30px;
     padding: 0 0 35px 15px;
     overflow: hidden;
@@ -100,7 +100,9 @@ h3 {
     letter-spacing: -1px;
     font-weight: 300;
     color: #909090;
+    margin-right: -40px;
 }
+
 
 #about-me a {
     text-decoration: none;
@@ -134,12 +136,12 @@ h3 {
 
 #works ul li a {
     text-decoration: none;
-    color: #3a3839;
+    color: #5d5c5d;
     font-size: 40px;
     font-weight: 300;
     margin-left: 5px;
     letter-spacing: -1px;
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #ffa63d;
 }
 
 #works ul li p {
@@ -147,16 +149,16 @@ h3 {
     /*padding: 62px;*/
     /*border: 7px solid #e8d7f2;*/
     /*background: #f3f3f3;*/
-    color: #686868;
     text-align: left;
     /*border-bottom: 3px solid #7ed1b5;*/
     /*border-radius: 10px;*/
-    font-size: 32px;
     line-height: 1.4em;
     letter-spacing: -1px;
     font-weight: 300;
     padding: 7px;
     margin: 0 0 20px 0;
+    color: #868686;
+    font-size: 27px;
 }
 
 #works .load-more {
@@ -197,7 +199,7 @@ h3 {
     list-style: none;
     overflow: hidden;
     padding: 10px;
-    margin: 14px 0 0;
+    margin: 19px 0 0;
     /*border-bottom: 1px solid #76BCAD;*/
 }
 
@@ -222,17 +224,17 @@ h3 {
     font-size: 34px;
     font-weight: 300;
     letter-spacing: -1px;
+    line-height: 1.2em;
     text-decoration: none;
     float: left;
-    padding-bottom: 5px;
-    border-bottom: 3px solid orange;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #ffa63d;
 }
 
 body > footer {
     background: #e4e4e4;
-    padding: 30px 30px 60px 30px;
+    padding: 30px 30px 30px 30px;
     font-size: 26px;
-    height: 200px;
     margin-top: 30px;
 }
 
@@ -269,13 +271,13 @@ article.post section {
 
 article.post header {
     background-color: #ededed;
-    padding: 30px;
     padding-bottom: 20px;
 }
 
 article.post header hgroup {
     width: 700px;
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 25px;
 }
 
 article.post header time {
@@ -287,6 +289,7 @@ article.post header time {
 article.post header h3 {
     line-height: 1em;
     margin: 10px 0;
+    font-size: 50px;
 }
 
 article.post header h3 a {
@@ -300,8 +303,8 @@ article.post img {
 }
 
 article.post section {
-    color: #636363;
-    font-size: 24px;
+    color: #5d5d5d;
+    font-size: 25px;
     font-weight: 300;
     line-height: 1.5em;
 }
@@ -347,7 +350,7 @@ article.post section h4:before {
     position: absolute;
     width: 700px;
     height: 22px;
-    display: block;
+    display: none;
     color: #c7c7c7;
     /*background-color: black;*/
     border-bottom: 1px solid #dddddd;
@@ -367,4 +370,99 @@ article.post footer {
     background-color: #f6f6f6;
     margin-bottom: 50px;
     border-radius: 20px;
+}
+
+#presentations {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+#presentations ul {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+#presentations li {
+    list-style: none;
+    margin: 20px 0 30px -6px;
+    padding: 6px 0 6px 20px;
+    border-left: 3px solid #ffa63d;
+}
+
+#presentations li a {
+    font-size: 32px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #515151;
+    letter-spacing: -1px;
+}
+
+#presentations li h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#presentations li p {
+    color: #bcbcbc;
+    font-size: 22px;
+    margin: 2px 0 0 0;
+    font-weight: 300;
+    padding: 0;
+    letter-spacing: -1px;
+}
+
+
+@media screen and (max-width: 850px) {
+
+	.content,
+    article.articles, article.comments,
+    article.post section h4:before,
+    article.post footer,
+    article.post section {
+        width: 90%;
+    }
+
+    article.post img {
+        width: 100%;
+        margin: auto;
+    }
+
+    body > footer li {
+        margin-bottom: 20px;
+    }
+
+    article.post,
+    article.post header {
+        width: 100%;
+    }
+
+    article.post header hgroup {
+        width: 80%;
+    }
+
+    body > footer strong {
+        text-align: left;
+        width: 100%;
+    }
+
+    nav ul {
+        margin-left: 0 !important;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    footer .content {
+        width: 100%;
+    }
+
+    article.post header h3 {
+
+    }
+
+    article.post section {
+        font-size: 24px;
+    }
+
 }
