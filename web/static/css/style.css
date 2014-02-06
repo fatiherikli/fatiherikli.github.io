@@ -454,7 +454,7 @@ body.blog-post-with-cover .post header h3 a {
 
 body.blog-post-with-cover header h1 a {
     color: #eeeeee;
-    text-shadow: 0 0 20px #4f4f4f;
+    text-shadow: 0 0 2px #4f4f4f;
 }
 
 body.blog-post-with-cover header nav a {
