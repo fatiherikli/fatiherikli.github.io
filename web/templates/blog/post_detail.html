@@ -10,7 +10,14 @@
     <link rel="canonical" href="{{ post.get_absolute_url }}" />
 {% endblock %}
 
+{% block body-id %}{% if post.cover_image %}blog-post-with-cover{% endif %}{% endblock %}
+
 {% block content %}
+
+    {% if post.cover_image %}
+    <div class="blog-post-cover" style="background-image: url('{{ post.cover_image.url }}');"></div>
+    {% endif %}
+
     {% include "blog/inc/post.html" %}
 
     <article class="comments">

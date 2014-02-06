@@ -27,6 +27,7 @@ class Post(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True, auto_now_add=True)
     is_published = models.BooleanField(_("Published"), default=True)
+    cover_image = models.ImageField(upload_to="covers/", null=True, blank=True)
 
     # legacy fields
     legacy_url = models.URLField(_("Legacy URL"), blank=True, null=True, editable=False)
