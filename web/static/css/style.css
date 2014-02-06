@@ -1,9 +1,6 @@
 body {
-    font-family: Helvetica Neue, Arial, sans-serif;
-    /*font-family: Raleway;*/
+    font-family:  "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin: 0;
-    /*font-weight: 300;*/
-    /*padding-top: 76px;*/
 }
 
 body > header {
