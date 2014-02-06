@@ -73,7 +73,7 @@ h3 {
 }
 
 #about-me {
-    background: #ecf0f1 url(../img/about-me-pattern.jpg) center -40px;
+    background: #ecf0f1 url(../img/about-me.jpg) center -40px;
     /*height: 390px;*/
     /*margin-top: 10px;*/
     padding-bottom: 70px;
@@ -420,7 +420,7 @@ article.post footer {
 }
 
 .blog-post-cover {
-    background: url(../img/cover.jpg) center center no-repeat;
+    background: center center no-repeat;
     backgrond-opacity: 10%;
     position: absolute;
     width: 100%;
