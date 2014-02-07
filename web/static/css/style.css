@@ -333,7 +333,6 @@ article.post section h3 {
     font-weight: 300;
     color: #4e4e4e;
     margin: 0;
-    margin-bottom: -15px;
 }
 
 article.post section h4 {
@@ -450,7 +449,7 @@ body.blog-post-with-cover .post header h3 a {
 }
 
 body.blog-post-with-cover header h1 a {
-    color: #eeeeee;
+    color: #ffffff;
     text-shadow: 0 0 2px #4f4f4f;
 }
 
@@ -459,7 +458,7 @@ body.blog-post-with-cover header nav a:hover {
 }
 
 body.blog-post-with-cover header nav a {
-    color: #dedede;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 850px) {
