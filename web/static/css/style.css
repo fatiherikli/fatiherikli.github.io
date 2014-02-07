@@ -432,7 +432,7 @@ article.post footer {
     top: 0;
     height: 340px;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.31);
+    background: rgba(0, 0, 0, 0.22);
 }
 
 body.blog-post-with-cover .post header {
@@ -452,6 +452,10 @@ body.blog-post-with-cover .post header h3 a {
 body.blog-post-with-cover header h1 a {
     color: #eeeeee;
     text-shadow: 0 0 2px #4f4f4f;
+}
+
+body.blog-post-with-cover header nav a:hover {
+    color: #ff7dd7;
 }
 
 body.blog-post-with-cover header nav a {
