@@ -194,7 +194,7 @@ h3 {
     list-style: none;
     overflow: hidden;
     padding: 10px;
-    margin: 35px 0 0;
+    margin: 35px 0 0 10px;
     /*border-bottom: 1px solid #76BCAD;*/
     /*border-left: 1px solid #95e1f4;*/
     border-left: 3px solid #95e1f4;
