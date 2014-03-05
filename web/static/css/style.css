@@ -66,52 +66,42 @@ h3 {
     font-weight: 300;
     margin: 0;
     letter-spacing: -3px;
-    color: #2f2f2f;
+    color: #4d4d4d;
 }
 
 #about-me {
-    background: #ecf0f1 url(../img/about-me.jpg) center -40px;
-    /*height: 390px;*/
-    /*margin-top: 10px;*/
-    padding-bottom: 70px;
-    border: 10px solid #fff;
-    border-left-width: 0;
-    border-right-width: 0;
+    width: 800px;
+    margin: auto;
+    background: url(../img/about-me.jpg) top left;
 }
 
-#about-me .picture {
-    float: right;
-    border-radius: 50%;
-    border: 15px solid #fff;
-    /*padding: 2px;*/
-    background: white;
-    margin-top: 45px;
-}
-
-#about-me h3 {
-    padding: 45px 0 0 10px;
-    color: #7a7a7a;
-}
 
 #about-me p {
-    padding: 150px 0 0;
-    font-size: 33px;
-    line-height: 1.3em;
-    letter-spacing: -1px;
+    padding: 70px 55px;
+    font-size: 50px;
+    line-height: 1.1em;
+    letter-spacing: -3px;
     font-weight: 300;
-    color: #2f2f2f;
-    margin: 3px -40px 0 10px;
+    color: #4c4c4c;
+    /*text-shadow: 1px 1px black;*/
+    margin: 10px;
 }
 
 
 #about-me a {
     text-decoration: none;
-    color: rgb(209, 29, 144);
+    /*background-color: black;*/
+    /*padding: 0 10px;*/
+    display: inline-block;
+    color: #ee00a6;
+    /*border-bottom: 3px dashed #a10070;*/
+    padding-bottom: 4px;
+    /*color: rgb(209, 29, 144);*/
     /*text-shadow: -1px 0 0 black;*/
 }
 
 #about-me a:hover {
-    color: rgba(0, 46, 244, 0.98);
+    color: black;
 }
 
 #about-me a:hover {
@@ -131,7 +121,7 @@ h3 {
 
 #works ul {
     color: white;
-    margin: 10px 0 0 -40px;
+    margin: 20px 0 0 -40px;
 }
 
 #works ul li {
@@ -141,12 +131,13 @@ h3 {
 
 #works ul li a {
     text-decoration: none;
-    color: #5d5c5d;
-    font-size: 40px;
+    color: #4a4a4a;
+    font-size: 35px;
     font-weight: 300;
-    margin-left: 5px;
     letter-spacing: -1px;
-    border-bottom: 3px solid #95e1f4;
+    border-bottom: 3px solid #9ae8fc;
+    padding: 1px 10px 5px;
+    margin-left: -3px;
 }
 
 #works ul li p {
@@ -158,10 +149,9 @@ h3 {
     /*border-bottom: 3px solid #7ed1b5;*/
     /*border-radius: 10px;*/
     line-height: 1.4em;
-    letter-spacing: -1px;
     font-weight: 300;
-    padding: 7px;
-    margin: 0 0 20px 0;
+    padding: 14px 5px;
+    margin: 0 0 10px 0;
     color: #868686;
     font-size: 27px;
 }
@@ -204,12 +194,14 @@ h3 {
     list-style: none;
     overflow: hidden;
     padding: 10px;
-    margin: 19px 0 0;
+    margin: 35px 0 0;
     /*border-bottom: 1px solid #76BCAD;*/
+    /*border-left: 1px solid #95e1f4;*/
+    border-left: 3px solid #95e1f4;
+
 }
 
 #latest-posts ul li:last-child {
-    border-bottom: none;
 }
 
 #latest-posts ul li time {
@@ -221,19 +213,20 @@ h3 {
     font-weight: 100;
     font-size: 30px;
     letter-spacing: -1px;
+    padding-left: 10px;
 }
 
 #latest-posts ul li a {
-    margin-top: 2px;
+    margin-top: 3px;
     color: #4c4b4c;
-    font-size: 34px;
+    font-size: 38px;
     font-weight: 300;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     line-height: 1.2em;
     text-decoration: none;
     float: left;
     padding-bottom: 2px;
-    border-bottom: 3px solid #95e1f4;
+    padding-left: 10px;
 }
 
 body > footer {
@@ -515,13 +508,15 @@ body.blog-post-with-cover header nav a {
     }
 
     #about-me {
-        background-image: none;
-        padding: 40px 10px;
+        width: 100%;
+        background: #eeeeee;
+        padding: 0;
     }
 
     #about-me p {
-        padding: 10px;
-        margin: 10px;
+        padding: 40px 10px;
+        margin: 10px 30px;
+        font-size: 50px;
     }
 
     .blog-post-cover  {
