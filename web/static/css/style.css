@@ -261,6 +261,11 @@ body > footer strong {
     margin-right: 10px;
 }
 
+article.post {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 
 article.post section {
     width: 700px;
