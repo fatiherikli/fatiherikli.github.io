@@ -330,7 +330,7 @@ article.post section h3 {
     letter-spacing: -1px;
     font-weight: 300;
     color: #4e4e4e;
-    margin: 0;
+    margin: 40px 0 0;
 }
 
 article.post section h4 {
@@ -366,11 +366,9 @@ article.articles, article.comments {
 
 article.post footer {
     width: 700px;
-    margin: auto;
-    padding: 10px 20px;
-    padding-top: 15px;
+    padding: 15px 20px 10px;
     background-color: #f6f6f6;
-    margin-bottom: 50px;
+    margin: 30px auto 50px;
     border-radius: 20px;
 }
 
