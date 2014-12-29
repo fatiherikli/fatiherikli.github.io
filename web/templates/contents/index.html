@@ -4,177 +4,82 @@
 
 {% block content %}
 <div id="about-me">
-    <p>ben fatih. istanbul'da yaşıyorum.
-        <a href="http://hipo.biz">hipo</a>'da çalışıyorum.
-        python ve javascript ile
-        <a href="#works">bir şeyler</a> geliştiriyorum.
+    <img src="{{ STATIC_URL }}img/me.png" alt=""/>
+    <p>ben fatih,<br/>
+        sosyoloji okuyorum, <br/>
+        yazılım geliştiricisiyim. <br/>
+        web ağırlıklı <a href="#works">işler*</a> yapıyorum.
     </p>
-</div>
-
-<div id="latest-posts">
-    <div class="content">
-        <h3>son blog yazıları</h3>
-        <ul>
-            {% for post in latest_posts %}
-                <li>
-                    <time>{{ post.date_created|date }}</time>
-                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
 </div>
 
 <div id="works">
     <div class="content">
-        <h3>çalışmalar</h3>
+        <h3>işler*</h3>
+        <p>
+            <a href="http://arguman.org">argüman</a>
+            <a href="http://glitchit.org">glitch it!</a>
+            <a href="http://dbpatterns.com">dbpatterns</a>
+            <a href="http://dictdiffer.readthedocs.org">dictdiffer</a>
+            <a href="http://progresif.org/renaissance/ashes-are-burning">progresif.org</a>
+            <a href="http://fatiherikli.github.io/programming-language-network/">programlama dilleri ağı</a>
+            <a href="http://fatiherikli.github.io/brainfuck-visualizer">brainfuck visualizer</a>
+            <a href="http://fatiherikli.github.io/takke/">takke</a>
+            <a href="http://github.com/fatiherikli/kule">kule</a>
+            <a href="http://fatiherikli.github.io/mockup-designer">mockup designer</a>
+            <a href="http://ismailabi.com/quote/37">ismailabi.com</a>
+            <a href="http://fatiherikli.github.io/flappybird">flappybird</a>
+            <a href="http://github.com/fatiherikli/kule">worldcup</a>
+        </p>
+
+        <h3>sunum/konuşma</h3>
         <ul>
-            <li>
-                <a href="http://dbpatterns.com">dbpatterns</a>
+            <li><i>Konuk</i><a href="http://adaptasyon.tumblr.com/post/105016798063/adaptasyon-4-donem-2-bolum-arguman-org">Adaptasyon 2. Dönem, 4. Bölüm</a>
+            <span>Adaptasyon - 2014</span></li>
+            <li><i>Sunum</i><a href="http://arguman.org/blog/galatasaray-universitesi-munazara-egitimi-gunlerindeydik/">Argüman Analizi Platformu</a>
+            <span>Galatasaray Üniversitesi - 2014</span></li>
+            
+            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/dugumkume-42428350">Graph Databases & Neo4J</a>
+                <span>Özgür Web Günleri - 2014</span>
+                <span>PHPKonf - 2014</span>
+            </li>
+            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/karmak-alar-ve-networkx">Karmaşık Ağlar - Networkx</a><span>Python Istanbul - 2014</span></li>
+            <li><i>Eğitmen</i><a href="http://blog.fatiherikli.com/post/linux-yaz-kampi-2014/">Python & Django ile Web Geliştiriciliği</a><span>Linux Yaz Kampı - 2014</span></li>
+            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/lettuce-presentation">Behaviour Driven Development</a><span>Python Istanbul - 2014</span></li>
+            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/processing-programclar-iin-eskiz-defteri">Programcılar İçin Eskiz Defteri</a><span>Hackerspace - 2014</span></li>
+            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/django-orm-optimization">Django ORM Optimizasyonu</a><span>JsPyConf - 2013</span>
+                <span>Python Istanbul - 2012</span>
+            </li>
+            <li><i>Eğitmen</i><a href="http://blog.fatiherikli.com/post/bahcesehir-bmk-django-dersleri/">Django ile Web Geliştiriciliği</a> <span>Bahçeşehir Üniversitesi - 2012</span></li>
+            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/celery-15778287">Distributed Queue Management</a> <span>Python Istanbul - 2012</span></li>
 
-                <p>Dbpatterns web üzerinde veritabanı modellerini oluşturup
-                    paylaşabileceğiniz bir platformdur. Gerçek zamanlı olarak
-                    birden çok kişi bir model üzerinde çalışabilir. Ayrıca
-                    başkalarının oluşturduğu modelleri de platform üzerinden
-                    görebilirsiniz.</p>
-            </li>
-            <li>
-                <a href="http://progresif.org">progresif.org</a>
-
-                <p>Progresif rock/metal severler için online radyo.</p>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/image-glitcher">image-glitcher</a>
-
-                <p>Bir image glitching uygulamasıdır. HTML5 & Javascript
-                    ile geliştirilmiştir.</p>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/mockup-designer">mockup designer</a>
-
-                <p>
-                    Basit bir mockup düzenleme aracıdır. Backbone ile
-                    geliştirilmiştir.
-                    Html5 ile gelen localStorage özelliğini kullanmaktadır.
-                </p>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/ismailabi.com">ismailabi</a>
-
-                <p>
-                    Leyla ile mecnun dizisinden repliklerin bulunduğu ufak bir
-                    haftasonu projesidir. Replikler kullanıcı tarafından
-                    ekleniyor.
-                    Kodları github üzerinde açıktır.
-                </p>
-            </li>
-            <li class="load-more">
-                <a href="#">daha fazla göster</a>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/brainfuck-visualizer">brainfuck visualizer</a>
-
-                <p>
-                    Brainfuck dili için yaptığım online bir editör ve
-                    görselleştiricidir. Brainfuck sadece 8 komutu bulunan,
-                    turing-complete
-                    bir programlama dilidir. İlginç olan tarafı ise bu dilin
-                    interpreter'ını yazmak bu dilde bir şeyler yapmaktan
-                    çok daha basit olmasıdır :)
-                </p>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/kule">kule</a>
-
-                <p>Kule Mongodb için bir REST arayüzüdür. Kule'yi hızlıca
-                    çıkarmanız gereken
-                    mobile ya da web uygulamalarınız da bir backend servisi
-                    olarak
-                    kullanabilirsiniz.</p>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/dictdiffer">dictdiffer</a>
-
-                <p>Python'da iki adet dictionary'nin farkını almanızı ve bu
-                    farkı
-                    yeni dictionary üzerinde uygulamanızı sağlayan ufak bir
-                    kütüphanedir.</p>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/olay">olay</a>
-
-                <p>Python üzerinde backbone benzeri bir event dispatching
-                    kütüphanesidir.</p>
-            </li>
-            <li>
-                <a href="http://github.com/hipo/django-api-playground">django-api-playground</a>
-
-                <p>Django üzerinde API'larınız için test ortamı oluşturmanızı
-                    sağlayan, yeniden kullanılabilir bir uygulamadır.</p>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/nginxparser">nginx parser</a>
-
-                <p>Python üzerinde nginx konfigürasyon dosyalarınızı parse
-                    etmenizi sağlayan
-                    bir kütüphanedir.</p>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/backbone-notifications">backbone-notifications</a>
-
-                <p>Backbone.js için bir global notification yöneticisidir.
-                    Dbpatterns
-                    ve Mockup Designer projesinde kullanılmıştır.</p>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/backbone-autocomplete">backbone-autocomplete</a>
-
-                <p>Backbone.js için jquery-ui tarzı autocomplete widget'dır.
-                    Ekstra bir uğraş gerektirmeden direkt olarak backbone
-                    koleksiyonları üzerinden çalışmaktadır.</p>
-            </li>
-            <li>
-                <a href="http://github.com/fatiherikli/twister">twister</a>
-
-                <p>Wamp protokolünün Python üzerinde uygulanmış halidir. Aynı
-                    zamanda
-                    twister.js adında bir javascript istemcisi
-                    bulunmaktadır.</p>
-            </li>
         </ul>
-    </div>
-</div>
+        <h3>Fotoğraf</h3>
+        <div class="photo-list">
+            <a href="https://500px.com/photo/93727781/bluehouse-by-fatih-erikli?from=user_library">
+                <img src="https://ppcdn.500px.org/93727781/afb5c87d3009154731ddc6610cf4ff75272f8645/3.jpg?v=7">
+            </a>
 
-<div id="presentations">
-    <div class="content">
-        <h3>sunumlar</h3>
-        <ul>
-            <li>
-                <h4><a href="http://www.slideshare.net/lahavlevelaislabonita/lettuce-presentation">Lettuce ile Behaviour Driven Development</a></h4>
-                <p>Python Istanbul - <span>2014</span></p>
-            </li>
+            <a href="https://500px.com/sugecirmezat">
+                <img src="https://ppcdn.500px.org/93727779/f582597a6ef69fcb7ed401b8ad2146ea118496c4/3.jpg?v=9" alt="">
+            </a>
 
-            <li>
-                <h4><a href="http://www.slideshare.net/lahavlevelaislabonita/processing-programclar-iin-eskiz-defteri">Programcılar İçin Eskiz Defteri</a></h4>
-                <p>Hackerspace - <span>2014</span></p>
-            </li>
+            <a href="https://500px.com/photo/93727771/colors-by-fatih-erikli?from=user_library">
+                <img src="https://ppcdn.500px.org/93727771/80365dfad84230dcae11f467c1c20591a7ffb9a9/3.jpg?v=10" alt="">
+            </a>
 
-            <li>
-                <h4><a href="http://www.slideshare.net/lahavlevelaislabonita/django-orm-optimization">Django ORM Optimizasyonu</a></h4>
-                <p>Python Istanbul - <span>2012</span></p>
-                <p>JsPyConf Istanbul - <span>2013</span></p>
-            </li>
+            <a href="https://500px.com/photo/93727749/thee-silver-mt-zion-memorial-orchestra-by-fatih-erikli?from=user_library">
+                <img src="https://ppcdn.500px.org/93727749/25f753abee466d9af7d7585e87983fcb35f5fe89/3.jpg?v=5" alt="">
+            </a>
 
-            <li>
-                <h4><a href="http://www.slideshare.net/lahavlevelaislabonita/django-introduction-15778278">Django'ya Giriş</a></h4>
-                <p>Python Istanbul - <span>2012</span></p>
-            </li>
+            <a href="https://500px.com/photo/93727751/aytekhead-by-fatih-erikli?from=user_library">
+                <img src="https://ppcdn.500px.org/93727751/bc77cf20fa46f69b5155dade0a5bbcc7b155b9dd/3.jpg?v=7" alt="">
+            </a>
 
-            <li>
-                <h4><a href="http://www.slideshare.net/lahavlevelaislabonita/celery-15778287">Distributed Queue Management - Celery</a></h4>
-                <p>Python Istanbul - <span>2012</span></p>
-            </li>
-        </ul>
+            <a href="https://500px.com/sugecirmezat" class="more">
+                <span>daha fazla</span>
+            </a>
+
+        </div>
     </div>
 </div>
 
