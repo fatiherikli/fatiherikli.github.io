@@ -32,7 +32,7 @@ body > header nav {
 
 header nav ul {
     margin: 0 0 0 -10px;
-    font-size: 30px;
+    font-size: 28px;
     padding: 0 0 35px 15px;
     overflow: hidden;
 }
@@ -44,6 +44,10 @@ header nav ul li {
     letter-spacing: 2px;
     font-weight: 100;
     color: #cfcfcf;
+}
+
+header nav ul li:last-child {
+    margin-left: -3px;
 }
 
 header nav ul li a {
@@ -540,14 +544,17 @@ body.blog-post-with-cover header nav a {
 
     #about-me {
         width: 100%;
-        background: #eeeeee;
         padding: 0;
+    }
+
+    #about-me img {
+        display: none
     }
 
     #about-me p {
         padding: 40px 10px;
         margin: 10px 30px;
-        font-size: 50px;
+        font-size: 35px;
     }
     
     .blog-post-cover  {
