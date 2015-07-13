@@ -1,6 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,latin-ext);
+
 body {
-    font-family:  "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body > header {
@@ -9,17 +11,17 @@ body > header {
 }
 
 body > header h1 {
-    font-size: 40px;
-    font-weight: 100;
-    letter-spacing: 4px;
     margin: 0 10px 0 5px;
-    color: #717171;
     text-align: center;
 }
 
 body > header h1 a {
-    color: #717171;
+    color: #7E7E7E;
     text-decoration: none;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 100;
 }
 
 body > header i {
@@ -31,28 +33,32 @@ body > header nav {
 }
 
 header nav ul {
-    margin: 0 0 0 -10px;
-    font-size: 28px;
-    padding: 0 0 35px 15px;
     overflow: hidden;
 }
 
 header nav ul li {
     float: left;
     list-style: none;
-    margin-right: 17px;
+    margin-right: 2px;
     letter-spacing: 2px;
     font-weight: 100;
-    color: #cfcfcf;
+    color: #EAEAEA;
+    font-size: 20px;
+    padding: 5px 0;
+    margin: 3px 0 20px;
+    text-align: center;
+    border-right: 1px solid rgb(247, 245, 245);
 }
 
 header nav ul li:last-child {
-    margin-left: -3px;
+    border-right: none;
 }
 
 header nav ul li a {
-    color: #827b85;
+    color: #A6A6A6;
+    font-size: 20px;
     text-decoration: none;
+    padding: 1px 7px;
 }
 
 header nav ul li a:hover {
@@ -66,7 +72,7 @@ header nav ul li a:hover {
 }
 
 h3 {
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 300;
     margin: 0;
     letter-spacing: -3px;
@@ -82,7 +88,7 @@ h3 {
 
 
 #about-me p {
-    padding: 20px 55px;
+    padding: 0 55px;
     font-size: 32px;
     line-height: 1.1em;
     letter-spacing: -1px;
@@ -376,10 +382,10 @@ article.post img {
 }
 
 article.post section {
-    color: #5d5d5d;
-    font-size: 25px;
+    color: #545454;
+    font-size: 21px;
     font-weight: 300;
-    line-height: 1.5em;
+    line-height: 1.4em;
 }
 
 article.post p code {
@@ -390,9 +396,9 @@ article.post p code {
 }
 
 article.post section a {
-    color: #ff1c8d;
+    color: #2D2D2D;
     text-decoration: none;
-    /*border-bottom: 1px solid #ffdfe4;*/
+    border-bottom: 3px solid #FFEB5E
 }
 
 article.post section h3 {
@@ -545,6 +551,8 @@ body.blog-post-with-cover header nav a {
     #about-me {
         width: 100%;
         padding: 0;
+        margin: 0;
+        font-size: 25px;
     }
 
     #about-me img {
@@ -552,9 +560,10 @@ body.blog-post-with-cover header nav a {
     }
 
     #about-me p {
-        padding: 40px 10px;
-        margin: 10px 30px;
-        font-size: 35px;
+        padding: 28px 10px;
+        margin: 10px 16px;
+        font-size: 28px;
+        width: auto;
     }
     
     .blog-post-cover  {
@@ -582,6 +591,52 @@ body.blog-post-with-cover header nav a {
 
     body.blog-post-with-cover header nav a {
         color: #a7a7a7;
+    }
+
+    #works h3 {
+        font-size: 40px;
+    }
+
+    #works p a {
+        font-size: 22px;
+    }
+
+    #works ul li i {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #works ul li a {
+        font-size: 16px;
+    }
+
+    #works ul li span {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .photo-list img {
+        width: 130px;
+    }
+
+    .photo-list .more span {
+        background: white;
+        display: block;
+        width: 105px;
+        height: 130px;
+        padding-top: 30px;
+        text-align: right;
+        padding-right: 0px;
+        font-size: 30px;
+        line-height: 1.3em;
+        color: rgb(189, 189, 189);
+        font-weight: 100;
+    }
+
+    footer li {
+        font-size: 20px;
+        margin-left: -40px;
     }
 
 }
