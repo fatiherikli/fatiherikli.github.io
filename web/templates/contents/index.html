@@ -5,55 +5,256 @@
 {% block content %}
 <div id="about-me">
     <img src="{{ STATIC_URL }}img/me.png" alt=""/>
-    <p>ben fatih,<br/>
-        sosyoloji okuyorum, <br/>
-        yazılım geliştiricisiyim. <br/>
-        web ağırlıklı <a href="#works">işler*</a> yapıyorum.
+    <p>Hi! I'm Fatih Erikli.<br/>
+        I study Sociology at Istanbul University, <br/>
+        I love to ride two wheelers, <br/>
+        I build <a href="#works">things*</a> on the web.
     </p>
 </div>
 
-<div id="works">
-    <div class="content">
-        <h3>işler*</h3>
-        <p>
-            <a href="http://arguman.org">argüman</a>
-            <a href="http://glitchit.org">glitch it!</a>
-            <a href="http://dbpatterns.com">dbpatterns</a>
-            <a href="http://dictdiffer.readthedocs.org">dictdiffer</a>
-            <a href="http://progresif.org/renaissance/ashes-are-burning">progresif.org</a>
-            <a href="http://fatiherikli.github.io/programming-language-network/">programlama dilleri ağı</a>
-            <a href="http://fatiherikli.github.io/brainfuck-visualizer">brainfuck visualizer</a>
-            <a href="http://fatiherikli.github.io/takke/">takke</a>
-            <a href="http://github.com/fatiherikli/kule">kule</a>
-            <a href="http://fatiherikli.github.io/mockup-designer">mockup designer</a>
-            <a href="http://ismailabi.com/quote/37">ismailabi.com</a>
-            <a href="http://fatiherikli.github.io/flappybird">flappybird</a>
-            <a href="http://github.com/fatiherikli/kule">worldcup</a>
-        </p>
+<div class="content works-container">
+	<h3 class="section-title">*projects</h3>
+	<div class="works">
+		<div class="work">
+			<div class="work-title">
+				<a href="http://arguman.org">argüman</a>
+			</div>
+			<div class="work-description">
+				<a href="http://arguman.org">Open-source argument mapping and analysis platform</a>
+			</div>
+			<div class="work-detail">
+				Built with Python and Django, running on Gunicorn.
+				Uses Wordnet and some NLTK modules for semantic categorisation.
+				<ul>
+					<li><a href="http://arguman.org">Project Homepage</a></li>
+					<li><a href="http://github.com/arguman">Source code</a></li>
+				</ul>
+			</div>
+			<div class="work-image">
+				<a href="http://arguman.org"><img src="/static/img/works/arguman.jpg"></a>
+			</div>
+		</div>
+		<div class="work">
+			<div class="work-title">
+				<a href="http://fatiherikli.github.io/react-designer">react-designer</a>
+			</div>
+			<div class="work-description">
+				<a href="http://fatiherikli.github.io/react-designer">Easy-to configure, editable vector graphics 
+		in your react components.</a>
+			</div>
+			<div class="work-image">
+				<a href="http://fatiherikli.github.io/react-designer"><img src="/static/img/works/react-designer.jpg" /></a>
+			</div>
+			<div class="work-detail">
+				Used webpack and css-modules on development mode.
+				<ul>
+					<li><a href="http://fatiherikli.github.io/react-designer">Project Homepage</a></li>
+					<li><a href="http://github.com/fatiherikli/react-designer">Source code</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="work">
+			<div class="work-title">
+				<a href="http://fatiherikli.github.io/fil">fil</a>
+			</div>
+			<div class="work-description">
+				<a href="http://fatiherikli.github.io/fil">A playground for in-browser interpreters.</a>
+			</div>
+			<div class="work-detail">
+				Built with React and Redux. The state is persisting on the 
+				browser's local storage with
+				a Redux middleware. Language interpreters are running
+				on web workers. Workers are spawming on demand.
+				Used gulp on development mode.
+				<ul>
+					<li><a href="http://fatiherikli.github.io/fil">Project Homepage</a></li>
+					<li><a href="http://github.com/fatiherikli/fil">Source code</a></li>
+				</ul>
+			</div>
+			<div class="work-image">
+				<a href="http://fatiherikli.github.io/fil"><img src="/static/img/works/fil.jpg"></a>
+			</div>
+		</div>
+		<div class="work">
+			<div class="work-title">
+				<a href="http://dbpatterns.com">dbpatterns</a>
+			</div>
+			<div class="work-description">
+				<a href="http://dbpatterns.com">Create and share database models</a>
+			</div>
+			<div class="work-detail">
+				Built with Django and Backbone.js, and socket.io
+				for realtime updates. Used MongoDB for storing
+				newsfeed, notifications and documents. The rest of the
+				data storing on relational database.
+				<ul>
+					<li><a href="http://dbpatterns.com">Project Homepage</a></li>
+					<li><a href="http://github.com/fatiherikli/fil">Source code</a></li>
+				</ul>
+			</div>
+			<div class="work-image">
+				<a href="http://dbpatterns.com"><img src="/static/img/works/dbpatterns.jpg"></a>
+			</div>
+		</div>
+		<div class="work">
+			<div class="work-title">
+				<a href="http://fatiherikli.github.io/brainfuck-visualizer">brainfuck visualizer</a>
+			</div>
+			<div class="work-description">
+				<a href="http://fatiherikli.github.io/brainfuck-visualizer">Brainfuck Interpreter and Visualizer on Browser</a>
+			</div>
+			<div class="work-detail">
+				It was a weekend project. I built it with Backbone.js. Supports
+				step by step debugging, delay time between instructions, shows
+				pointer position with caret by instantaneously.
+				<ul>
+					<li><a href="http://fatiherikli.github.io/brainfuck-visualizer">Project Homepage</a></li>
+					<li><a href="http://github.com/fatiherikli/brainfuck-visualizer">Source code</a></li>
+				</ul>
+			</div>
+			<div class="work-image">
+				<a href="http://fatiherikli.github.io/brainfuck-visualizer"><img src="/static/img/works/brainfuck-visualizer.jpg"></a>
+			</div>
+		</div>
+		<div class="work">
+			<div class="work-title">
+				<a href="http://fatiherikli.github.io/mockup-designer">mockup designer</a>
+			</div>
+			<div class="work-description">
+				<a href="http://fatiherikli.github.io/mockup-designer">The mockup tool that uses your local storage as backend</a>
+			</div>
+			<div class="work-detail">
+				Built with Backbone.js. It allows extend the toolset with
+				an internal declarative API. The data layer is loosely coupled, It's 
+				easy to integrate with a RESTful API.
+				<ul>
+					<li><a href="http://fatiherikli.github.io/mockup-designer">Project Homepage</a></li>
+					<li><a href="http://github.com/fatiherikli/mockup-designer">Source code</a></li>
+				</ul>
+			</div>
+			<div class="work-image">
+				<a href="http://fatiherikli.github.io/mockup-designer"><img src="/static/img/works/mockup-designer.jpg"></a>
+			</div>
+		</div>
+		<div class="work">
+			<div class="work-title">
+				<a href="http://fatiherikli.github.io/programming-language-network">programming language network</a>
+			</div>
+			<div class="work-description">
+				<a href="http://fatiherikli.github.io/programming-language-network">The network of programming languages.</a>
+			</div>
+			<div class="work-detail">
+				The graph is rendered on Gephi app. I used D3.js for drawing 
+				nodes on the browser. I feed the gml file with a python script that uses
+				NetworkX for building graph structure.
+				<ul>
+					<li><a href="http://fatiherikli.github.io/programming-language-network">Project Homepage</a></li>
+					<li><a href="http://github.com/fatiherikli/programming-language-network">Source code</a></li>
+				</ul>
+			</div>
+			<div class="work-image">
+				<a href="http://fatiherikli.github.io/programming-language-network"><img src="/static/img/works/programming-language-network.jpg"></a>
+			</div>
+		</div>
+		<div class="work without-image">
+			<div class="work-title">
+				<a href="http://dictdiffer.readthedocs.org/en/latest/">dictdiffer</a>
+			</div>
+			<div class="work-description">
+				<a href="http://dictdiffer.readthedocs.org/en/latest/">Diff and patch for python dict objects.</a>
+			</div>
+			<div class="work-detail">
+				Dictdiffer is a helper module that helps you to diff and patch dictionaries in Python. The project is maintaining and developing by Invenio Software now.
+				<ul>
+					<li><a href="http://dictdiffer.readthedocs.org/en/latest/">Documentation</a></li>
+					<li><a href="https://github.com/inveniosoftware/dictdiffer">Source code</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="work without-image">
+			<div class="work-title">
+				<a href="https://github.com/fatiherikli/kule">kule</a>
+			</div>
+			<div class="work-description">
+				<a href="https://github.com/fatiherikli/kule">REST interface for MongoDB</a>
+			</div>
+			<div class="work-detail">
+				I used Bottle and Pymongo libraries. It can be used
+				as a temporary backend service for your persistance
+				needed apps. Supports module system and have some
+				builtin modules.
+				<ul>
+					<li><a href="https://github.com/fatiherikli/kule">Documentation</a></li>
+					<li><a href="https://github.com/fatiherikli/kule">Source code</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="work without-image">
+			<div class="work-title">
+				<a href="https://github.com/fatiherikli/nginxparser">nginxparser</a>
+			</div>
+			<div class="work-description">
+				<a href="https://github.com/fatiherikli/nginxparser">Nginx configuration parser in Python.</a>
+			</div>
+			<div class="work-detail">
+				Parses nginx configuration files. The parser written
+				with Pyparser which is a python library that allows you to generate parsers with own internal DSL.
+				<ul>
+					<li><a href="https://github.com/fatiherikli/nginxparser">Documentation</a></li>
+					<li><a href="https://github.com/fatiherikli/nginxparser">Source code</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="work without-image">
+			<div class="work-title">
+				<a href="https://github.com/fatiherikli/nginxparser">django model parser</a>
+			</div>
+			<div class="work-description">
+				<a href="https://github.com/fatiherikli/nginxparser">A parser that detects django models from the provided python script.</a>
+			</div>
+			<div class="work-detail">
+				It uses Python's AST (abstract syntax trees) module. Parsers returns the skeleton of provided django models. It's using on dbpatterns for generating diagrams
+				from django models. 
+				<ul>
+					<li><a href="https://github.com/fatiherikli/nginxparser">Documentation</a></li>
+					<li><a href="https://github.com/fatiherikli/nginxparser">Source code</a></li>
+				</ul>
+			</div>
+		</div>
 
-        <h3>sunum/konuşma</h3>
+	</div>
+</div>
+
+<div class="presentations">
+    <div class="content">
+        <h3 class="section-title">Talks</h3>
         <ul>
-            <li><i>Konuk</i><a href="http://adaptasyon.tumblr.com/post/105016798063/adaptasyon-4-donem-2-bolum-arguman-org">Adaptasyon 2. Dönem, 4. Bölüm</a>
+        <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/">Text Processing with Python</a>
+            <span>Python Istanbul - 2016</span></li>
+        <li><i>Trainer</i><a href="http://blog.fatiherikli.com/post/linux-yaz-kampi-2014/">Web Development with Python & Django</a><span>Linux Yaz Kampı - 2014</span>
+        <span>Linux Yaz Kampı - 2015</span></li>
+        	  <li><i>Trainer</i><a href="#">Web Development with Python, Flask, MongoDB</a> <span>Akademik Bilişim 2015</span></li>
+            <li><i>Guest</i><a href="http://adaptasyon.tumblr.com/post/105016798063/adaptasyon-4-donem-2-bolum-arguman-org">Adaptasyon 2. Season, 4. Episode</a>
             <span>Adaptasyon - 2014</span></li>
-            <li><i>Sunum</i><a href="http://arguman.org/blog/galatasaray-universitesi-munazara-egitimi-gunlerindeydik/">Argüman Analizi Platformu</a>
-            <span>Galatasaray Üniversitesi - 2014</span></li>
+            <li><i>Talk</i><a href="http://arguman.org/blog/galatasaray-universitesi-munazara-egitimi-gunlerindeydik/">Argument Mapping Platform</a>
+            <span>Galatasaray University - 2014</span></li>
             
-            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/dugumkume-42428350">Graph Databases & Neo4J</a>
+            <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/dugumkume-42428350">Graph Databases and Neo4J</a>
                 <span>Özgür Web Günleri - 2014</span>
                 <span>PHPKonf - 2014</span>
             </li>
-            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/karmak-alar-ve-networkx">Karmaşık Ağlar - Networkx</a><span>Python Istanbul - 2014</span></li>
-            <li><i>Eğitmen</i><a href="http://blog.fatiherikli.com/post/linux-yaz-kampi-2014/">Python & Django ile Web Geliştiriciliği</a><span>Linux Yaz Kampı - 2014</span></li>
-            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/lettuce-presentation">Behaviour Driven Development</a><span>Python Istanbul - 2014</span></li>
-            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/processing-programclar-iin-eskiz-defteri">Programcılar İçin Eskiz Defteri</a><span>Hackerspace - 2014</span></li>
-            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/django-orm-optimization">Django ORM Optimizasyonu</a><span>JsPyConf - 2013</span>
+            <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/karmak-alar-ve-networkx">Complex Networks in Python</a><span>Python Istanbul - 2014</span></li>
+            <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/lettuce-presentation">Behaviour Driven Development</a><span>Python Istanbul - 2014</span></li>
+             <li><i>Guest</i><a href="https://soundcloud.com/ntvradyo/baska-bir-gozle-7-aralik-2014">NTV Radyo - Başka Bir Gözle</a><span>NTV Radyo - 2014</span></li>
+            <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/processing-programclar-iin-eskiz-defteri">Sketchbook for Programmers (Processing)</a><span>Hackerspace - 2014</span></li>
+            <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/django-orm-optimization">Django ORM Optimization</a><span>JsPyConf - 2013</span>
                 <span>Python Istanbul - 2012</span>
             </li>
-            <li><i>Eğitmen</i><a href="http://blog.fatiherikli.com/post/bahcesehir-bmk-django-dersleri/">Django ile Web Geliştiriciliği</a> <span>Bahçeşehir Üniversitesi - 2012</span></li>
-            <li><i>Sunum</i><a href="http://www.slideshare.net/lahavlevelaislabonita/celery-15778287">Distributed Queue Management</a> <span>Python Istanbul - 2012</span></li>
+            <li><i>Trainer</i><a href="http://blog.fatiherikli.com/post/bahcesehir-bmk-django-dersleri/">Web Development with Django</a> <span>Bahçeşehir University - 2012</span></li>
+            <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/celery-15778287">Distributed Queue Management</a> <span>Python Istanbul - 2012</span></li>
 
         </ul>
-        <h3>Fotoğraf</h3>
+        <h3>Photos</h3>
         <div class="photo-list">
             <a href="https://500px.com/photo/93727781/bluehouse-by-fatih-erikli?from=user_library">
                 <img src="https://ppcdn.500px.org/93727781/afb5c87d3009154731ddc6610cf4ff75272f8645/3.jpg?v=7">
@@ -76,7 +277,7 @@
             </a>
 
             <a href="https://500px.com/sugecirmezat" class="more">
-                <span>daha fazla</span>
+                <span>more photos</span>
             </a>
 
         </div>

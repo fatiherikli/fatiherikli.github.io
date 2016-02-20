@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,latin-ext);
-
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Open Sans', sans-serif;
+    font-weight: 300;
+
 }
 
 body > header {
@@ -89,13 +89,13 @@ h3 {
 
 #about-me p {
     padding: 0 55px;
-    font-size: 32px;
-    line-height: 1.1em;
+    font-size: 23px;
+    line-height: 1.4em;
     letter-spacing: -1px;
-    font-weight: 300;
-    color: #686868;
+    color: #929292;
+    font-weight: 100;
     /*text-shadow: 1px 1px black;*/
-    margin: 50px 10px 10px -10px;
+    margin: 80px 10px 10px -10px;
     float: left;
     width: 370px;
 }
@@ -130,61 +130,24 @@ h3 {
     width: 230px;
 }
 
-#works {
+.presentations {
     overflow: hidden;
     margin-top: 30px;
 }
 
-#works h3 {
-    color: black;
-    border-bottom: 3px solid yellow;
-    float: left;
-}
-
-#works p {
+.presentations p {
     clear: both;
     margin-left: -4px;
     padding-top: 9px;
 }
 
-#works p a {
-    font-size: 27px;
-    background: #f4f4f4;
-    color: #595959;
-    text-decoration: none;
-    border-bottom: 1px solid #e4e4e4;
-    margin: 4px 4px;
-    padding: 3px 7px;
-    display: inline-block;
-    letter-spacing: -1px;
-    font-weight: 300;
-}
-
-#works p a.others {
-    background: #fff;
-    border-bottom: 0;
-    font-size: 23px;
-}
-
-#works p a:hover {
-    border-bottom: 1px solid #7cc7e6;
-    color: black;
-    background: #EDEDED;
-}
-
-#works p a.others:hover {
-    background: #fff;
-    border-bottom: 0;
-}
-
-
-#works ul {
+.presentations ul {
     clear: both;
     padding: 15px 10px 10px;
     margin: 0;
 }
 
-#works ul li {
+.presentations ul li {
     margin: 0;
     padding: 2px;
     list-style-type: none;
@@ -192,12 +155,12 @@ h3 {
     margin-bottom: 20px;
 }
 
-#works ul li a {
+.presentations ul li a {
     color: #424242;
     text-decoration: none;
 }
 
-#works ul li i {
+.presentations ul li i {
     font-style: normal;
     color: #CCCCCC;
     width: 85px;
@@ -206,7 +169,7 @@ h3 {
     padding-left: 10px;
 }
 
-#works ul li span {
+.presentations ul li span {
     display: block;
     color: #c1c1c1;
     font-size: 18px;
@@ -468,6 +431,13 @@ article.post footer {
     background: rgba(0, 0, 0, 0.22);
 }
 
+.section-title {
+    color: black;
+    border-bottom: 3px solid yellow;
+    float: left;
+}
+
+
 body.blog-post-with-cover .post header {
     background-color: rgba(172, 172, 172, 0.01);
     margin-bottom: 40px;
@@ -493,6 +463,91 @@ body.blog-post-with-cover header nav a:hover {
 
 body.blog-post-with-cover header nav a {
     color: #ffffff;
+}
+
+.works-container {
+    margin-top: 30px;
+}
+
+.works {
+    padding-top: 70px;
+    margin-bottom: 10px;
+}
+
+.work {
+    margin-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #ececec;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.work-image {
+    width: 65%;
+    float: left;
+}
+
+.work-detail {
+    float: right;
+    width: 210px;
+    margin-left: 10px;
+    border-left: 3px solid #ececec;
+    padding: 10px;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.work-detail ul {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.work-detail ul li {
+    list-style: none;
+    padding: 0;
+}
+
+.work-detail ul li a {
+    color: inherit;
+}
+
+.work-title {
+    font-size: 1.5em;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.work-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.work-description {
+    padding: 0 10px 20px 10px;
+}
+
+.work-description a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.work.without-image .work-detail {
+    width: 96%;
+    padding-left: 15px;
+    font-size: 1em;
+}
+
+.work.without-image .work-detail li {
+    float: left;
+    margin-right: 10px;
+}
+
+.work.without-image .work-title {
+    font-size: 2em;
 }
 
 @media screen and (max-width: 850px) {
@@ -570,6 +625,16 @@ body.blog-post-with-cover header nav a {
         display: none;
     }
 
+    .work-detail {
+        width: 95%;
+        margin: auto;
+        border: none;
+    }
+
+    .work-image {
+        width: 100%;
+    }
+
     body.blog-post-with-cover .post header {
         background-color: rgba(172, 172, 172, 0.14);
         margin-bottom: 40px;
@@ -593,25 +658,25 @@ body.blog-post-with-cover header nav a {
         color: #a7a7a7;
     }
 
-    #works h3 {
+    .presentations h3 {
         font-size: 40px;
     }
 
-    #works p a {
+    .presentations p a {
         font-size: 22px;
     }
 
-    #works ul li i {
+    .presentations ul li i {
         display: block;
         width: 100%;
         padding-left: 0;
     }
 
-    #works ul li a {
+    .presentations ul li a {
         font-size: 16px;
     }
 
-    #works ul li span {
+    .presentations ul li span {
         margin-left: 0;
         font-size: 16px;
     }
