@@ -161,7 +161,6 @@ h3 {
 }
 
 #about-me:before {
-    background: #ff7c53;
     width: 200px;
     height: 200px;
     position: absolute;
@@ -171,7 +170,7 @@ h3 {
     margin-left: 30px;
     margin-top: 20px;
     transform: rotate(-2deg);
-    background: url(../img/dots.svg);
+    background: url(../img/dots.svg) #ff7c53;
 }
 
 #about-me:after {
