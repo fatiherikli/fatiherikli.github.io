@@ -306,18 +306,19 @@ h3 {
     /*float: left;*/
     /*width: 200px;*/
     display: block;
-    color: #9f9ea6;
+    color: #4c4b4c;
     font-weight: 100;
     font-size: 30px;
     letter-spacing: -1px;
-    padding-left: 10px;
+    padding: 2px 10px;
     font-size: 1.1em;
-    border-bottom: 3px solid #9f9ea6;
+    background: yellow;
     float: left;
 }
 
 #latest-posts ul li a {
     clear: left;
+    border-top: 3px solid #4c4b4c;
     margin-top: 3px;
     color: #4c4b4c;
     font-size: 45px;
