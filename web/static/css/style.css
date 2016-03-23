@@ -20,10 +20,9 @@ body > header h1 {
 body > header h1 a {
     color: #7E7E7E;
     text-decoration: none;
-    font-weight: 300;
     font-size: 24px;
     letter-spacing: 2px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 body > header i {
@@ -43,7 +42,7 @@ header nav ul li {
     list-style: none;
     margin-right: 2px;
     letter-spacing: 2px;
-    font-weight: 100;
+    font-weight: 300;
     color: #EAEAEA;
     font-size: 20px;
     padding: 5px 0;
@@ -82,111 +81,65 @@ h3 {
 }
 
 #about-me {
-    width: 800px;
+    width: 700px;
     margin: auto;
-    overflow: hidden;
-    padding-bottom: 20px;
-}
-
-
-#about-me p {
-    padding: 0 55px;
-    font-size: 30px;
-    line-height: 1.4em;
-    letter-spacing: -1px;
-    color: #929292;
-    font-weight: 100;
-    /*text-shadow: 1px 1px black;*/
-    margin: 75px 10px 10px -10px;
-    float: left;
-    width: 450px;
-}
-
-#about-me .info {
-    margin: 5px 0 0 25px;
-    padding: 5px 20px;
-}
-
-#about-me u {
-    text-decoration: none;
-    border-bottom: 3px solid yellow;
-    color: black;
-}
-
-#about-me a {
-    text-decoration: none;
-    /*background-color: black;*/
-    /*padding: 0 10px;*/
-    display: inline-block;
-    color: black;
-    border-bottom: 3px solid yellow;
-    padding-bottom: 4px;
-    /*color: rgb(209, 29, 144);*/
-    /*text-shadow: -1px 0 0 black;*/
-}
-
-#about-me a:hover {
-    color: black;
-}
-
-#about-me a:hover {
-    /*background-color: #f1c40f;*/
-    /*color: white;*/
-}
-
-#about-me img {
-    margin-left: 35px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    float: left;
-    width: 175px;
-    border-radius: 50%;
-    padding: 10px;
-    
-}
-
-#about-me span:after {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    background: transparent;
-    border-radius: 50%;
-    margin-left: -200px;
-    margin-top: 25px;
-    z-index: -1;
-    border: 3px solid black;
-    background: #fff;
-}
-
-#about-me:before {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    z-index: -2;
-    margin-left: 30px;
     margin-top: 20px;
-    transform: rotate(-2deg);
-    background: url(../img/dots.svg) #ff7c53;
+    padding-bottom: 20px;
+    position: relative;
 }
 
 #about-me:after {
-    transform: rotate(3deg);
-    background: blue;
-    mix-blend-mode: exclusion;
-    width: 200px;
-    height: 200px;
-    position: absolute;
     content: "";
-    display: inline-block;
-    z-index: -2;
-    margin-left: -750px;
-    margin-top: 30px;
+    clear: both;
+    display: block;
 }
 
+#about-me .picture {
+    width: 180px;
+    float: left;
+}
+
+#about-me .picture img {
+    width: 100%;
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid black;
+    background: white;
+}
+
+#about-me .picture:after {
+    width: 220px;
+    height: 220px;
+    background: url(../img/dots.svg?v=1.2) transparent;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+}
+
+#about-me .picture:before {
+    width: 220px;
+    height: 220px;
+    background: yellow;
+    display: inline-block;
+    position: absolute;
+    z-index: -2;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: rotate(10deg);
+}
+
+#about-me p {
+    float: left;
+    width: 350px;
+    margin-left: 80px;
+    margin-top: 65px;
+    font-size: 1.4em;
+    color: #2b2b2b;
+}
 
 .presentations {
     overflow: hidden;
@@ -688,7 +641,7 @@ body.blog-post-with-cover header nav a {
     }
 
     article.post section {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     #about-me {
@@ -699,16 +652,21 @@ body.blog-post-with-cover header nav a {
         text-align: center;
     }
 
-    #about-me:after {display: none;}
-    #about-me:before {display: none;}
+    #about-me .picture:after {display: none;}
+    #about-me .picture:before {display: none;}
 
     #about-me span:after {display: none}
-    #about-me img {
+    #about-me .picture {
         /*display: none*/
         float: none;
         margin: auto;
         border: 3px solid black;
         padding: 10px;
+        width: 120px;
+    }
+
+    #about-me .picture img {
+        width: 140%;
     }
 
     #about-me p {
@@ -726,6 +684,15 @@ body.blog-post-with-cover header nav a {
         width: 95%;
         margin: auto;
         border: none;
+        margin-top: -20px;
+    }
+
+    .work.without-image .work-detail {
+        width: 100%;
+        margin: 0 10px;
+        margin-top: -10px;
+        padding: 0;
+        float: none;
     }
 
     .work-image {
@@ -757,7 +724,6 @@ body.blog-post-with-cover header nav a {
 
     article.post header {
         width: 95%;
-        display: none;
     }
 
     .presentations h3 {
@@ -804,6 +770,16 @@ body.blog-post-with-cover header nav a {
     footer li {
         font-size: 20px;
         margin-left: -40px;
+    }
+
+    #latest-posts ul li {
+        margin-top: 20px;
+    }
+
+    #latest-posts ul li a {
+        font-size: 1.5em;
+        line-height: 1.1em;
+        padding-top: 10px;
     }
 
 }

@@ -4,10 +4,11 @@
 
 {% block content %}
 <div id="about-me">
-    <span><img src="{{ STATIC_URL }}img/me-2.png" alt=""/></span>
+    <div class="picture">
+    	<img src="{{ STATIC_URL }}img/me-2.png" alt=""/>
+    </div>
     <p>
-    A software developer who loves building <u>*things</u> for software developers. 
-    <br />
+    	A software developer who loves building <u>*things</u> for software developers. 
     </p>
 </div>
 
@@ -31,6 +32,24 @@
 			</div>
 			<div class="work-image">
 				<a href="http://arguman.org"><img src="/static/img/works/arguman.jpg"></a>
+			</div>
+		</div>
+		<div class="work">
+			<div class="work-title">
+				<a href="http://github.com/fatiherikli/klassify">klassify</a>
+			</div>
+			<div class="work-description">
+				<a href="http://github.com/fatiherikli/klassify">Text classification service based on Redis</a>
+			</div>
+			<div class="work-detail">
+				Built on top of Tornado and React. Trained data stored on a Redis database with a prefix. Uses web socket for real-time monitor on the client-side, and Pub/Sub interface of Redis with a Tornado endpoint.
+				<ul>
+					<li><a href="http://github.com/fatiherikli/klassify">Project Homepage</a></li>
+					<li><a href="http://github.com/fatiherikli/klassify">Source code</a></li>
+				</ul>
+			</div>
+			<div class="work-image">
+				<a href="http://github.com/fatiherikli/klassify"><img src="/static/img/works/klassify.jpg"></a>
 			</div>
 		</div>
 		<div class="work">
@@ -228,6 +247,8 @@
     <div class="content">
         <h3 class="section-title">Talks</h3>
         <ul>
+        <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/">Text Classification with Redis</a>
+            <span>Python Istanbul - 2016</span></li>
         <li><i>Instructor</i><a href="http://programlamagunleri.bilisimkarabuk.com">Python & Django Workshop</a><span>Programlama Günleri - 2016</span>
         </li>
         <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/">Text Processing with Python</a>
