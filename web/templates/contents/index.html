@@ -8,239 +8,36 @@
     	<img src="{{ STATIC_URL }}img/me-2.png" alt=""/>
     </div>
     <p>
-    	A software developer who loves building <u>*things</u> for software developers. 
+    	A software developer who loves <u>generative</u> things with fun algorithms.
     </p>
 </div>
 
 <div class="content works-container">
 	<h3 class="section-title">*projects</h3>
-	<div class="works">
-		<div class="work">
-			<div class="work-title">
-				<a href="http://arguman.org">argüman</a>
-			</div>
-			<div class="work-description">
-				<a href="http://arguman.org">Open-source argument mapping and analysis platform</a>
-			</div>
-			<div class="work-detail">
-				Built with Python and Django, running on Gunicorn.
-				Uses Wordnet and some NLTK modules for semantic categorisation.
-				<ul>
-					<li><a href="http://arguman.org">Project Homepage</a></li>
-					<li><a href="http://github.com/arguman">Source code</a></li>
-				</ul>
-			</div>
-			<div class="work-image">
-				<a href="http://arguman.org"><img src="/static/img/works/arguman.jpg"></a>
-			</div>
-		</div>
-		<div class="work">
-			<div class="work-title">
-				<a href="http://github.com/fatiherikli/klassify">klassify</a>
-			</div>
-			<div class="work-description">
-				<a href="http://github.com/fatiherikli/klassify">Text classification service based on Redis</a>
-			</div>
-			<div class="work-detail">
-				Built on top of Tornado and React. Trained data stored on a Redis database with a prefix. Uses web socket for real-time monitor on the client-side, and Pub/Sub interface of Redis with a Tornado endpoint.
-				<ul>
-					<li><a href="http://github.com/fatiherikli/klassify">Project Homepage</a></li>
-					<li><a href="http://github.com/fatiherikli/klassify">Source code</a></li>
-				</ul>
-			</div>
-			<div class="work-image">
-				<a href="http://github.com/fatiherikli/klassify"><img src="/static/img/works/klassify.jpg"></a>
-			</div>
-		</div>
-		<div class="work">
-			<div class="work-title">
-				<a href="http://fatiherikli.github.io/react-designer">react-designer</a>
-			</div>
-			<div class="work-description">
-				<a href="http://fatiherikli.github.io/react-designer">Easy-to configure, editable vector graphics 
-		in your react components.</a>
-			</div>
-			<div class="work-image">
-				<a href="http://fatiherikli.github.io/react-designer"><img src="/static/img/works/react-designer.jpg" /></a>
-			</div>
-			<div class="work-detail">
-				Used webpack and css-modules on development mode.
-				<ul>
-					<li><a href="http://fatiherikli.github.io/react-designer">Project Homepage</a></li>
-					<li><a href="http://github.com/fatiherikli/react-designer">Source code</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="work">
-			<div class="work-title">
-				<a href="http://fatiherikli.github.io/fil">fil</a>
-			</div>
-			<div class="work-description">
-				<a href="http://fatiherikli.github.io/fil">A playground for in-browser interpreters.</a>
-			</div>
-			<div class="work-detail">
-				Built with React and Redux. The state is persisting on the 
-				browser's local storage with
-				a Redux middleware. Language interpreters are running
-				on web workers. Workers are spawming on demand.
-				Used gulp on development mode.
-				<ul>
-					<li><a href="http://fatiherikli.github.io/fil">Project Homepage</a></li>
-					<li><a href="http://github.com/fatiherikli/fil">Source code</a></li>
-				</ul>
-			</div>
-			<div class="work-image">
-				<a href="http://fatiherikli.github.io/fil"><img src="/static/img/works/fil.jpg"></a>
-			</div>
-		</div>
-		<div class="work">
-			<div class="work-title">
-				<a href="http://dbpatterns.com">dbpatterns</a>
-			</div>
-			<div class="work-description">
-				<a href="http://dbpatterns.com">Create and share database models</a>
-			</div>
-			<div class="work-detail">
-				Built with Django and Backbone.js, and socket.io
-				for realtime updates. Used MongoDB for storing
-				newsfeed, notifications and documents. The rest of the
-				data storing on relational database.
-				<ul>
-					<li><a href="http://dbpatterns.com">Project Homepage</a></li>
-					<li><a href="http://github.com/fatiherikli/fil">Source code</a></li>
-				</ul>
-			</div>
-			<div class="work-image">
-				<a href="http://dbpatterns.com"><img src="/static/img/works/dbpatterns.jpg"></a>
-			</div>
-		</div>
-		<div class="work">
-			<div class="work-title">
-				<a href="http://fatiherikli.github.io/brainfuck-visualizer">brainfuck visualizer</a>
-			</div>
-			<div class="work-description">
-				<a href="http://fatiherikli.github.io/brainfuck-visualizer">Brainfuck Interpreter and Visualizer on Browser</a>
-			</div>
-			<div class="work-detail">
-				It was a weekend project. I built it with Backbone.js. Supports
-				step by step debugging, delay time between instructions, shows
-				pointer position with caret by instantaneously.
-				<ul>
-					<li><a href="http://fatiherikli.github.io/brainfuck-visualizer">Project Homepage</a></li>
-					<li><a href="http://github.com/fatiherikli/brainfuck-visualizer">Source code</a></li>
-				</ul>
-			</div>
-			<div class="work-image">
-				<a href="http://fatiherikli.github.io/brainfuck-visualizer"><img src="/static/img/works/brainfuck-visualizer.jpg"></a>
-			</div>
-		</div>
-		<div class="work">
-			<div class="work-title">
-				<a href="http://fatiherikli.github.io/mockup-designer">mockup designer</a>
-			</div>
-			<div class="work-description">
-				<a href="http://fatiherikli.github.io/mockup-designer">The mockup tool that uses your local storage as backend</a>
-			</div>
-			<div class="work-detail">
-				Built with Backbone.js. It allows extend the toolset with
-				an internal declarative API. The data layer is loosely coupled, It's 
-				easy to integrate with a RESTful API.
-				<ul>
-					<li><a href="http://fatiherikli.github.io/mockup-designer">Project Homepage</a></li>
-					<li><a href="http://github.com/fatiherikli/mockup-designer">Source code</a></li>
-				</ul>
-			</div>
-			<div class="work-image">
-				<a href="http://fatiherikli.github.io/mockup-designer"><img src="/static/img/works/mockup-designer.jpg"></a>
-			</div>
-		</div>
-		<div class="work">
-			<div class="work-title">
-				<a href="http://fatiherikli.github.io/programming-language-network">programming language network</a>
-			</div>
-			<div class="work-description">
-				<a href="http://fatiherikli.github.io/programming-language-network">The network of programming languages.</a>
-			</div>
-			<div class="work-detail">
-				The graph is rendered on Gephi app. I used D3.js for drawing 
-				nodes on the browser. I feed the gml file with a python script that uses
-				NetworkX for building graph structure.
-				<ul>
-					<li><a href="http://fatiherikli.github.io/programming-language-network">Project Homepage</a></li>
-					<li><a href="http://github.com/fatiherikli/programming-language-network">Source code</a></li>
-				</ul>
-			</div>
-			<div class="work-image">
-				<a href="http://fatiherikli.github.io/programming-language-network"><img src="/static/img/works/programming-language-network.jpg"></a>
-			</div>
-		</div>
-		<div class="work without-image">
-			<div class="work-title">
-				<a href="http://dictdiffer.readthedocs.org/en/latest/">dictdiffer</a>
-			</div>
-			<div class="work-description">
-				<a href="http://dictdiffer.readthedocs.org/en/latest/">Diff and patch for python dict objects.</a>
-			</div>
-			<div class="work-detail">
-				Dictdiffer is a helper module that helps you to diff and patch dictionaries in Python. The project is maintaining and developing by Invenio Software now.
-				<ul>
-					<li><a href="http://dictdiffer.readthedocs.org/en/latest/">Documentation</a></li>
-					<li><a href="https://github.com/inveniosoftware/dictdiffer">Source code</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="work without-image">
-			<div class="work-title">
-				<a href="https://github.com/fatiherikli/kule">kule</a>
-			</div>
-			<div class="work-description">
-				<a href="https://github.com/fatiherikli/kule">REST interface for MongoDB</a>
-			</div>
-			<div class="work-detail">
-				I used Bottle and Pymongo libraries. It can be used
-				as a temporary backend service for your persistance
-				needed apps. Supports module system and have some
-				builtin modules.
-				<ul>
-					<li><a href="https://github.com/fatiherikli/kule">Documentation</a></li>
-					<li><a href="https://github.com/fatiherikli/kule">Source code</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="work without-image">
-			<div class="work-title">
-				<a href="https://github.com/fatiherikli/nginxparser">nginxparser</a>
-			</div>
-			<div class="work-description">
-				<a href="https://github.com/fatiherikli/nginxparser">Nginx configuration parser in Python.</a>
-			</div>
-			<div class="work-detail">
-				Parses nginx configuration files. The parser written
-				with Pyparser which is a python library that allows you to generate parsers with own internal DSL.
-				<ul>
-					<li><a href="https://github.com/fatiherikli/nginxparser">Documentation</a></li>
-					<li><a href="https://github.com/fatiherikli/nginxparser">Source code</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="work without-image">
-			<div class="work-title">
-				<a href="https://github.com/fatiherikli/nginxparser">django model parser</a>
-			</div>
-			<div class="work-description">
-				<a href="https://github.com/fatiherikli/nginxparser">A parser that detects django models from the provided python script.</a>
-			</div>
-			<div class="work-detail">
-				It uses Python's AST (abstract syntax trees) module. Parsers returns the skeleton of provided django models. It's using on dbpatterns for generating diagrams
-				from django models. 
-				<ul>
-					<li><a href="https://github.com/fatiherikli/nginxparser">Documentation</a></li>
-					<li><a href="https://github.com/fatiherikli/nginxparser">Source code</a></li>
-				</ul>
-			</div>
-		</div>
-
-	</div>
+  <div class="works">
+  {% for work in works %}
+    <div class="work{% if not work.image %} without-image{% endif %}">
+      <div class="work-title">
+        <a href="{{ work.home_page }}">{{ work.title }}</a>
+      </div>
+      <div class="work-description">
+        <a href="{{ work.home_page }}">{{ work.description }}</a>
+      </div>
+      <div class="work-detail">
+        {{ work.details }}
+        <ul>
+          <li><a href="{{ work.home_page }}">Project Homepage</a></li>
+          <li><a href="{{ work.source_code }}">Source code</a></li>
+        </ul>
+      </div>
+      {% if work.image %}
+      <div class="work-image">
+        <a href="{{ work.home_page }}"><img src="{{ work.image }}"></a>
+      </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+  </div>
 </div>
 
 <div class="presentations">
@@ -260,7 +57,7 @@
             <span>Adaptasyon - 2014</span></li>
             <li><i>Talk</i><a href="http://arguman.org/blog/galatasaray-universitesi-munazara-egitimi-gunlerindeydik/">Argument Mapping Platform</a>
             <span>Galatasaray University - 2014</span></li>
-            
+
             <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/dugumkume-42428350">Graph Databases and Neo4J</a>
                 <span>Özgür Web Günleri - 2014</span>
                 <span>PHPKonf - 2014</span>

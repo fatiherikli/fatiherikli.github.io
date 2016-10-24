@@ -1,14 +1,14 @@
 from django.conf.urls import patterns, url
 from django.views.generic.base import TemplateView
 
-from contents.views import ContactView, TextTemplateView
+from contents.views import (
+    ContactView, TextTemplateView, HomeView
+)
 
 
 urlpatterns = patterns('',
 
-    url(r'^$', TemplateView.as_view(
-        template_name="contents/index.html"
-    ), name="index"),
+    url(r'^$', HomeView.as_view(), name="index"),
 
     url(r'^contact/$', ContactView.as_view(
         template_name="contents/contact.html"
@@ -26,5 +26,5 @@ urlpatterns = patterns('',
     url(r'^robots.txt$', TextTemplateView.as_view(
         template_name="robots.txt",
     ), name="robots"),
-    
+
 )

@@ -1,3 +1,6 @@
+from os import path
+import json
+
 from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
 from django.views.generic.base import TemplateView
@@ -24,6 +27,25 @@ class ContactView(FormView):
         )
 
         return super(ContactView, self).form_valid(form)
+
+class HomeView(TemplateView):
+    template_name = "contents/index.html"
+
+    def render_to_response(self, context, **response_kwargs):
+        works = json.load(
+            open(
+                path.join(
+                    path.dirname(__file__),
+                    'works.json'
+                )
+            )
+        )
+        return super(TemplateView, self).render_to_response(
+            {
+                'works': works
+            },
+            **response_kwargs
+        )
 
 
 class TextTemplateView(TemplateView):
