@@ -323,7 +323,7 @@ article.post,
     font-family: 'Source Serif Pro', serif;
 }
 
-article.post h3, 
+article.post h3,
 article.post h4 {
     font-family: 'Source Serif Pro', serif;
     font-weight: 700;
@@ -675,16 +675,17 @@ body.blog-post-with-cover header nav a {
         font-size: 28px;
         width: auto;
     }
-    
+
     .blog-post-cover  {
         display: none;
     }
 
     .work-detail {
         width: 95%;
-        margin: auto;
+        margin: 0;
         border: none;
         margin-top: -20px;
+        float: none;
     }
 
     .work.without-image .work-detail {

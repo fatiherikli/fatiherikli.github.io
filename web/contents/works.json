@@ -1,5 +1,13 @@
 [
     {
+        "title": "argüman",
+        "description": "Open-source argument mapping and analysis platform",
+        "details": "Crowd sourced argument mapping and analysis platform based on critical thinking princibles. Encourages the people to avoid from fallacies while analysing a contention. It's an open source project and running on 4 different languages.",
+        "image": "/static/img/works/arguman.jpg",
+        "home_page": "http://arguman.org",
+        "source_code": "http://github.com/arguman"
+    },
+    {
         "title": "kilim motifs",
         "description": "Procedural kilim motif generation with Lindenmayer System.",
         "details": "You can play on the demo to generate more kilim patterns based on basic kilim figures.",
@@ -18,23 +26,15 @@
     {
         "title": "language evolution simulation",
         "description": "Language evolution simulation with Agent-based models.",
-        "details": "If an agent intersects with another, picks a word from own vocabulary and tells that. The neighborhood receives and adds that word into its vocabulary.",
+        "details": "Each agent tries to talk with their neighbors in same island. If the neighbor doesn't know the heard word, learns that and uses while talking with other neighbors. This behaviour emerges an evolution pattern in the big picture.",
         "image": "/static/img/works/language.jpg",
         "home_page": "http://fatiherikli.github.io/language-evolution-simulation",
         "source_code": "http://github.com/fatiherikli/language-evolution-simulation"
     },
     {
-        "title": "argüman",
-        "description": "Open-source argument mapping and analysis platform",
-        "details": "Built with Python and Django, running on Gunicorn.\n\t\t\t\tUses Wordnet and some NLTK modules for semantic categorisation.\n\t\t\t\t\n\t\t\t\t\tProject Homepage\n\t\t\t\t\tSource code",
-        "image": "/static/img/works/arguman.jpg",
-        "home_page": "http://arguman.org",
-        "source_code": "http://github.com/arguman"
-    },
-    {
         "title": "klassify",
         "description": "Text classification service based on Redis",
-        "details": "Built on top of Tornado and React. Trained data stored on a Redis database with a prefix. Uses web socket for real-time monitor on the client-side, and Pub/Sub interface of Redis with a Tornado endpoint.\n\t\t\t\t\n\t\t\t\t\tProject Homepage\n\t\t\t\t\tSource code",
+        "details": "Built on top of Tornado and React. Trained data stored on a Redis database with a prefix. Uses web socket for real-time monitor on the client-side, and Pub/Sub interface of Redis with a Tornado endpoint.",
         "image": "/static/img/works/klassify.jpg",
         "home_page": "http://github.com/fatiherikli/klassify",
         "source_code": "http://github.com/fatiherikli/klassify"
@@ -42,7 +42,7 @@
     {
         "title": "react-designer",
         "description": "Easy-to configure, editable vector graphics\n\t\tin your react components.",
-        "details": "Used webpack and css-modules on development mode.\n\t\t\t\t\n\t\t\t\t\tProject Homepage\n\t\t\t\t\tSource code",
+        "details": "Used webpack and css-modules on development mode.",
         "image": "/static/img/works/react-designer.jpg",
         "home_page": "http://fatiherikli.github.io/react-designer",
         "source_code": "http://github.com/fatiherikli/react-designer"
@@ -50,7 +50,7 @@
     {
         "title": "fil",
         "description": "A playground for in-browser interpreters.",
-        "details": "Built with React and Redux. The state is persisting on the\n\t\t\t\tbrowser's local storage with\n\t\t\t\ta Redux middleware. Language interpreters are running\n\t\t\t\ton web workers. Workers are spawming on demand.\n\t\t\t\tUsed gulp on development mode.\n\t\t\t\t\n\t\t\t\t\tProject Homepage\n\t\t\t\t\tSource code",
+        "details": "Built with React and Redux. The state is persisting on the\n\t\t\t\tbrowser's local storage with\n\t\t\t\ta Redux middleware. Language interpreters are running\n\t\t\t\ton web workers. Workers are spawming on demand.\n\t\t\t\tUsed gulp on development mode.",
         "image": "/static/img/works/fil.jpg",
         "home_page": "http://fatiherikli.github.io/fil",
         "source_code": "http://github.com/fatiherikli/fil"
@@ -58,7 +58,7 @@
     {
         "title": "dbpatterns",
         "description": "Create and share database models",
-        "details": "Built with Django and Backbone.js, and socket.io\n\t\t\t\tfor realtime updates. Used MongoDB for storing\n\t\t\t\tnewsfeed, notifications and documents. The rest of the\n\t\t\t\tdata storing on relational database.\n\t\t\t\t\n\t\t\t\t\tProject Homepage\n\t\t\t\t\tSource code",
+        "details": "Built with Django and Backbone.js, and socket.io\n\t\t\t\tfor realtime updates. Used MongoDB for storing\n\t\t\t\tnewsfeed, notifications and documents. The rest of the\n\t\t\t\tdata storing on relational database.",
         "image": "/static/img/works/dbpatterns.jpg",
         "home_page": "http://dbpatterns.com",
         "source_code": "http://github.com/fatiherikli/fil"
@@ -66,7 +66,7 @@
     {
         "title": "brainfuck visualizer",
         "description": "Brainfuck Interpreter and Visualizer on Browser",
-        "details": "It was a weekend project. I built it with Backbone.js. Supports\n\t\t\t\tstep by step debugging, delay time between instructions, shows\n\t\t\t\tpointer position with caret by instantaneously.\n\t\t\t\t\n\t\t\t\t\tProject Homepage\n\t\t\t\t\tSource code",
+        "details": "It was a weekend project. I built it with Backbone.js. Supports\n\t\t\t\tstep by step debugging, delay time between instructions, shows\n\t\t\t\tpointer position with caret by instantaneously.",
         "image": "/static/img/works/brainfuck-visualizer.jpg",
         "home_page": "http://fatiherikli.github.io/brainfuck-visualizer",
         "source_code": "http://github.com/fatiherikli/brainfuck-visualizer"
@@ -74,7 +74,7 @@
     {
         "title": "mockup designer",
         "description": "The mockup tool that uses your local storage as backend",
-        "details": "Built with Backbone.js. It allows extend the toolset with\n\t\t\t\tan internal declarative API. The data layer is loosely coupled, It's\n\t\t\t\teasy to integrate with a RESTful API.\n\t\t\t\t\n\t\t\t\t\tProject Homepage\n\t\t\t\t\tSource code",
+        "details": "Built with Backbone.js. It allows extend the toolset with\n\t\t\t\tan internal declarative API. The data layer is loosely coupled, It's\n\t\t\t\teasy to integrate with a RESTful API.",
         "image": "/static/img/works/mockup-designer.jpg",
         "home_page": "http://fatiherikli.github.io/mockup-designer",
         "source_code": "http://github.com/fatiherikli/mockup-designer"
@@ -82,7 +82,7 @@
     {
         "title": "programming language network",
         "description": "The network of programming languages.",
-        "details": "The graph is rendered on Gephi app. I used D3.js for drawing\n\t\t\t\tnodes on the browser. I feed the gml file with a python script that uses\n\t\t\t\tNetworkX for building graph structure.\n\t\t\t\t\n\t\t\t\t\tProject Homepage\n\t\t\t\t\tSource code",
+        "details": "The graph is rendered on Gephi app. I used D3.js for drawing\n\t\t\t\tnodes on the browser. I feed the gml file with a python script that uses\n\t\t\t\tNetworkX for building graph structure.",
         "image": "/static/img/works/programming-language-network.jpg",
         "home_page": "http://fatiherikli.github.io/programming-language-network",
         "source_code": "http://github.com/fatiherikli/programming-language-network"
@@ -90,29 +90,36 @@
     {
         "title": "dictdiffer",
         "description": "Diff and patch for python dict objects.",
-        "details": "Dictdiffer is a helper module that helps you to diff and patch dictionaries in Python. The project is maintaining and developing by Invenio Software now.\n\t\t\t\t\n\t\t\t\t\tDocumentation\n\t\t\t\t\tSource code",
+        "details": "Dictdiffer is a helper module that helps you to diff and patch dictionaries in Python. The project is maintaining and developing by Invenio Software now.",
         "home_page": "http://dictdiffer.readthedocs.org/en/latest/",
         "source_code": "https://github.com/inveniosoftware/dictdiffer"
     },
     {
         "title": "kule",
         "description": "REST interface for MongoDB",
-        "details": "I used Bottle and Pymongo libraries. It can be used\n\t\t\t\tas a temporary backend service for your persistance\n\t\t\t\tneeded apps. Supports module system and have some\n\t\t\t\tbuiltin modules.\n\t\t\t\t\n\t\t\t\t\tDocumentation\n\t\t\t\t\tSource code",
+        "details": "I used Bottle and Pymongo libraries. It can be used\n\t\t\t\tas a temporary backend service for your persistance\n\t\t\t\tneeded apps. Supports module system and have some",
         "home_page": "https://github.com/fatiherikli/kule",
         "source_code": "https://github.com/fatiherikli/kule"
     },
     {
         "title": "nginxparser",
         "description": "Nginx configuration parser in Python.",
-        "details": "Parses nginx configuration files. The parser written\n\t\t\t\twith Pyparser which is a python library that allows you to generate parsers with own internal DSL.\n\t\t\t\t\n\t\t\t\t\tDocumentation\n\t\t\t\t\tSource code",
+        "details": "Parses nginx configuration files. The parser written\n\t\t\t\twith Pyparser which is a python library that allows you to generate parsers with own internal DSL.",
         "home_page": "https://github.com/fatiherikli/nginxparser",
         "source_code": "https://github.com/fatiherikli/nginxparser"
+    },
+    {
+        "title": "markov-chain",
+        "description": "Infinity story with Markov Chains.",
+        "details": "Generates an infinity story with markov chain on a visualized directed graph.",
+        "home_page": "https://github.com/fatiherikli/markov-chain-demo",
+        "source_code": "https://github.com/fatiherikli/markov-chain-demo"
     },
     {
         "title": "django model parser",
         "description": "A parser that detects django models from the provided python script.",
         "details": "It uses Python's AST (abstract syntax trees) module. Parsers returns the skeleton of provided django models. It's using on dbpatterns for generating diagrams\n\t\t\t\tfrom django models.\n\t\t\t\t\n\t\t\t\t\tDocumentation\n\t\t\t\t\tSource code",
-        "home_page": "https://github.com/fatiherikli/nginxparser",
-        "source_code": "https://github.com/fatiherikli/nginxparser"
+        "home_page": "https://github.com/fatiherikli/django-model-parser",
+        "source_code": "https://github.com/fatiherikli/django-model-parser"
     }
 ]

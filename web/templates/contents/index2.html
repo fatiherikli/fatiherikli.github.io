@@ -3,17 +3,109 @@
 {% load content_block %}
 
 {% block content %}
+<div class="grid">
+  <canvas id="grid-canvas"></canvas>
+  <div class="grid-cells">
+    {% for cell in grid %}
+      <div class="cell {{ cell.type }}{% if cell.dotted%} dotted{% endif %}" style="
+        left: {{ cell.x }}px;
+        top: {{ cell.y }}px;
+        {% if cell.color %}background-color: {{ cell.color }}{% endif %}
+      ">
+        {% include cell.template %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<script>
+  var canvas = document.querySelector('canvas');
+  var container = document.querySelector('.grid');
+  var context = canvas.getContext('2d');
+  var rows = Math.floor(document.querySelectorAll('.cell').length / 3) + 1;
+  var cols = 3;
+  var cellSize = 250;
+  var pixelDensity = 2;
+  var separator = 5;
+  var computedWidth = pixelDensity * cellSize * cols;
+  var computedHeight = pixelDensity * cellSize * rows;
+
+  computedWidth += separator * cols * pixelDensity;
+  computedHeight += separator * rows * pixelDensity;
+
+  canvas.setAttribute('width', computedWidth + 'px');
+  canvas.setAttribute('height', computedHeight + 'px');
+  container.style.width = computedWidth / pixelDensity + 'px';
+  container.style.height = computedHeight / pixelDensity + 'px';
+  canvas.style.width = computedWidth / pixelDensity + 'px';
+  canvas.style.height = computedHeight / pixelDensity + 'px';
+  context.lineWidth = 5;
+  context.translate(0, 30);
+
+  function draw(color) {
+    context.strokeStyle = color;
+
+  for (var row = 0; row < rows; row++) {
+    context.beginPath();
+
+    var blur = (
+      Math.random() * 5
+    ) * (Math.random() < 0.5 ? -1 : 1);
+    console.log(blur);
+    context.moveTo(
+      0, (
+        row * cellSize * pixelDensity
+      ) - blur
+    );
+    context.lineTo(computedWidth, (
+        row * cellSize * pixelDensity
+      ) + blur
+    );
+    context.stroke();
+
+  }
+
+  context.closePath();
+
+  context.save();
+  context.translate(0, -30);
+
+
+  for (var col = 1; col < cols; col++) {
+    context.beginPath();
+
+    var blur = (
+      Math.random() * 5
+    ) * (Math.random() < 0.5 ? -1 : 1);
+
+
+    context.moveTo(col * cellSize * pixelDensity - blur, 0);
+    context.lineTo(col * cellSize * pixelDensity + blur, computedHeight);
+  context.stroke();
+
+  }
+
+  context.restore();
+
+  }
+
+  draw('magenta')
+  draw('yellow')
+  draw('black')
+</script>
+{% endblock %}
+
+{% block content_ %}
 <div id="about-me">
     <div class="picture">
-    	<img src="{{ STATIC_URL }}img/me-2.png" alt=""/>
+      <img src="{{ STATIC_URL }}img/me-2.png" alt=""/>
     </div>
     <p>
-    	A software developer who loves <u>generative</u> things with fun algorithms.
+      A software developer who loves <u>generative</u> things with fun algorithms.
     </p>
 </div>
 
 <div class="content works-container">
-	<h3 class="section-title">works</h3>
+  <h3 class="section-title">*projects</h3>
   <div class="works">
   {% for work in works %}
     <div class="work{% if not work.image %} without-image{% endif %}">
@@ -44,18 +136,15 @@
     <div class="content">
         <h3 class="section-title">Talks</h3>
         <ul>
-        <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/agentbased-models">Agent-based Models</a>
-            <span>Python Istanbul - 2016</span>
-            <span>TEDU Istasyon - 2016</span></li>
-        <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/text-classificationwithredis">Bayesian Classification with Redis</a>
+        <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/">Text Classification with Redis</a>
             <span>Python Istanbul - 2016</span></li>
         <li><i>Instructor</i><a href="http://programlamagunleri.bilisimkarabuk.com">Python & Django Workshop</a><span>Programlama Günleri - 2016</span>
         </li>
         <li><i>Talk</i><a href="http://www.slideshare.net/lahavlevelaislabonita/">Text Processing with Python</a>
             <span>Python Istanbul - 2016</span></li>
         <li><i>Instructor</i><a href="http://blog.fatiherikli.com/post/linux-yaz-kampi-2014/">Web Development with Python & Django</a><span>Linux Yaz Kampı - 2014</span>
-        <span>Linux Yaz Kampı - 2015</span><span>Linux Yaz Kampı - 2016</span></li>
-        	  <li><i>Instructor</i><a href="#">Web Development with Python, Flask, MongoDB</a> <span>Akademik Bilişim 2015</span></li>
+        <span>Linux Yaz Kampı - 2015</span></li>
+            <li><i>Instructor</i><a href="#">Web Development with Python, Flask, MongoDB</a> <span>Akademik Bilişim 2015</span></li>
             <li><i>Guest</i><a href="http://adaptasyon.tumblr.com/post/105016798063/adaptasyon-4-donem-2-bolum-arguman-org">Adaptasyon 2. Season, 4. Episode</a>
             <span>Adaptasyon - 2014</span></li>
             <li><i>Talk</i><a href="http://arguman.org/blog/galatasaray-universitesi-munazara-egitimi-gunlerindeydik/">Argument Mapping Platform</a>
