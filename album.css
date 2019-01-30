@@ -1,0 +1,48 @@
+body {
+  font-family: helvetica, sans-serif;
+  background-color: #ffffff;
+  background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23747474' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+ul {
+  margin: auto;
+  padding: 0;
+  column-count: 2;
+  column-gap: 1em;
+}
+
+li {
+  list-style: none;
+  text-align: right;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  /*background: black;*/
+}
+
+h3 {
+  font-size: 6em;
+  text-align: center;
+  text-shadow: 3px 3px yellow;
+}
+
+.photo-frame {
+}
+
+.photo-frame img {
+  width: 100%;
+
+  display: inline-block;
+}
+
+.photo-title {
+  /*color: #fff;*/
+  background: #fff;
+  text-align: center;
+  margin-top: -5px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  display: none;
+}
+
