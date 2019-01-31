@@ -12,39 +12,33 @@
           content="Personal web site of Fatih Erikli, a Python developer."/>
     <meta property="og:image" content="/static/img/icon-128.png"/>
     <link rel="author" href="https://plus.google.com/109590184509977241359"/>
-    <link rel="sitemap" type="application/xml" title="Sitemap"
-          href="http://blog.fatiherikli.com/sitemap.xml"/>
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed"
-          href="http://blog.fatiherikli.com/feed/rss"/>
-    <link rel="alternate" type="application/atom+xml" title="ATOM Feed"
-          href="http://blog.fatiherikli.com/feed/atom"/>
     <link rel="icon" href="/static/img/icon-16.png" />
     <link rel="shortcut icon" href="/static/img/icon-16.png" />
     <link rel="stylesheet" href="base.css" />
-    <link rel="stylesheet" href="home-page.css?v=2.4" />
+    <link rel="stylesheet" href="home-page.css?v=2.5" />
      <link rel="stylesheet"
           href="http://fonts.googleapis.com/css?family=Crete+Round">
     <link rel="stylesheet"
           href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,latin-ext'
           type='text/css'>
 </head>
-<body class="">
+<body>
 <div class="cover">
   <div class="headline">
     <h1>Fatih Erikli</h1>
     <h2>Faa-Tiy, IPA /faːtih/</h2>
      <nav>
         <ul>
-            <li><a href="http://fatiherikli.github.io/">blog</a></li>
+            <li><a href="https://medium.com/@fthrkl">blog</a></li>
             <li><a href="http://github.com/fatiherikli">github</a></li>
             <li><a href="http://twitter.com/fthrkl">twitter</a></li>
         </ul>
     </nav>
   </div>
-  <div class="photo-info">
-    <span id="photo-title"></span>
-    <a onClick="changeBackground()" id="change-background">Random</a>
-  </div>
+  <!-- <div class="photo-info"> -->
+    <!-- <span id="photo-title"></span> -->
+    <!-- <a onClick="changeBackground()" id="change-background">Random</a> -->
+  <!-- </div> -->
   <div class="overlay"></div>
   <div class="background"></div>
 </div>
@@ -52,10 +46,14 @@
   <h3><span>who</span></h3>
   <div class="bio">
     lives in Krakow,      <br />
-    founder of <a href="http://arguman.org">arguman</a>,   <br />
-    co-organizer of <a href="http://otomat.org">otomat</a>,  <br />
-    instructor at 
-     <a href="http://kamp.linux.org.tr/2014">L</a><a href="http://kamp.linux.org.tr/2015">Y</a><a href="http://kamp.linux.org.tr/2016">K</a>.    
+    founder of <a href="https://arguman.org">arguman</a>, <br />
+    interested in
+    <ol style="list-style: bengali; margin-top: 0.2em;">
+    	<li>computational intelligence</li>
+    	<li>natural language processing</li>
+    	<li>data visualization</li>
+    </ol>
+
   </div>
   <h3><span>works</span></h3>
   <div class="works">
@@ -65,6 +63,8 @@
       <div class="work-type work-type--simulation">Simulation</div> 
     </div>
     <ul class="work-items">
+    	<li class="work-item work-item--experiment">
+        <a href="https://fatiherikli.github.io/fil">fil</a></li>
        <li class="work-item work-item--experiment">
         <a href="https://fatiherikli.github.io/archetype">archetype</a></li>
       <li class="work-item work-item--simulation">
@@ -78,19 +78,14 @@
       <li class="work-item work-item--experiment">
         <a href="https://fatiherikli.github.io/kilim-motifs">kilim-motifs</a></li>
       <li class="work-item work-item--library">
-        <a href="https://fatiherikli.github.io/react-designer">react-designer</a></li>
+        <a href="https://fatiherikli.github.io/react-designer">react-designer</a>
+    </li>
       <li class="work-item work-item--simulation">
         <a href="https://fatiherikli.github.io/crowd-simulation">crowd-of-istanbul</a></li>
-      <li class="work-item work-item--experiment">
-        <a href="https://fatiherikli.github.io/fil">fil</a></li>
-      
       <li class="work-item work-item--library">
         <a href="https://github.com/fatiherikli/klassify">klassify</a></li>
       <li class="work-item work-item--simulation">
         <a href="https://fatiherikli.github.io/language-evolution-simulation">language-evolution</a></li>
-      <li class="work-item work-item--experiment">
-        <a href="https://fatiherikli.github.io/papuga">papuga</a></li>
-      
       <li class="work-item work-item--experiment">
         <a href="https://dbpatterns.com">dbpatterns</a></li>
       <li class="work-item work-item--experiment">
@@ -99,6 +94,8 @@
         <a href="https://fatiherikli.github.io/mockup-designer">mockup-designer</a></li>
       <li class="work-item work-item--experiment">
         <a href="https://fatiherikli.github.io/programming-language-network">programming-language-network</a></li>
+       <li class="work-item work-item--library">
+        <a href="https://github.com/yogurt-cultures/kefir">kefir</a></li>
       <li class="work-item work-item--library">
         <a href="https://dictdiffer.readthedocs.io">dictdiffer</a></li>
       <li class="work-item work-item--library">
@@ -126,6 +123,13 @@
   <h3><span>talks</span></h3>
   <div class="talks">
     <ul class="talk-list">
+     <li>
+     	<a href="https://github.com/pyistanbul/presentations/blob/master/common-algebraic-structures/fantezi-kod.pdf">Common Algebraic Structures</a>
+     	<ul>
+     		<li>2018 - Python Istanbul</li>
+     		<li>2018 - Javascript Istanbul</li>
+     	</ul>
+     </li>
       <li>
           <a href="http://en.arguman.org/blog/galatasaray-universitesi-munazara-egitimi-gunlerindeydik/">Argument Mapping Platform </a>
           <ul>
@@ -137,6 +141,7 @@
       <li>
           <a href="http://blog.fatiherikli.com/post/linux-yaz-kampi-2014/">Python and Django</a> <span>(Instructor)</span>
           <ul>
+          	<li>2018 - Mustafa Akgül Özgür Yazılım Kampı</li>
             <li>2017 - Django Girls Krakow</li>
             <li>2016 - Programlama Gunleri</li>
             <li>2016 - Linux Yaz Kampi</li>
@@ -168,7 +173,7 @@
       <li>
           <a href="http://www.slideshare.net/lahavlevelaislabonita/dugumkume-42428350">Graph Databases and Neo4J</a>
           <ul>
-            <li>2017 - EPAM Poland</li>
+            <li>2017 - EPAM Systems</li>
             <li>2014 - Ozgur Web Gunleri</li>
             <li>2014 - PHPKonf</li>
           </ul>
@@ -292,7 +297,7 @@ mathiasbynens.be/notes/async-analytics-snippet -->
     title.innerHTML = randomPhoto[0];
   }
 
-  changeBackground();
+  // changeBackground();
 </script>
 </body>
 </html>
