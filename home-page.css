@@ -303,28 +303,19 @@ footer {
 }
 
 #me {
-  width: 27vw;
-  margin-bottom: 20px;
+  width: 20vw;
   border-radius: 50%;
-  margin-left: 5vw;
-
 }
 
 #me:hover {
 
 }
 
-#me:after {
-  display: inline-block;
-  width: 30vw;
-  background: black;
-  content: "";
-  position: absolute;
-}
-
 @media only screen and (max-width: 700px) {
     #me {
       float: right;
+      width: 30vw;
+      margin-top: 5vw;
     }
 
     .cover, .overlay, .background {
