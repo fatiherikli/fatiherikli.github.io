@@ -306,12 +306,12 @@ footer {
   width: 27vw;
   margin-bottom: 20px;
   border-radius: 50%;
-  filter: grayscale(100%);
   margin-left: 5vw;
+
 }
 
 #me:hover {
-  filter: grayscale(0%);
+
 }
 
 #me:after {
