@@ -26,7 +26,6 @@ h3 {
 
 h3 span {
   display: inline-block;
-  background: #c4bdbd;
   line-height: 20px;
   position: absolute;
   z-index: 10;
@@ -91,7 +90,7 @@ margin-left: -1em;
 .headline h1 {
   margin: 0;
   padding: 0;
-  color: white;
+  color: #aeaeae;
   font-weight: normal;
   margin-bottom: -10px;
 }
@@ -229,7 +228,6 @@ margin-left: -1em;
 
 .work-item a {
   text-decoration: none;
-  border-bottom: 3px solid white;
   line-height: 0.8em;
   display: inline-block;
   font-size: 1em;
