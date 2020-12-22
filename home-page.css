@@ -70,7 +70,7 @@ h3 span {
 .interested-in li::before {
   font-family: "San Francisco", sans-serif;
 content: "\2022";
-color: #b7b7b7;
+color: #464646;
 font-weight: bold;
 display: inline-block;
 width: 1em;
