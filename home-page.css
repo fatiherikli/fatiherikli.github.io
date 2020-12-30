@@ -15,10 +15,9 @@ html, body {
 }
 
 h3 {
-  font-family: "San Francisco", sans-serif;
   font-weight: bold;
   height: 2vw;
-  margin-bottom: 3vw;
+  margin-bottom: 2.5vw;
   margin-top: 3vw;
   font-size: 1.7em;
 }
