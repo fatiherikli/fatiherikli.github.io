@@ -76,7 +76,7 @@ C 43 297.5625, 22 259.5625, 22 259.5625
 Z" data-reactid=".0.4.1.0.0.$=13.$=1$2" style="fill: #acacac;fill: #ffa0a0;"></path></g>
 
 
-      <path fill="#dbdbdb" stroke="gray" stroke-width="0" type="polygon" x="8" y="292.5625" transform="
+      <path fill="#dbdbdb" onmouseover="this.style.fill='rgb(68, 0, 255)'" id="db" stroke="gray" stroke-width="0" type="polygon" x="8" y="292.5625" transform="
       translate(0 0)
       rotate(0 8 292.5625)
     " d="M 8 292.5625
@@ -85,7 +85,15 @@ C 15 303.5625, 255 135.5625, 255 135.5625
 C 255 135.5625, 252 130.5625, 252 130.5625
 C 252 130.5625, 8 292.5625, 8 292.5625
 Z" data-reactid=".0.4.1.0.0.$=13.$=1$14" style="fill: #46496c;"></path>
-      <path fill="#888276" stroke="gray" stroke-width="0" type="polygon" x="47" y="65.5625" transform="
+      <path fill="#888276" onmouseover="
+          this.style.fill='#ff00ef';
+          document.getElementById('db').style.fill = '#222';
+      " onmouseout="
+
+        this.style.fill='rgb(255, 97, 193)';
+        document.getElementById('db').style.fill = '#46496c';
+
+      " stroke="gray" stroke-width="0" type="polygon" x="47" y="65.5625" transform="
       translate(0 0)
       rotate(0 47 65.5625)
     " d="M 47 65.5625
@@ -94,7 +102,20 @@ C 57 61.5625, 182 356.5625, 182 356.5625
 C 182 356.5625, 171 362.5625, 171 362.5625
 C 171 362.5625, 47 65.5625, 47 65.5625
 Z" data-reactid=".0.4.1.0.0.$=13.$=1$1" style="fill: #c089d5;"></path>
-      <path style="mix-blend-mode: normal;fill: #ffd78f;" fill="#848484" stroke="gray" stroke-width="0" type="polygon" x="138" y="52.5625" transform="
+      <path style="mix-blend-mode: normal;" fill="rgb(255, 222, 144)" 
+
+      onmouseout="
+        this.style.fill='#ffc334';
+        document.getElementById('db').style.fill = '#46496c';
+      "
+
+      onmouseover="
+        this.style.fill='#120aff'
+        document.getElementById('db').style.fill = '#222';
+      "
+
+
+      fill="#ffd78f" stroke="gray" stroke-width="0" type="polygon" x="138" y="52.5625" transform="
       translate(0 1)
       rotate(0 138 52.5625)
     " d="M 138 51.5625
