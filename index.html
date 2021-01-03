@@ -33,7 +33,25 @@
 <body style="overflow-x: hidden; overscroll-behavior: none; margin: 0;">
 <div class="cover">
   <div class="headline">
- <svg style="position: absolute; left: 0; top: -20em;" width="350" height="400">
+
+    <style>
+      @keyframes crystalize {
+        from {
+          background-color: #191a25;
+    }
+        to {
+
+          background-color: #0040ff;}
+      }
+
+          
+}    
+    </style>
+
+
+    <div onmouseover="this.style.animationName = 'crystalize'" id="overlay" style="width: 350px; height: 400px;position: absolute; left: 0; top: -20em;mix-blend-mode: initial;background: transparent;  animation-duration: 30s; z-index: 9; mix-blend-mode: color; animation-iteration-count: infinite;"></div>
+
+ <svg   style="position: absolute; left: 0; top: -20em;" width="350" height="400">
       
 
 <path fill="gray" stroke="gray" stroke-width="0" type="polygon" x="70" y="39.5625" transform="
