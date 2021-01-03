@@ -34,19 +34,23 @@
 
       <style>
         @keyframes crystalize {
-          from {
+          0% {
             background-color: #ff16db;
           }
 
-          to {
+          50% {
             background-color: #0040ff;
+          }
+
+          100% {
+            background-color: #ff16db;
           }
         }
       </style>
 
 
       <div onmouseover="this.style.animationName = 'crystalize'" id="overlay"
-        style="width: 350px; height: 400px;position: absolute; left: 0; top: -20em;mix-blend-mode: initial;background: transparent;  animation-duration: 1s; animation-fill-mode: forwards; animation-timing-function: cubic-bezier(.82,0,.07,1);z-index: 9; mix-blend-mode: color; animation-iteration-count: infinite;">
+        style="width: 350px; height: 400px;position: absolute; left: 0; top: -20em;mix-blend-mode: initial;background: transparent;  animation-duration: 10s; animation-fill-mode: forwards; animation-timing-function: cubic-bezier(.82,0,.07,1);z-index: 9; mix-blend-mode: color; animation-iteration-count: infinite;">
       </div>
 
       <svg style="position: absolute; left: 0; top: -20em;" width="350" height="400">
