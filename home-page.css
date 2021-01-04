@@ -204,7 +204,7 @@ margin-left: -1em;
 }
 
 .works {
-  max-width: 600px;
+  max-width: 800px;
   overflow: hidden;
 }
 
@@ -402,3 +402,16 @@ footer {
     }
 }
 
+#canvas {
+  display: none;
+  margin: 0 auto;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  outline: none;
+  image-rendering: optimizespeed;
+  margin-bottom: 30px;
+}

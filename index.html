@@ -20,6 +20,10 @@
   <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,latin-ext' type='text/css'>
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({
       google_ad_client: "ca-pub-5587173855104127",
@@ -198,6 +202,7 @@ Z" data-reactid=".0.4.1.0.0.$=13.$=1$13"></path>
     </div>
     <h3><span>works</span></h3>
     <div class="works">
+      <canvas width="800" height="500" id="canvas" tabindex="1"></canvas>
       <div class="work-types">
         <div class="work-type work-type--experiment">Experiment</div>
         <div class="work-type work-type--library">Library</div>
@@ -245,7 +250,7 @@ Z" data-reactid=".0.4.1.0.0.$=13.$=1$13"></path>
         <li class="work-item work-item--library">
           <a href="https://github.com/fatiherikli/kule">kule</a></li>
         <li class="work-item work-item--experiment">
-          <a href="https://fatiherikli.github.io/flappybird/">flappybird</a>
+          <a id="flappybird-link" href="https://fatiherikli.github.io/flappybird/">flappybird</a>
         </li>
         <li class="work-item work-item--experiment">
           <a href="https://github.com/fatiherikli/worldcup">worldcup</a></li>
@@ -392,6 +397,12 @@ Z" data-reactid=".0.4.1.0.0.$=13.$=1$13"></path>
       <a href="mailto:fatiherikli@gmail.com">fatiherikli@gmail.com</a>
     </footer>
   </div>
+  <img class="asset" src="https://fatiherikli.github.io/flappybird/assets/bird.png" />
+  <img class="asset" src="https://fatiherikli.github.io/flappybird/assets/cloud.png" />
+  <img class="asset" src="https://fatiherikli.github.io/flappybird/assets/ground.png" />
+  <img class="asset" src="https://fatiherikli.github.io/flappybird/assets/pipe.png" />
+  <script src="https://fatiherikli.github.io/flappybird/vendor/libs/class.js"></script>
+  <script src="flappybird.js"></script>
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
 mathiasbynens.be/notes/async-analytics-snippet -->
   <script>
@@ -467,7 +478,25 @@ mathiasbynens.be/notes/async-analytics-snippet -->
       title.innerHTML = randomPhoto[0];
     }
 
-  // changeBackground();
+    function startGame() {
+      document.getElementById('canvas').style.display = 'block';
+  
+      var game = new flappybird.Game({
+          canvas: document.getElementById("canvas")
+      });
+
+      game.loop();
+    }
+
+    document.getElementById(
+      'flappybird-link'
+    ).addEventListener(
+      'mousedown',
+      (event) => {
+        event.preventDefault();
+        startGame();
+      }
+    )
   </script>
 </body>
 
