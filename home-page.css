@@ -412,6 +412,7 @@ footer {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   outline: none;
-  image-rendering: optimizespeed;
+  image-rendering: optimizequality;
+  perspective(100px) rotateY(15deg);
   margin-bottom: 30px;
 }
