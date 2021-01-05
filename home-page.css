@@ -413,6 +413,6 @@ footer {
   -webkit-user-select: none;
   outline: none;
   image-rendering: optimizequality;
-  transform: perspective(100px) rotateY(15deg);
+  transform: perspective(300px) rotateY(15deg);
   margin-bottom: 30px;
 }
