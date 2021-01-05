@@ -5,7 +5,7 @@ flappybird.Pipe = Class.extend({
     width: 72,
     height: 180,
 
-    speed: Math.PI - 1,
+    speed: Math.PI,
 
     order: 0,
 
