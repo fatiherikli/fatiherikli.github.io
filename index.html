@@ -199,7 +199,7 @@ Z" data-reactid=".0.4.1.0.0.$=13.$=1$13"></path>
         </ol>
 
     </div>
-    <h3><span>works</span></h3>
+    <h3><span id="works-title">works</span></h3>
     <div class="works">
       <canvas width="800" height="500" id="canvas" tabindex="1"></canvas>
       <div class="work-types">
@@ -396,7 +396,7 @@ Z" data-reactid=".0.4.1.0.0.$=13.$=1$13"></path>
       <a href="mailto:fatiherikli@gmail.com">fatiherikli@gmail.com</a>
     </footer>
   </div>
-  <img class="asset" src="https://fatiherikli.github.io/flappybird/assets/bird.png" />
+  <img class="asset" src="https://fatiherikli.github.io/flappybird/assets/bird.png?3" />
   <img class="asset" src="https://fatiherikli.github.io/flappybird/assets/cloud.png" />
   <img class="asset" src="https://fatiherikli.github.io/flappybird/assets/ground.png" />
   <img class="asset" src="https://fatiherikli.github.io/flappybird/assets/pipe.png" />
@@ -479,6 +479,7 @@ mathiasbynens.be/notes/async-analytics-snippet -->
 
     function startGame() {
       document.getElementById('canvas').style.display = 'block';
+      document.getElementById('works-title').innerHTML = 'Spiel mit mir';
   
       var game = new flappybird.Game({
           canvas: document.getElementById("canvas")

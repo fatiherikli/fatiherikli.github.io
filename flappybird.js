@@ -91,7 +91,7 @@ flappybird.Bird = Class.extend({
         this.stage.canvas.addEventListener('keydown', this.flap.bind(this));
 
         this.img = new Image();
-        this.img.src = 'assets/bird.png';
+        this.img.src = 'assets/bird.png?1';
 
         this.flapState = 0;
         this.rotation = this.defaultRotation;
@@ -146,6 +146,9 @@ flappybird.Bird = Class.extend({
 
         this.stage.context.rotate(this.rotation);
         this.stage.context.translate(-(this.x), -(this.y));
+
+        var angle = 0; //Math.PI - 3;
+        this.stage.context.setTransform(1, 0, angle, 1, 0, 0);
 
         this.stage.context.drawImage(
             this.img,
