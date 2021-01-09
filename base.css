@@ -19,8 +19,8 @@ html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #2d39f8; color: #fff; text-shadow: none; }
+::selection { background: #2d39f8; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
