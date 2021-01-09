@@ -183,12 +183,13 @@ margin-left: -1em;
 
 .work-type:before {
   display: inline-block;
-  position: absolute;
+  /* position: absolute; */
   content: "";
   width: 2vw;
   height: 2vw;
-  background: red;
-  margin-left: -2em;
+  /* background: red; */
+  margin-left: -2.5em;
+  margin-right: 1em;
 }
 
 .work-type--experiment:before {
