@@ -77,7 +77,7 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
    Embedded content
    ========================================================================== */
 
-img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; image-rendering: pixelated }
 
 /*
  * Correct overflow not hidden in IE9
