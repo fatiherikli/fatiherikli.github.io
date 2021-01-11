@@ -10,7 +10,7 @@ from taggit.managers import TaggableManager
 
 class PublishedManager(models.Manager):
     """
-    Returns published blog posts.
+    Returns published blog posts
     """
     def get_query_set(self):
         return super(PublishedManager, self)\
@@ -19,7 +19,7 @@ class PublishedManager(models.Manager):
 
 class Post(models.Model):
     """
-    Holds blog post data.
+    Holds blog post data
     """
     title = models.CharField(_("Name"), max_length=255)
     slug = models.SlugField(_("Slug"), max_length=255, unique=True)
