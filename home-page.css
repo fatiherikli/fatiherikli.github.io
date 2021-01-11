@@ -401,7 +401,7 @@ footer {
       margin-left: -18px;
     }
   
-  .headline > div { height: 500px; width: 200%; }
+  .headline > div { min-height: 500px; min-width: 200%; margin-left: -5%; }
 }
 
 #canvas {
