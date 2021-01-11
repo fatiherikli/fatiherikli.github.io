@@ -400,6 +400,8 @@ footer {
     .talk-list a:before {
       margin-left: -18px;
     }
+  
+  .headline > div { height: 500px; width: 200%; }
 }
 
 #canvas {
