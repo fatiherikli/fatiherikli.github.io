@@ -401,8 +401,7 @@ footer {
       margin-left: -18px;
     }
   
-  .headline > div { min-height: 500px; min-width: 200%; margin-left: -5%; z-index: -1; }
-  #overlay { z-index: 2}
+  .headline > div { min-height: 500px; min-width: 200%; margin-left: -5%; z-index: -1 !important; // :-( }
 }
 
 #canvas {
