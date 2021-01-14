@@ -192,7 +192,7 @@ margin-left: -1em;
 }
 
 .work-type--experiment:before {
-  background: #6382ff;
+  background: radial-gradient(#0099ff 23.6%, #fff, 74%, lightblue 101%, transparent 0%);
 }
 
 .work-type--library:before {
