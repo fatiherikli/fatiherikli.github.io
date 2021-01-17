@@ -181,6 +181,7 @@ margin-left: -1em;
 
 .work-types {
   margin-bottom: 10px;
+  background: yellow;
 }
 
 .work-type {
@@ -297,12 +298,12 @@ margin-left: -1em;
 .talk-list ul li {
   list-style: none;
   margin-left: 2vw;
-  color: #9b9b9b;
+  color: black;
 }
 
 .talk-list a {
-  color: rgb(0, 0, 0);
-background: rgb(190, 190, 190);
+  color: color(srgb 0 0 0);
+background: white;
 }
 
 .talk-list a:before {
@@ -310,7 +311,7 @@ background: rgb(190, 190, 190);
 display: inline-block;
 position: absolute;
 margin-left: 2vw;
-color: rgb(63, 119, 251);
+color: rgba(63, 119, 251, 0.22);
 font-size: 12px;
 margin-top: 1.15em;
 mix-blend-mode: plus-darker;
