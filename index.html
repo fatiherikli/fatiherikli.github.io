@@ -299,7 +299,7 @@ mathiasbynens.be/notes/async-analytics-snippet -->
   </script>
 
   <script>
-    var overlays = [
+     /*[
       ['Santa Monica, CA', 'https://scontent.cdninstagram.com/t51.2885-15/e35/17126676_1265339460229392_9036849097612460032_n.jpg'],
       ['Santa Monica, CA', 'https://scontent.cdninstagram.com/t51.2885-15/e35/17332766_1827341710851507_5262688092816408576_n.jpg'],
       ['Hollywood, CA', 'https://scontent.cdninstagram.com/t51.2885-15/e35/17126979_1733308973647791_8687423585045708800_n.jpg'],
@@ -348,16 +348,12 @@ mathiasbynens.be/notes/async-analytics-snippet -->
       ['Arac, Kastamonu', 'https://scontent.cdninstagram.com/t51.2885-15/e35/10296657_1642558319290685_1911508200_n.jpg'],
       ['Esrefefendi, Istanbul', 'https://scontent.cdninstagram.com/t51.2885-15/e15/10311301_1431145320476994_479851622_n.jpg'],
       ['Esentepe, Karabuk', 'https://scontent.cdninstagram.com/t51.2885-15/e15/11248012_1646262195605152_1226688448_n.jpg']
-    ];
+    ];*/
 
-    function changeBackground() {
-      var randomPhoto = overlays[Math.floor(Math.random() * overlays.length)];
-      var background = document.querySelector('.background');
-      var title = document.getElementById('photo-title');
-      background.style.backgroundImage = 'url(' + randomPhoto[1] + ')';
-      title.innerHTML = randomPhoto[0];
-    }
-
+     const overlays = [
+     	"https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/118304711_3394067397327630_3117741331763119198_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=106&_nc_ohc=Oxyb7R5PktYAX_b21_U&tp=1&oh=f14d84799073ba024d5f1b3ad460cd08&oe=602DA356",                   
+     ];
+ 
     function startGame() {
       document.getElementById('canvas').style.display = 'block';
       document.getElementById('works-title').innerHTML = 'Spiel mit mir';
