@@ -40,7 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="cover">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 400 400" style="margin-top: 50px;margin-left: 60px;mix-blend-mode: overlay;">
    <!--<circle cx="200" r="200" cy="200" fill="🀅" /> -->
-  <circle cx="200" r="200" cy="200" fill="orange" />
+  <circle cx="200" r="200" cy="200" fill="white" />
   <!-- <text
     alignment-baseline="central"
     x="-5000%"
@@ -393,11 +393,11 @@ svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientX, 100) + 0, eve
 
 }*/
     
-    window.__onDrag = function (event) {
+   window.__onDrag = function (event) {
 
 const svg = document.querySelector("svg");
-svg.style.marginTop = String(Math.abs(Math.sin(event.clientX * 400))) + "px";
-svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientX, 100) + 0, event.clientY + 128 ) * (window.innerWidth/2) ) + "px";
+svg.style.marginTop = String(64 + Math.abs(Math.sin(event.clientY))) + "px";
+svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientY, 100) + 0, event.clientX + window.innerHeight ) * window.innerWidth/2 ) + "px";
 
 }
     
