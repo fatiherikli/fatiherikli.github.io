@@ -413,7 +413,7 @@ const svg = document.querySelector("svg");
 svg.style.marginTop = String(64 + Math.abs(Math.sin(event.clientY))) + "px";
 svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientY, 100) + 0, event.clientX + window.innerHeight ) * window.innerWidth/2 ) + "px";
 
-svg.style.transform=`rotate(${180 * Math.atan2(event.clientX, event.clientY)}deg)`
+svg.style.transform=`rotate(${(180 * Math.atan2(event.clientX, event.clientY)) + 45}deg)`
 console.log(Math.atan2(event.clientX, event.clientY))
 }
     
