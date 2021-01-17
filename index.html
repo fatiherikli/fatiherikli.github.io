@@ -394,7 +394,7 @@ mathiasbynens.be/notes/async-analytics-snippet -->
       (event) => {
         counter++;
                                                   if (counter % 10 === 0) {
-                                                    document.querySelector(".cover").style.background = `url(${overlays[0]}) center center no-repeat`;
+                                                    document.querySelector(".cover").style.background = `url(${overlays[counter % overlays.length - 1]}) center center no-repeat`;
                                                   }
       }
     );
