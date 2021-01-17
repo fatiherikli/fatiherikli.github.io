@@ -388,7 +388,7 @@ svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientX, 100) + 0, eve
 
 const svg = document.querySelector("svg");
 svg.style.marginTop = String(Math.abs(Math.sin(event.clientX * 400))) + "px";
-svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientX, 100) + 0, event.clientY + 128 ) * 100 ) + "px";
+svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientX, 100) + 0, event.clientY + 128 ) * (window.innerWidth/2) ) + "px";
 
 }
     
