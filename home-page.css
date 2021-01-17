@@ -382,6 +382,13 @@ footer {
 
     .headline h1 {
       margin-bottom: -5px;
+      
+margin-top: 10px;
+content: "fatiherikli";
+letter-spacing: 1px;
+color: deepskyblue;
+background: white;
+
     }
 
     .headline nav {
