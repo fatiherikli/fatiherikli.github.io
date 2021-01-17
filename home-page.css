@@ -75,7 +75,7 @@ padding-top: 1em;
 
 .interested-in li::before {
   font-family: "San Francisco", sans-serif;
-content: open-quote;
+content: ""; /*open-quote;*/
 color: floralwhite;
 font-weight: bold;
 display: inline-block;
