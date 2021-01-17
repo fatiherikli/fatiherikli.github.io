@@ -40,7 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="cover">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 400 400" style="margin-top: 64.4282px; margin-left: 110.93px; mix-blend-mode: overlay;position: absolute; z-index: 32;">
    <!--<circle cx="200" r="200" cy="200" fill="🀅" /> -->
-  <circle cx="200" r="200" cy="200" fill="orange"></circle>
+  <circle cx="200" r="200" cy="200" fill="slategray"></circle>
   
 
 <polyline points="300,275 200,115 100,275" fill="transparent" stroke="black" stroke-width="30" style="" transform="scale(1)"></polyline>
@@ -387,12 +387,14 @@ svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientX, 100) + 0, eve
 
 }*/
     
-   window.__onDrag = function (event) {
+  window.__onDrag = function (event) {
 
 const svg = document.querySelector("svg");
 svg.style.marginTop = String(64 + Math.abs(Math.sin(event.clientY))) + "px";
 svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientY, 100) + 0, event.clientX + window.innerHeight ) * window.innerWidth/2 ) + "px";
 
+svg.style.transform=`rotate(${180 * Math.atan2(event.clientX, event.clientY)}deg)`
+console.log(Math.atan2(event.clientX, event.clientY))
 }
     
     document.body.addEventListener("mousemove", (event) => { window.__onDrag(event) })
