@@ -440,7 +440,11 @@ footer {
     text-align: right;
     top: 100px;
     width: 100px;
-  } 
+  }
+  
+  h1 {
+    margin-top: -170px;
+  }
 }
 
 #canvas {
