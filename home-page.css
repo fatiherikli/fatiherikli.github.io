@@ -301,15 +301,20 @@ margin-left: -1em;
 }
 
 .talk-list a {
-  color: black;
-  padding-left: 2vw;
+  color: rgb(0, 0, 0);
+background: rgb(190, 190, 190);
 }
 
 .talk-list a:before {
-  content: "⦁";
-  display: inline-block;
-  position: absolute;
-  margin-left: -2vw;
+  content: attr(href);
+display: inline-block;
+position: absolute;
+margin-left: 2vw;
+color: rgb(63, 119, 251);
+font-size: 12px;
+margin-top: 1.15em;
+mix-blend-mode: plus-darker;
+display: block;
 }
 
 footer {
