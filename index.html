@@ -377,7 +377,14 @@ mathiasbynens.be/notes/async-analytics-snippet -->
         event.preventDefault();
         startGame();
       }
-    )
+    ); let counter = 0; document.getElementById(
+      'flappybird-link'
+    ).addEventListener(
+      'mouseup',
+      (event) => {
+        counter++; console.log(counter)
+      }
+    );
     
 /*window.__onDrag = function (event) {
 
