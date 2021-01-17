@@ -36,9 +36,10 @@ h3 span {
 .cover {
   width: 45%;
   float: left;
-  background: black;
   height: 100%;
   position: fixed;
+  background: url(url(https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/97184197_246149420047228_6361037996303145174_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=6L0MCsTkbwcAX-dMHB-&tp=1&oh=9d6e930e182a9c3cd7aab29fef48f89f&oe=602E419D) center center no-repeat) center center no-repeat;
+  background-size: cover;
 }
 
 .content {
@@ -90,7 +91,7 @@ margin-left: -1em;
 .headline h1 {
   margin: 0;
   padding: 0;
-  color: #aeaeae;
+  color: #373737;
   font-weight: normal;
   margin-bottom: -10px;
 }
@@ -101,7 +102,7 @@ margin-left: -1em;
   color: white;
   font-size: 0.8em;
   font-weight: normal;
-  color: #6a6a6a;
+  color: #373737;
 }
 
 .headline nav {
@@ -109,7 +110,7 @@ margin-left: -1em;
 }
 
 .headline nav a {
-  color: white;
+  color: #373737;
   text-decoration: none;
   margin-left: 10px;
   font-size: 0.8em;
@@ -123,7 +124,7 @@ margin-left: -1em;
 
 .headline {
   position: absolute;
-  bottom: 100px;
+  top: 260px;
   left: 5vw;
   z-index: 10;
   font-size: 2.4vw;
