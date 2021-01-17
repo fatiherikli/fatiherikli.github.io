@@ -75,8 +75,8 @@ padding-top: 1em;
 
 .interested-in li::before {
   font-family: "San Francisco", sans-serif;
-content: "\2022";
-color: #464646;
+content: open-quote;
+color: floralwhite;
 font-weight: bold;
 display: inline-block;
 width: 1em;
