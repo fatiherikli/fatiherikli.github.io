@@ -321,6 +321,16 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
+  
+  body {
+    font-size: 1.4em;
+  }
+  
+  .content { padding: 20px 15px }
+  
+  h3 {
+  margin: 15px 0 32px
+  }
     #me {
       float: right;
       width: 30vw;
