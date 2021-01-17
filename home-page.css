@@ -21,8 +21,8 @@ h3 {
   margin-top: 3vw;
   font-size: 2.3em;
 text-align: right;
-  color: #191a25;
-background: floralwhite;
+  color: #0415ce;
+background: #eee;
 }
 
 
@@ -31,6 +31,7 @@ h3 span {
   line-height: 20px;
   z-index: 10;
   padding: 0 10px 0 0;
+  background: #7460ff;
 }
 
 .cover {
