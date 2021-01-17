@@ -19,7 +19,10 @@ h3 {
   height: 2vw;
   margin-bottom: 2.5vw;
   margin-top: 3vw;
-  font-size: 1.7em;
+  font-size: 2.3em;
+text-align: right;
+  color: #191a25;
+background: slategray;
 }
 
 
