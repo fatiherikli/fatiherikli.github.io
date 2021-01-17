@@ -329,7 +329,15 @@ footer {
   .content { padding: 20px 15px }
   
   h3 {
-  margin: 15px 0 32px
+  margin: 15px 0 32px;
+  }
+  
+  h3 span {
+  font-weight: normal;
+  }
+  
+  .work-types {
+  margin: 6px 0 4px 14px;
   }
     #me {
       float: right;
