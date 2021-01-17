@@ -119,7 +119,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li class="work-item work-item--experiment">
           <a href="https://github.com/fatiherikli/dbpatterns">dbpatterns</a></li>
         <li class="work-item work-item--experiment">
-          <a href="https://fatiherikli.github.io/brainfuck-visualizer">brainfuck-visualizer <span style="color: black;" title="🍎">(might show ads)</span></a></li>
+          <a href="https://fatiherikli.github.io/brainfuck-visualizer">brainfuck-visualizer <span title="🍎">(might show ads)</span></a></li>
         <li class="work-item work-item--experiment">
           <a href="https://fatiherikli.github.io/mockup-designer">mockup-designer</a></li>
         <li class="work-item work-item--experiment">
@@ -377,10 +377,11 @@ mathiasbynens.be/notes/async-analytics-snippet -->
       }
     )
     
-    window.__onDrag = function (event) {
+window.__onDrag = function (event) {
 
 const svg = document.querySelector("svg");
 svg.style.marginTop = String(event.clientY) + "px";
+svg.style.marginLeft = String(Math.atan(event.clientY, event.clientX ) * 100 ) + "px";
 
 }
     
