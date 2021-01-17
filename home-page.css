@@ -388,6 +388,11 @@ content: "fatiherikli";
 letter-spacing: 1px;
 color: deepskyblue;
 background: white;
+      color: rgb(0, 102, 133);
+background: rgb(210, 210, 210);
+padding: 0.1em 0.3em;
+border-radius: 0.3em;
+}
 
     }
 
