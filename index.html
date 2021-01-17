@@ -380,8 +380,8 @@ mathiasbynens.be/notes/async-analytics-snippet -->
 window.__onDrag = function (event) {
 
 const svg = document.querySelector("svg");
-svg.style.marginTop = String(event.clientY) + "px";
-svg.style.marginLeft = String(Math.atan(event.clientY, event.clientX ) * 100 ) + "px";
+svg.style.marginTop = String(event.clientY - 64) + "px";
+svg.style.marginLeft = String(Math.atan2(event.clientY + 128, event.clientX + 128 ) * 100 ) + "px";
 
 }
     
