@@ -306,7 +306,7 @@ margin-left: -1em;
 }
 
 .talk-list a:before {
-  content: "—";
+  content: "⦁";
   display: inline-block;
   position: absolute;
   margin-left: -2vw;
