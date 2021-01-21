@@ -356,8 +356,7 @@ mathiasbynens.be/notes/async-analytics-snippet -->
       ['Esentepe, Karabuk', 'https://scontent.cdninstagram.com/t51.2885-15/e15/11248012_1646262195605152_1226688448_n.jpg']
     ];*/
 
-     const overlays = [
-                             
+    const overlays = [                
       "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/118408446_1018600275252633_2185371767175961301_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=eScEQejaSRYAX9-V2Ye&tp=1&oh=717244af383c75915343085c965badd4&oe=602F746D",
       "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/107389083_967957830321452_7997865338448549891_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=Z-r9fUAUkaAAX-rhSNf&tp=1&oh=e065ba66d07f90a3015afefbc0ab5259&oe=602C28D2",
       "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/105969928_969912850114875_1224825819716349937_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=103&_nc_ohc=pnKnd7IiDsQAX-5E3Hm&tp=1&oh=90ecd782d3dd182c4316021b7193fe46&oe=602C9E3A",
@@ -367,59 +366,48 @@ mathiasbynens.be/notes/async-analytics-snippet -->
       "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/79267619_530937730833488_8256010509177616018_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=blwz814rDVsAX-3vsHD&tp=1&oh=c09ddbf71f27ea004b72ceca4f532ee5&oe=602DD274",
       "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/74354449_1002728240086618_5926928112882014990_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=Y3g1k3FpOPUAX-95k-K&tp=1&oh=df481cb615db71709d5556436fd334bb&oe=602DD8F6",
       "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/79366720_120006559190513_6293484284855083578_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=Cq9VdX0slnEAX-cH97F&tp=1&oh=7f16ce1cdd5fdb08a3b5c22d19570c91&oe=602F0BE8",
-     "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/61840415_423992178439670_8918711681658105624_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=rkEC9XFMlYUAX-rgzxG&tp=1&oh=7c1149a15d80f0f569a114807bb410c1&oe=602B8D15",
+      "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/61840415_423992178439670_8918711681658105624_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=rkEC9XFMlYUAX-rgzxG&tp=1&oh=7c1149a15d80f0f569a114807bb410c1&oe=602B8D15",
       "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/61692140_382899142569146_1015335636568700001_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=Sk6X2na497YAX9KrY8E&tp=1&oh=f8bfb4c68e8934a9328e796fd1d4ea54&oe=602F4847",
       "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/61372105_431753707557124_3705865835785535559_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=8j-frAA6lMwAX9XsEuh&tn=Rb7m9wVqOPmGNlXc&tp=1&oh=28019c1b596cf9f7eeabf7e5aeeaa171&oe=602F007C",
-     ];
+    ];
  
-    function startGame() {
-      document.getElementById('canvas').style.display = 'block';
-      document.getElementById('works-title').innerHTML = 'Spiel mit mir';
-  
-      var game = new flappybird.Game({
-          canvas: document.getElementById("canvas")
-      });
+function startGame() {
+  document.getElementById('canvas').style.display = 'block';
+  document.getElementById('works-title').innerHTML = 'Levitate';
 
-      game.loop();
-    }
+  var game = new flappybird.Game({ canvas: document.getElementById("canvas") });
+  game.loop();
+}
 
-    document.getElementById(
-      'flappybird-link'
-    ).addEventListener(
-      'mousedown',
-      (event) => {
-        event.preventDefault();
-        startGame();
-      }
-    ); let counter = 0;  let level = 0; document.querySelector(
-      'body'
-    ).addEventListener(
-      'mouseup',
-      (event) => {
-        counter++;
-                                                  if (counter %  Math.floor(window.innerWidth / 32 / Math.PI) === 0) {
-                                                    level++;
-                                                    document.querySelector(".cover").style.background = `url(${overlays[level]}) center center no-repeat`;
-                                                  }
-      }
-    );
-    
-/*window.__onDrag = function (event) {
+document.getElementById(
+  'flappybird-link'
+).addEventListener(
+  'mousedown',
+  (event) => {
+    event.preventDefault();
+    startGame();
+  }
+);
 
-const svg = document.querySelector("svg");
-svg.style.marginTop = String(event.clientY - 64) + "px";
-svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientX, 100) + 0, event.clientY + 128 ) * 100 ) + "px";
+let counter = 0;
+let level = 0;
+                                                                           
+function onLevitate() {
+  counter++;
+  if (counter %  Math.floor(window.innerWidth / 32 / Math.PI) === 0) {
+    level++; // spotify: 01:42
+    document.querySelector('.cover').style.background = `url(${overlays[level]}) center center no-repeat`;
+  }
+}
 
-}*/
-    
-  window.__onDrag = function (event) {
+document.querySelector('body').addEventListener('mouseup', onLevitate);
 
-const svg = document.querySelector("svg");
-svg.style.marginTop = String(64 + Math.abs(Math.sin(event.clientY))) + "px";
-svg.style.marginLeft = String(Math.atan2(  Math.max(event.clientY, 100) + 0, event.clientX + window.innerHeight ) * window.innerWidth/2 ) + "px";
-
-svg.style.transform=`rotate(${(180 * Math.atan2(event.clientX, event.clientY)) + 45}deg)`
-console.log(Math.atan2(event.clientX, event.clientY))
+window.__onDrag = function (event) {
+  // much science fiction
+  const svg = document.querySelector("svg");
+  svg.style.marginTop = String(64 + Math.abs(Math.sin(event.clientY))) + "px";
+  svg.style.marginLeft = String(Math.atan2(Math.max(event.clientY, 100) + 0, event.clientX + window.innerHeight) * window.innerWidth/2 ) + "px";
+  svg.style.transform=`rotate(${(180 * Math.atan2(event.clientX, event.clientY)) + 45}deg)`;
 }
     
     document.body.addEventListener("mousemove", (event) => { window.__onDrag(event) })
