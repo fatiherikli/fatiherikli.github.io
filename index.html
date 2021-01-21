@@ -402,6 +402,9 @@ function onLevitate() {
     document.querySelector('.cover').style.background = `url(${overlays[level]}) center center no-repeat`;
     document.querySelector('.cover').style.backgroundSize = 'contain';
   }
+                                                                           
+                                                                           
+  document.querySelector("svg").style.mixBlendMode = 'difference';                                                                  
 }
 
 document.querySelector('body').addEventListener('mouseup', onLevitate);
