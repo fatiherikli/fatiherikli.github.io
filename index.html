@@ -400,6 +400,7 @@ function onLevitate() {
   if (counter %  Math.floor(window.innerWidth / 32 / Math.PI) === 0) {
     level++; // spotify: 01:42
     document.querySelector('.cover').style.background = `url(${overlays[level]}) center center no-repeat`;
+    document.querySelector('.cover').style.backgroundSize = 'contain';
   }
 }
 
