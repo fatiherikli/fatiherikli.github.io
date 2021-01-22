@@ -91,7 +91,7 @@ flappybird.Bird = Class.extend({
         this.stage.canvas.addEventListener('keydown', this.flap.bind(this));
 
         this.img = new Image();
-        this.img.src = 'bird.png?with=blue-eyes';
+        this.img.src = 'bird-2.png';
 
         this.flapState = 0;
         this.rotation = this.defaultRotation;
