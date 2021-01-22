@@ -68,7 +68,7 @@ flappybird.Pipe = Class.extend({
 
 flappybird.Bird = Class.extend({
 
-    width: 30,
+    width: 64,
     height: 27,
 
     x: 100,
