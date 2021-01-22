@@ -87,8 +87,8 @@ flappybird.Bird = Class.extend({
 
     init: function (stage) {
         this.stage = stage;
-        this.stage.canvas.addEventListener('mousedown', this.flap.bind(this));
-        this.stage.canvas.addEventListener('keydown', this.flap.bind(this));
+        document.body.addEventListener('mousedown', this.flap.bind(this));
+        document.body.canvas.addEventListener('keydown', this.flap.bind(this));
 
         this.img = new Image();
         this.img.src = 'assets/a-bird.png';
@@ -299,8 +299,8 @@ flappybird.Game = Class.extend({
         this.passedPipes = [];
         this.lastPipe = null;
         this.state = this.states.WAIT;
-        this.canvas.addEventListener("click", this.onclick.bind(this));
-        document.body.addEventListener("mouseup", this.onclick.bind(this));
+        document.body.addEventListener("click", this.onclick.bind(this));
+        document.body.addEventListener("mouseup", this.onclick.bind(this), { once: window.innerWidth > 900 });
     },
 
     createPipe: function () {
