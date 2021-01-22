@@ -68,8 +68,8 @@ flappybird.Pipe = Class.extend({
 
 flappybird.Bird = Class.extend({
 
-    width: 64 * 2,
-    height: 27 * 2,
+    width: 64,
+    height: 27,
 
     x: 100,
     y: 200,
@@ -152,14 +152,14 @@ flappybird.Bird = Class.extend({
 
         this.stage.context.drawImage(
             this.img,
-            this.flapState * (this.width/2),
+            this.flapState * this.width,
             0,
-            this.width/2,
-            this.height/2,
+            this.width,
+            this.height,
             this.x,
             this.y,
-            this.width/2,
-            this.height/2
+            this.width,
+            this.height
         );
 
         this.stage.context.restore();
