@@ -89,6 +89,7 @@ flappybird.Bird = Class.extend({
         this.stage = stage;
         document.body.addEventListener('mousedown', this.flap.bind(this));
         document.body.addEventListener('keydown', this.flap.bind(this));
+        document.body.addEventListener('mouseup', this.flap.bind(this), { once: true });
 
         this.img = new Image();
         this.img.src = 'assets/a-bird.png';
