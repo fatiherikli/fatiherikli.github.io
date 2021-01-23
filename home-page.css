@@ -449,6 +449,5 @@ footer {
   -webkit-user-select: none;
   outline: none;
   image-rendering: optimizespeed;
-  transform: perspective(500px) rotateX(300deg);;
   margin-bottom: 100px;
 }
