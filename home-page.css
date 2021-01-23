@@ -52,9 +52,16 @@ h3 span {
   font-size: 2vw;
   color: #3b3b3b;
   line-height: 1.3em;
-  box-shadow: inset 0 0 50px #967b6f, inset 20px 0 80px #9ea48d, inset -20px 0 80px #c8ddf2, inset 20px 0 300px #dbe3b7, inset -20px 0 300px #8f7a73, 0 0 50px #174973, -10px 0 80px #7098c4, 10px 0 80px;
-  margin-top: -1em;
-padding-top: 1em;
+  box-shadow: inset 0 0 50px #6c6c6c,
+    inset 20px 0 80px #9d9d9d,
+    inset -20px 0 80px #540df00f,
+    inset 20px 0 300px #999,
+    inset -20px 0 300px #404040,
+    0 0 50px #fff,
+    -10px 0 80px #fff,
+    10px 0 80px;
+   margin-top: -1em;
+   padding-top: 1em;
 }
 
 .content a {
