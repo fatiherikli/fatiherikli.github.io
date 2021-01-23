@@ -128,8 +128,8 @@ margin-left: -1em;
 }
 
 .headline nav a:hover {
-  background-color: white;
-  color: black;
+  background-color: blue;
+  color: white;
 }
 
 .headline {
