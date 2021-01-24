@@ -120,14 +120,18 @@ ght and (related-rights) and associated claims and causes of action, whether now
 unknown (including existing as well as future claims and causes of action), in the Work (
 I) in all territories (territory-plural) worldwide, (II) for the maximum duration provide
 d by applicable law or treaty (including future time extensions), (III) in any current or 
-future medium and
+future medium and for any number of copies and (IV) for any purpose;
+                   ⦁
+                   ⦁
+                   ⦁
+                   ⦁
+                   ⦁
+<----------------- ⦁
+    (Whatsoever)
 
-                                                                for any number of copies #
-and (IV) for any purpose;
 
-#########################
-Whatsoever
-----------------------------------------------------------------------------------------------
+                                         STATE
+--------------------------------------------------------------------------------------------->
 | including without limitation commercial, advertising or promotional purposes (the-waiver). |
 | Affirmer makes the Waiver for the benefit of each member of the public at large and to the |
 | detriment of Affirmer's heirs and successors, fully intending that such Waiver shall not b |
