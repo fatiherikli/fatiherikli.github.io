@@ -130,7 +130,7 @@ future medium and for any number of copies and (IV) for any purpose;
     (Whatsoever)
 
 
-                                         STATE
+                                        STATEMENT
 --------------------------------------------------------------------------------------------->
 | including without limitation commercial, advertising or promotional purposes (the-waiver). |
 | Affirmer makes the Waiver for the benefit of each member of the public at large and to the |
