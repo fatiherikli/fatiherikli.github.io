@@ -68,8 +68,9 @@ competition in regards to a work, subject to the limitations in paragraph
 *******************************************************
 
 
-   EQUALIZER
-   iiiiiiiiiiiiiiiiiiiiiii[i]iiiiiiiiiiiiiiiiiiiiiiiiii
+   +++++++++
+   ++STORY++
+   +++++++++
 
 
 ********************************************************
@@ -87,8 +88,6 @@ competition in regards to a work, subject to the limitations in paragraph
    |░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░░░░░|  
    |░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░░░░░|  
    +++++++++++++++++++++++++++++++++++
-   
-   Tells a story without an enforcement of distraction
 
 *******************************************************
 
