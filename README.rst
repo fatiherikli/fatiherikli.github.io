@@ -97,5 +97,6 @@ action with respect to the Work, in either case contrary to Affirmer's
 express Statement of Purpose.
 
 ----
-https://fatiherikli.github.io/fil/#eyJwYXRoIjoiaGVsbG8ucHkiLCJzb3VyY2UiOiJwcmludCgnSSBoZXJlIGJ5IGRlY2xhcmUgdGhhdCB3aWxsIGZvbGxvdyB0aGUgcnVsZXMnKSJ9
-https://fatiherikli.github.io/fil/#eyJwYXRoIjoicmFuZG9tLnB5Iiwic291cmNlIjoic2VlZCA9IDFcblxuZGVmIHJhbmRvbSgpOlxuICAgIHJldHVybiAzLjE0MjM4NjI2MjYyNjI2MlxuIn0=
+https://fatiherikli.github.io/fil
+
+I hereby declare that I will follow the rules written above.
