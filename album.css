@@ -1,7 +1,6 @@
 body {
   font-family: helvetica, sans-serif;
   background-color: #ffffff;
-  background-color: #ffffff;
 }
 
 ul {
@@ -26,17 +25,13 @@ h3 {
   text-shadow: 3px 3px yellow;
 }
 
-.photo-frame {
-}
-
 .photo-frame img {
   width: 100%;
-
   display: inline-block;
 }
 
 .photo-title {
-  /*color: #fff;*/
+  /* color: #fff;                                */
   background: #fff;
   text-align: center;
   margin-top: -5px;
