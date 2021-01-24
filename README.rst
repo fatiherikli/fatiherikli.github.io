@@ -128,7 +128,7 @@ d by applicable law or treaty (including future time extensions), (III) in any c
 future medium and for any number of copies and (IV) for any purpose;
                    ⦁
                    ⦁
-                   ⦁  W H A T S O E V E R
+                   ⦁  A N Y W A Y
                    ⦁
                    ⦁
 <----------------- ⦁
