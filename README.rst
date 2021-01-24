@@ -49,7 +49,8 @@ Rights protecting against unfair competition in regards to a work,
 subject to the limitations in paragraph 4(a), below;
 
 
-***********************************************************************************************************************
+*******************************************************
+
    +++++++++++++++++++++++---+++++++++  
    |░░░░░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░|  
    |░░░░░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░|  
@@ -63,15 +64,17 @@ subject to the limitations in paragraph 4(a), below;
    |░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░░░░░|  
    |░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░░░░░|  
    +++++++++++++++++++---+++++++++++++
-   it starts
-
-***********************************************************************************************************************
 
 
-   THINGS HAPPENING ON BACKSTAGE
+*******************************************************
 
 
-***********************************************************************************************************************
+   EQUALIZER
+   iiiiiiiiiiiiiiiiiiiiiii[i]iiiiiiiiiiiiiiiiiiiiiiiiii
+
+
+********************************************************
+
    +++++++++++++++++++++++++++++++++++  
    |░░░░░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░|  
    |░░░░░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░|  
@@ -85,23 +88,21 @@ subject to the limitations in paragraph 4(a), below;
    |░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░░░░░|  
    |░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░░░░░|  
    +++++++++++++++++++++++++++++++++++
-   ad break
+   
+   Tells a story
 
-***********************************************************************************************************************
+*******************************************************
 
 Rights protecting 
    ** the extraction
    && dissemination
    and use and reuse of data in a *work*;
-   
 
 Database rights (such as those arising under Directive 96 ~ 9 ~ EC of the
-
 
 ********************************************************
 European Parliament and of the Council of 11 March 1996
 ********************************************************
-
 
 on the legal protection of databases, and under any national implementati
 on thereof, including any amended or successor version of suchdirective);
@@ -113,30 +114,29 @@ of.
 Waiver
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To the greatest extent permitted by                (toor or root or domethings like dhat)
+To the *greatest extent permitted by*              ~toor or root or somethings like thad~
+----------------------------------------------------------------------------------------
 but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently,
 irrevocably and unconditionally waives, abandons, and surrenders all of Affirmer's Copyri
 ght and (related-rights) and associated claims and causes of action, whether now known or
 unknown (including existing as well as future claims and causes of action), in the Work (
 I) in all territories (territory-plural) worldwide, (II) for the maximum duration provide
-d by applicable law or treaty (including future time extensions), (II) in any current or 
+d by applicable law or treaty (including future time extensions), (III) in any current or 
 future medium and
 
-                                                                   for any number of copies,
-
-
-&& (IV) for any purpose
+                                                                for any number of copies|
+and (IV) for any purpose;
 
 ######
 Whatsoever
 ######
 
-including without limitation commercial, advertising or promotional purposes (the-waiver).
-Affirmer makes the Waiver for the benefit of each member of the public at large and to th
-e detriment of Affirmer's heirs and successors, fully intending that such Waiver shall not be
-subject to, any of (revocation_, rescission_, cancellation_, termination_) or any other legal
-or equitable action to disrupt the quiet *enjoyment* of the *work* by the public as contempla
-ted by plural-affirmer express (_statement_of_purpose).
+                                                      including without limitation commercial, advertising or promotional purposes (the-waiver).
+                                                      Affirmer makes the Waiver for the benefit of each member of the public at large and to the
+                                                      detriment of Affirmer's heirs and successors, fully intending that such Waiver shall not b
+                                                      e subject to, any of (revocation_, rescission_, cancellation_, termination_) or any other 
+                                                      legal or equitable action to disrupt the quiet *enjoyment* of the *work* by the public as 
+                                                      -contemplated- by plural-affirmer express (_statement_of_purpose).
 
 
 ########################
