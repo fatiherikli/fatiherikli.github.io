@@ -88,7 +88,7 @@ competition in regards to a work, subject to the limitations in paragraph
    |░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░░░░░|  
    +++++++++++++++++++++++++++++++++++
    
-   Tells a story
+   Tells a story without an enforcement of distraction
 
 *******************************************************
 
