@@ -110,8 +110,7 @@ The database rights (
 on the legal protection of databases, and under any national implementati
 on thereof, including any amended or successors version of suchdirective;
 other than the similar, equivalent or corresponding rights throughout the
-world based on applicable law or treaty, and any *national implementations*
-thereof. (page=widont_
+world based on applicable law or treaty, and any national implementations      — thereof.
 
 ~~~~~~
 Waiver
