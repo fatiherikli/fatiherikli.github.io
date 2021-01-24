@@ -113,8 +113,8 @@ of.
 Waiver
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To the *greatest extent permitted by*              ~toor or root or somethings like thad~
-----------------------------------------------------------------------------------------
+To the *greatest extent permitted by*                toor or root or somethings like thad
+-----------------------------------------------------------------------------------------
 but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently,
 irrevocably and unconditionally waives, abandons, and surrenders all of Affirmer's Copyri
 ght and (related-rights) and associated claims and causes of action, whether now known or
