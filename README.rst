@@ -78,7 +78,11 @@ Database rights (such as those arising under Directive 96/9/EC of the European P
 Other similar, equivalent or corresponding rights throughout the world based on applicable law or treaty, and any *national
 implementations* thereof.
 
-Waiver. To the greatest extent permitted by, but not in contravention
+~
+Waiver
+~
+
+To the greatest extent permitted by, but not in contravention
 of, applicable law, Affirmer hereby overtly, fully, permanently,
 irrevocably and unconditionally waives, abandons, and surrenders all of
 Affirmer's Copyright and Related Rights and associated claims and causes
