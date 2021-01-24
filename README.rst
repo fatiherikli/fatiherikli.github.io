@@ -48,10 +48,8 @@ Rights protecting against unfair competition in regards to a work,
 subject to the limitations in paragraph 4(a), below;
 
 
-ADVERTISEMENTS
+A NOT DISTRACTING ADVERTISEMENT
 **************
- SPIEL MIT MIR
-
    +++++++++++++++++++++++---+++++++++  
    |░░░░░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░|  
    |░░░░░░░░░░░░░░░░░░░░░░|▒|░░░░░░░░|  
