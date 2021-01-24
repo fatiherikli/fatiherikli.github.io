@@ -2,9 +2,9 @@
 Licenses for specific creative works
 ========================================================
 
-apple-touch-icon.png — CLAUSE BSD (No-copyleft)
-fatiherikli.github.io - Creative Commons License Code
-blue-square-game - CLAUSE BSD (No-copyleft)
+apple-touch-icon.png   — CLAUSE BSD (No-copyleft)
+this website           - Creative Commons License Code
+blue-square-game       - CLAUSE BSD (No-copyleft)
 
 ***********************
 Statement of Purpose
@@ -65,16 +65,18 @@ A NOT DISTRACTING ADVERTISEMENT
    +++++++++++++++++++---+++++++++++++  
 
 
-rights protectin1. g the extraction, dissemination, use and reuse of data
-in a Work;
-database rights (such as those arising under Directive 96/9/EC of the
-European Parliament and of the Council of 11 March 1996 on the legal
-protection of databases, and under any national implementation
-thereof, including any amended or successor version of such
-directive); and
-other similar, equivalent or corresponding rights throughout the
-world based on applicable law or treaty, and any national
-implementations thereof.
+Rights protecting 
+   ** the extraction
+   && dissemination
+   and use and reuse of data in a *work*;
+   
+
+Database rights (such as those arising under Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996
+                 on the legal protection of databases, and under any national implementation thereof, including any amended o
+                 r successor version of suchdirective);
+
+Other similar, equivalent or corresponding rights throughout the world based on applicable law or treaty, and any *national
+implementations* thereof.
 
 Waiver. To the greatest extent permitted by, but not in contravention
 of, applicable law, Affirmer hereby overtly, fully, permanently,
