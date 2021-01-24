@@ -3,14 +3,10 @@ Licenses for specific creative works
 ========================================================
 
 apple-touch-icon.png — **3 CLAUSE BSD (No-copyleft)**
+fatiherikli.github.io - **Creative Commons License Code**
+blue-square-game - **3 CLAUSE BSD (No-copyleft)**
 
-========================================================
-Licenses for the website
-========================================================
 
-***************************
-Creative Commons Legal Code
-***************************
 
 ***********************
 Statement of Purpose
