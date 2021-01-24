@@ -371,7 +371,7 @@ flappybird.Game = Class.extend({
         this.context.textAlign = "center";
         this.context.font = "bold 30px helvetica";
         this.context.fillText("GAME OVER but it's ok", 400, 240);
-        this.context.fillText("SCORE " + this.score, 400, 280);
+        this.context.fillText("SCORE " + (Math.random() * 100), 400, 280);
     },
 
     update: function () {
