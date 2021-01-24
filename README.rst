@@ -91,16 +91,23 @@ competition in regards to a work, subject to the limitations in paragraph
 
 *******************************************************
 
-Rights protecting 
-   ** the extraction
-   && dissemination
-   and use and reuse of data in a *work*;
+Continue
 
-Database rights (such as those arising under Directive 96 ~ 9 ~ EC of the
+#################
+Rights protecting
+#################
 
-********************************************************
-European Parliament and of the Council of 11 March 1996
-********************************************************
+
+   * * the extraction
+   & & dissemination
+   AND use and reuse of data in a work
+
+The database rights (
+      such as those arising under the 
+      Directive 96/9/ (EC of the European Parliament
+                       and of the Council of 11 March
+                                             1996)
+)
 
 on the legal protection of databases, and under any national implementati
 on thereof, including any amended or successor version of suchdirective);
