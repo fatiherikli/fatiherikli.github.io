@@ -127,14 +127,14 @@ and (IV) for any purpose;
 
 #########################
 Whatsoever
-##########
-
-   including without limitation commercial, advertising or promotional purposes (the-waiver).
-   Affirmer makes the Waiver for the benefit of each member of the public at large and to the
-   detriment of Affirmer's heirs and successors, fully intending that such Waiver shall not b
-   e subject to, any of (revocation_, rescission_, cancellation_, termination_) or any other 
-   legal or equitable action to disrupt the quiet *enjoyment* of the *work* by the public as 
-   -contemplated- by plural-affirmer express (_statement_of_purpose).
+----------------------------------------------------------------------------------------------
+| including without limitation commercial, advertising or promotional purposes (the-waiver). |
+| Affirmer makes the Waiver for the benefit of each member of the public at large and to the |
+| detriment of Affirmer's heirs and successors, fully intending that such Waiver shall not b |
+| e subject to, any of (revocation_, rescission_, cancellation_, termination_) or any other  |
+| legal or equitable action to disrupt the quiet *enjoyment* of the *work* by the public as  |
+| -contemplated- by plural-affirmer express (_statement_of_purpose).                         |
+----------------------------------------------------------------------------------------------
 
 
 ########################
