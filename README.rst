@@ -6,8 +6,6 @@ apple-touch-icon.png — CLAUSE BSD (No-copyleft)
 fatiherikli.github.io - Creative Commons License Code
 blue-square-game - CLAUSE BSD (No-copyleft)
 
-
-
 ***********************
 Statement of Purpose
 ***********************
