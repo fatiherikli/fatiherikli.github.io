@@ -106,7 +106,7 @@ on the legal protection of databases, and under any national implementati
 on thereof, including any amended or successor version of suchdirective);
 Other similar, equivalent or corresponding rights throughout the world ba
 sed on applicable law or treaty, and any *national implementations* there
-of.
+of. {PAGENOTES: WIDONT}
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Waiver
