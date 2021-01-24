@@ -95,16 +95,23 @@ Rights protecting
    and use and reuse of data in a *work*;
    
 
-Database rights (such as those arising under Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996
-                 on the legal protection of databases, and under any national implementation thereof, including any amended o
-                 r successor version of suchdirective);
+Database rights (such as those arising under Directive 96 ~ 9 ~ EC of the
 
-Other similar, equivalent or corresponding rights throughout the world based on applicable law or treaty, and any *national
-implementations* thereof.
 
-~
+********************************************************
+European Parliament and of the Council of 11 March 1996
+********************************************************
+
+
+on the legal protection of databases, and under any national implementati
+on thereof, including any amended or successor version of suchdirective);
+Other similar, equivalent or corresponding rights throughout the world ba
+sed on applicable law or treaty, and any *national implementations* there
+of.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Waiver
-~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To the greatest extent permitted by                (toor or root or domethings like dhat)
 but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently,
