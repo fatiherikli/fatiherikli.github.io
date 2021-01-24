@@ -28,7 +28,7 @@ part through the use and efforts of others.
 
 For these and/or other purposes and motivations, and without any
 expectation of additional consideration or compensation, the person
-associating CC0 with a Work (the "Affirmer"), to the extent that he or she
+associating CC0 with a Work (the "Affirmer"), to the extent that he or she                 (SHIMSELF)
 is an owner of Copyright and Related Rights in the Work, voluntarily
 elects to apply CC0 to the Work and publicly distribute the Work under its
 terms, with knowledge of his or her Copyright and Related Rights in the
