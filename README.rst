@@ -176,4 +176,4 @@ express Statement of Purpose.            PATCH
 ----
 https://fatiherikli.github.io/fil
 
-I hereby declare that I will follow the rules written above.
+I hereby declare that I will follow the rules written below.
