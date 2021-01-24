@@ -122,12 +122,12 @@ I) in all territories (territory-plural) worldwide, (II) for the maximum duratio
 d by applicable law or treaty (including future time extensions), (III) in any current or 
 future medium and
 
-                                                                for any number of copies|
+                                                                for any number of copies #
 and (IV) for any purpose;
 
-######
+#########################
 Whatsoever
-######
+##########
 
    including without limitation commercial, advertising or promotional purposes (the-waiver).
    Affirmer makes the Waiver for the benefit of each member of the public at large and to the
