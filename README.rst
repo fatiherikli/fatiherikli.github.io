@@ -115,11 +115,11 @@ Other similar, equivalent or corresponding rights throughout the world ba
 sed on applicable law or treaty, and any *national implementations* there
 of. {PAGENOTES: WIDONT}
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
 Waiver
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
 
-To the *greatest extent permitted by*                toor or root or somethings like thad
+To the greatest extent permitted by
 -----------------------------------------------------------------------------------------
 but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently,
 irrevocably and unconditionally waives, abandons, and surrenders all of Affirmer's Copyri
@@ -130,11 +130,11 @@ d by applicable law or treaty (including future time extensions), (III) in any c
 future medium and for any number of copies and (IV) for any purpose;
                    ⦁
                    ⦁
-                   ⦁
+                   ⦁  W H A T S O E V E R
                    ⦁
                    ⦁
 <----------------- ⦁
-    (Whatsoever)
+    (this is about something else)
 
 
                                         STATEMENT
