@@ -96,10 +96,12 @@
   ">
     <h4>The license loading...</h4>
     <script>
+      if (window.innerWidth < 900) {
+        document.getElementById("license").style.fontSize = '9px';
+      }
       fetch('README.rst')
         .then(data => (data.text()))
         .then(licenseText => document.getElementById('license').innerHTML = 
-        
           licenseText
             .replace('quiet enjoyment', '<strong style="color: blue">quiet enjoyment</strong>')
             .replace('Continue...', `<button onclick="continueDONTSHADOWARESERVEDKEYWORD()">Continue</button>`)
