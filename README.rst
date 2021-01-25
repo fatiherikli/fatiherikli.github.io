@@ -95,7 +95,8 @@ Rights protecting
 The database rights (
    such as those arising under the 
    Directive 96 / 9 /
-   EC of the European Parliament and of the Council of 11 March 1996
+   EC of the European Parliament and of the Council of
+   11 March 1996
 )
 
 on the legal protection of databases, and under any national implementati
