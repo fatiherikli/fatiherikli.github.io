@@ -124,15 +124,18 @@ future medium and for any number of copies and (IV) for any purpose;
                    ⦁
                    ⦁
                    ⦁  A N Y W A Y
+                   ⦁
 <----------------- ⦁
-    (this is about something else)      WE ARE HERE TO INTRODUCE SOMETHING CALLED
+    (this is about something else)      
+    
+    
                                         STATEMENT
 --------------------------------------------------------------------------------------------->
 | including without limitation commercial, advertising or promotional purposes (the-waiver). |
 | Affirmer makes the Waiver for the benefit of each member of the public at large and to the |
 | detriment of Affirmer's heirs and successors, fully intending that such Waiver shall not b |
-| e subject to, any of (revocation_, rescission_, cancellation_, termination_) or any other  |
-| legal or equitable action to disrupt the quiet *enjoyment* of the *work* by the public as  |
+| e subject to, any of (revocation, rescission, cancellation, termination) or any other      |
+| legal or equitable action to disrupt the -quiet enjoyment- of the work by the public as    |
 | -contemplated- by plural-affirmer expression.                                              |
 ----------------------------------------------------------------------------------------------
 
@@ -160,7 +163,7 @@ of the License, and in such ca           DIFF    se Affirmer hereby affirms that
 will not (i) exercise any of h           DIFF    is or her remaining Copyright and Related
 Rights in the Work or (ii) ass           DIFF    ert any associated claims and causes of
 action with respect to the Wor           DIFF    k, in either case contrary to Affirmer's
-express Statement of Purpose.            PATCH
+express Statement of Purpose.            PATCH   ok
 
 ----
 https://fatiherikli.github.io/fil
