@@ -125,9 +125,7 @@ future medium and for any number of copies and (IV) for any purpose;
                    ⦁
                    ⦁  A N Y W A Y
 <----------------- ⦁
-    (this is about something else)
-
-
+    (this is about something else)      WE ARE HERE TO INTRODUCE SOMETHING CALLED
                                         STATEMENT
 --------------------------------------------------------------------------------------------->
 | including without limitation commercial, advertising or promotional purposes (the-waiver). |
