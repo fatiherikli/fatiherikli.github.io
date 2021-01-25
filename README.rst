@@ -132,7 +132,7 @@ future medium and for any number of copies and (IV) for any purpose;
 | detriment of Affirmer's heirs and successors, fully intending that such Waiver shall not b |
 | e subject to, any of (revocation, rescission, cancellation, termination) or any other      |
 | legal or equitable action to disrupt the -quiet enjoyment- of the work by the public as    |
-| -contemplated- by plural-affirmer expression.                                              |
+| -contemplated- by  Affirmer's express Statement of Purpose.                                |
 ----------------------------------------------------------------------------------------------
 
 
