@@ -63,9 +63,9 @@
              margin: 0;">
   <div class="cover"
     style="background-color: rgb(255, 255, 255); background-image: url(https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/97184197_246149420047228_6361037996303145174_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=6L0MCsTkbwcAX_10jsm&tp=1&oh=da2dd71ec9b3df6b2f7e499331c0d3ca&oe=602E419D)">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="mix-blend-mode: multiply;" width="32" height="32" viewBox="0 0 400 400"
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 400 400"
       style="margin-top: 64.062px; margin-left: 198.734px; position: absolute; z-index: 32; transform: rotate(259.713deg);">
-      <polyline points="300,275 200,115 100,275" fill="transparent" stroke-width="30" style="stroke: blue;"
+      <polyline points="300,275 200,115 100,275" fill="transparent" stroke-width="30" style="stroke:slategray;"
         transform="scale(1)"></polyline>
     </svg>
     <div class="headline">
@@ -469,7 +469,8 @@ mathiasbynens.be/notes/async-analytics-snippet -->
     window.__onDrag = function (event) {
       // much science fiction
       const svg = document.querySelector("svg");
-      svg.style.marginTop = String(window.innerHeight / 2) + "px";
+      const isTablet = window.innerWidth < 900;
+      svg.style.marginTop = String(window.innerHeight / (isTablet ? 4 : 2)) + "px";
       svg.style.marginLeft = String(Math.atan2(Math.max(event.clientY, 100) + 0, event.clientX + window.innerHeight) * window.innerWidth / 2) + "px";
       svg.style.transform = `rotate(${(180 * Math.atan2(event.clientX, event.clientY)) + 45}deg)`;
     }

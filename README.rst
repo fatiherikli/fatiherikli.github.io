@@ -44,8 +44,8 @@ The right to reproduce, adapt, distribute, perform, display, communicate,
 and translate a Work. Moral rights retained by the original author(s) an
 d/or performer(s) publicity and privacy rights pertaining to a person's 
 image or likeness depicted in a *work*. Rights protecting against unfair
-competition in regards to a work, subject to the limitations in paragraph
-4(a) below;
+competition in regards to a work, subject to the limitations in the para
+graph below;
 
 PAGE ONE
 *******************************************************

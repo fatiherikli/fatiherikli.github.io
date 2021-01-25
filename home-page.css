@@ -311,17 +311,26 @@ margin-left: -1em;
 background: white;
 }
 
-.talk-list a:before {
+/* .talk-list a:before {
   content: attr(href);
-display: inline-block;
-position: absolute;
+display: block;
 margin-left: 2vw;
-color: rgba(63, 119, 251, 0.22);
+color: white;
 font-size: 12px;
 margin-top: 1.15em;
 mix-blend-mode: plus-darker;
 display: block;
+position: absolute;
+top: 300px;
+transform: rotate(-90deg);
+left: 20%;
+letter-spacing: -5px;
+
 }
+
+.talk-list a:hover:before {
+  color: black;
+} */
 
 footer {
   border-top: 1px solid slategray;
@@ -379,7 +388,7 @@ footer {
     }
 
     .headline {
-      display: none;
+      left: 40px;
     }
 
     .headline nav {
