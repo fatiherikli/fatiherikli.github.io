@@ -33,7 +33,7 @@ h3 span {
 }
 
 .cover {
-  width: 45%;
+  width: 35%;
   float: left;
   height: 100%;
   position: fixed;
@@ -43,7 +43,7 @@ h3 span {
 
 .content {
   float: right;
-  width: 55%;
+  width: 65%;
   box-sizing: border-box;
   padding: 20px 40px;
   background: #ddd;
@@ -220,26 +220,30 @@ margin-left: -1em;
 .works {
   max-width: 800px;
   overflow: hidden;
+  background-color: #fff;
+  padding: 5px;
 }
 
 .work-items {
   margin: 0;
   padding: 0;
-  margin-left: -4px;
+  /* margin-left: -4px; */
+  
 }
 
 .work-items li {
   list-style: none;
-  padding: 0 4px;
+  padding: 0;
   margin: 0;
-  float: left;
+  /* float: left; */
   display: block;
-  font-size: 0.9em;
+  float: right;
+  margin-bottom: 3px;
+  margin-right: 3px;
 }
 
 .work-item a {
   text-decoration: none;
-  line-height: 0.8em;
   display: inline-block;
   font-size: 1em;
   font-weight: normal;
@@ -388,11 +392,15 @@ footer {
     }
 
     .headline {
-      left: 40px;
+      /* left: 40px; */
+    }
+
+    .headline h1, .headline h2 {
+      margin-top: -55px;
     }
 
     .headline nav {
-      margin: 10px 0 0 -15px;
+      margin: 10px 0 0 0px;
     }
 
     .photo-info {
@@ -409,7 +417,7 @@ footer {
     }
 
     h3 span {
-      line-height: 10px;
+      /* line-height: 10px; */
     }
 
     .bio a, .work-item a {
