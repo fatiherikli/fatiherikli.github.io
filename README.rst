@@ -100,7 +100,8 @@ Use-and-reuse (cycle) of data in a work.
 
 The database rights (
    such as those arising under the 
-   Directive 96/9/ (EC of the European Parliament and of the Council of 11 March 1996)
+   Directive 96 /9 /
+   EC of the European Parliament and of the Council of 11 March 1996
 )
 
 on the legal protection of databases, and under any national implementati
@@ -169,3 +170,5 @@ express Statement of Purpose.            PATCH   ok
 https://fatiherikli.github.io/fil
 
 I hereby declare that I will follow the rules written above.
+
+Continue...
