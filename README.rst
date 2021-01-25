@@ -2,9 +2,9 @@
 Licenses for specific creative works
 ========================================================
 
-apple-touch-icon.png   — CLAUSE BSD (No-copyleft)
+apple-touch-icon.png   — 3 CLAUSE BSD (No-copyleft)
 this website           - Creative Commons License Code
-blue-square-game       - CLAUSE BSD (No-copyleft)
+blue-square-game       - 3 CLAUSE BSD (No-copyleft)
 this-paper             - MUST BE RECYCLED
 
 ***********************
