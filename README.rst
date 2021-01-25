@@ -47,7 +47,7 @@ image or likeness depicted in a *work*. Rights protecting against unfair
 competition in regards to a work, subject to the limitations in paragraph
 4(a) below;
 
-
+PAGE ONE
 *******************************************************
 
    +++++++++++++++++++++++---+++++++++  
@@ -68,11 +68,7 @@ competition in regards to a work, subject to the limitations in paragraph
 *******************************************************
 
 
-                                              +++++++++
-                                              | STORY |
-                                              +++++++++
-
-
+PAGE TOO
 ********************************************************
 
    +++++++++++++++++++++++++++++++++++  
@@ -128,8 +124,6 @@ future medium and for any number of copies and (IV) for any purpose;
                    ⦁
                    ⦁
                    ⦁  A N Y W A Y
-                   ⦁
-                   ⦁
 <----------------- ⦁
     (this is about something else)
 
