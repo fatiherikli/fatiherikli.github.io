@@ -27,7 +27,7 @@
   <meta property="og:description" content="Watch out, there might be a flappy bird game on the page " />
   <link rel="author" href="https://scholar.google.com/citations?hl=de&user=6zr4psgAAAAJ" />
   <link rel="stylesheet" href="base.css" />
-  <link rel="stylesheet" href="home-page.css?v=4.0.9" />
+  <link rel="stylesheet" href="home-page.css?v=4.1.0" />
   <link rel="dns-prefetch" href="//an-experiment.com" />
   <link rel="dns-prefetch" href="//google-analytics.com" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -103,10 +103,9 @@
             .replace('quiet enjoyment', '<strong style="color: blue">quiet enjoyment</strong>')
             .replace('Continue...', `<button onclick="continueDONTSHADOWARESERVEDKEYWORD()">Continue</button>`)
             .replace('I hereby declare that I will follow the rules written above.', '<input type="checkbox" /> I here by declare that I will follow the rules written above')
-          
         );
     </script>
-    Does your browser support javascript?
+    Does your browser support javascript? NO
   </pre>
   <script>function continueDONTSHADOWARESERVEDKEYWORD() {
     document.getElementById("license").style.display = 'none';
@@ -421,7 +420,7 @@ mathiasbynens.be/notes/async-analytics-snippet -->
      ['Esentepe, Karabuk', 'https://scontent.cdninstagram.com/t51.2885-15/e15/11248012_1646262195605152_1226688448_n.jpg']
    ];*/
 
-    const overlays = ["https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/97184197_246149420047228_6361037996303145174_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=6L0MCsTkbwcAX_10jsm&tp=1&oh=da2dd71ec9b3df6b2f7e499331c0d3ca&oe=602E419D",
+    const [cover, ...overlays] = ["https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/97184197_246149420047228_6361037996303145174_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=6L0MCsTkbwcAX_10jsm&tp=1&oh=da2dd71ec9b3df6b2f7e499331c0d3ca&oe=602E419D",
 "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/79825269_214310746240380_3532749904418919212_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=100&_nc_ohc=j2GvY6Ovh8sAX_gZsld&tp=1&oh=473e558831aac1741a79425425962818&oe=602E0223",
 "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/80837120_171281217270661_5949132336912125082_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=r5_pPUdz4OgAX_l4CLd&tp=1&oh=d13ab5ac6e24610b7882d67cd56d6a99&oe=602BAB7B",
 "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/79267619_530937730833488_8256010509177616018_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=blwz814rDVsAX-3vsHD&tp=1&oh=c09ddbf71f27ea004b72ceca4f532ee5&oe=602DD274",
@@ -434,6 +433,8 @@ mathiasbynens.be/notes/async-analytics-snippet -->
 "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/118408446_1018600275252633_2185371767175961301_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=eScEQejaSRYAX9-V2Ye&tp=1&oh=717244af383c75915343085c965badd4&oe=602F746D",
 "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/105969928_969912850114875_1224825819716349937_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=103&_nc_ohc=pnKnd7IiDsQAX-5E3Hm&tp=1&oh=90ecd782d3dd182c4316021b7193fe46&oe=602C9E3A"];
 
+    document.querySelector('.cover').style.backgroundImage = `url(${cover})`;
+    
     function startGame() {
       document.getElementById('canvas').style.display = 'block';
       document.getElementById('works-title').innerHTML = 'Levitate';
