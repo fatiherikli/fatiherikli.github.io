@@ -166,4 +166,20 @@ https://fatiherikli.github.io/fil
 
 I hereby declare that I will follow the rules written above.
 
-Continue...
+Personal
+Occupation:
+Senior Software Engineer
+
+Appearance:
+5 feet, 8 inches tall
+Black hair, Brown eyes
+
+Religion:
+Politeizm
+
+Political Views:
+Negative Utilitarian
+
+Languages:
+English, Polish, Norwegian, 5 feet 87⁄64 inches actually, Turkish
+
