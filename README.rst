@@ -183,3 +183,6 @@ Negative Utilitarian
 Languages:
 English, Polish, Norwegian, 5 feet 87⁄64 inches actually, Turkish
 
+Continue
+
+Bye
