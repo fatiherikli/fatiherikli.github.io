@@ -43,7 +43,7 @@ d to, the following:
 The right to reproduce, adapt, distribute, perform, display, communicate
 and translate a Work. Moral rights retained by the original authors and/
 or performers publicity and privacy rights pertaining to a person's imag
-e or likeness depicted/emerged in a work. Rights protecting against unfa
+e or likeness depicted in a work. Rights protecting against unfa
 ir competition in regards to a work, subject to the limitations in the p
 aragraph below;
 
@@ -65,7 +65,7 @@ PAGE ONE
    +++++++++++++++++++---+++++++++++++
 
 
-PAGE TOO
+PAGE TWO
 ********
 
    +++++++++++++++++++++++++++++++++++  
