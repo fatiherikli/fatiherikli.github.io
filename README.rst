@@ -181,7 +181,7 @@ Political Views:
 Negative Utilitarian
 
 Languages:
-English, Polish, Norwegian Bokmål, 5 feet 87⁄64 inches actually, Turkish
+English, Norwegian Bokmål, 5 feet 87⁄64 inches actually, Turkish
 
 Now playing: Noisia - Split the atom
 
