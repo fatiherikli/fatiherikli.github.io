@@ -181,9 +181,9 @@ Political Views:
 Negative Utilitarian
 
 Languages:
-English, Norwegian Bokmål, 5 feet 87⁄64 inches actually, Turkish
+English, Norwegisch, 5 feet 87⁄64 inches.
 
-Now playing: Noisia - Split the atom
+Now playing: Bonobo & Totally Enormous Extinct Dinosaurs - Heartbreak
 
 Continue...
 
