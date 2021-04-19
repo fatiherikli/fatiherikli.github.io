@@ -4,7 +4,7 @@ Licenses for specific creative works
 
 apple-touch-icon.png   — 3 CLAUSE BSD (No-copyleft)
 this website           - Creative Commons License Code
-blue-square-game       - 3 CLAUSE BSD (No-copyleft)
+blue-square-game       - 3 CLAUSE BSD (No-copyright)
 this-paper             - MUST BE RECYCLED
 
 ***********************
