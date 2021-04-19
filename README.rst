@@ -178,7 +178,7 @@ Religion:
 I am your god you need to pay to me
 
 Political Views:
-Negative Utilitarian
+Altruist
 
 Languages:
 English, Norwegisch, 5 feet 87⁄64 inches.
