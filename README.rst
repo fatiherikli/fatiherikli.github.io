@@ -163,5 +163,5 @@ English, Norwegisch, 5 feet 87⁄64 inches.
 
 Now playing: Bonobo & Totally Enormous Extinct Dinosaurs - Heartbreak
 
-Continue...
+Fork button
 
