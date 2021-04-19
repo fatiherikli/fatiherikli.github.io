@@ -136,6 +136,7 @@ Black hair, Brown eyes
 
 Religion:
 I am your god you need to pay to me
+You can buy me atoms too
 
 Political Views:
 Altruist
