@@ -175,7 +175,7 @@ Appearance:
 Black hair, Brown eyes
 
 Religion:
-Politeizm
+I am your god you need to pay to me
 
 Political Views:
 Negative Utilitarian
