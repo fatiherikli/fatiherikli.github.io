@@ -168,7 +168,7 @@ I hereby declare that I will follow the rules written above.
 
 Personal
 Occupation:
-Senior Software Engineer
+Neurosurgery
 
 Appearance:
 5 feet, 8 inches tall
