@@ -124,7 +124,7 @@ express Statement of Purpose.            PATCH   ketum░░░░░░░░�
 ----
 https://fatiherikli.github.io/fil
 
-I hear by declare that you are my god
+I hear by declare that you are my god.
 
 Personal
 Occupation:
